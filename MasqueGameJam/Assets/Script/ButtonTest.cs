@@ -9,6 +9,7 @@ public class ButtonTest : MonoBehaviour, IInteractable
         SoundManager.PlaySound(SoundType.FLIP);
 
     }
+
     public void OnHoverExit()
     {
     }
@@ -16,6 +17,6 @@ public class ButtonTest : MonoBehaviour, IInteractable
     public void OnClick()
     {
         Debug.Log("Nik fait un truc");
-        
+        DialogueManager.StartDialogue(DialogueType.HAPPY);
     }
 }
