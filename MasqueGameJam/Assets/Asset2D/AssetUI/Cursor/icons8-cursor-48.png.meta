@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 3b65742b64a492a4cb0fc1700595a02c
+guid: 824eff4ed3e1d33428689076b531ffd1
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -886343384496143905
-    second: "icons8-ep\xE9e-minecraft-48_0"
+      213: -4593618271097163204
+    second: icons8-cursor-48_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: "icons8-ep\xE9e-minecraft-48_0"
+      name: icons8-cursor-48_0
       rect:
         serializedVersion: 2
-        x: 4
-        y: 2
-        width: 41
-        height: 43
+        x: 13
+        y: 3
+        width: 26
+        height: 40
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: fd1071a436313b3f0800000000000000
-      internalID: -886343384496143905
+      spriteID: c32728d35803040c0800000000000000
+      internalID: -4593618271097163204
       vertices: []
       indices: 
       edges: []
@@ -135,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      "icons8-ep\xE9e-minecraft-48_0": -886343384496143905
+      icons8-cursor-48_0: -4593618271097163204
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

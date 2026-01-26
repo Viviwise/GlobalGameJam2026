@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 997ff0132b361934cae7df9960ca1e75
+guid: a86d9de2ccf3e2643b7fe9ff88070680
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 8027195969988467214
-    second: icons8-pointeur-bleu-24_0
+      213: -5724608867774899417
+    second: icons8-cursor-50_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: icons8-pointeur-bleu-24_0
+      name: icons8-cursor-50_0
       rect:
         serializedVersion: 2
-        x: 4
-        y: 0
-        width: 20
-        height: 24
+        x: 13
+        y: 2
+        width: 28
+        height: 44
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: e0a1c9d6434566f60800000000000000
-      internalID: 8027195969988467214
+      spriteID: 72bd936a09a1e80b0800000000000000
+      internalID: -5724608867774899417
       vertices: []
       indices: 
       edges: []
@@ -135,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      icons8-pointeur-bleu-24_0: 8027195969988467214
+      icons8-cursor-50_0: -5724608867774899417
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -15,6 +15,6 @@ public class Interactable : MonoBehaviour, IInteractable
 
     public virtual void OnClick()
     {
-        Debug.Log("Clicked on " + name);
+        SoundManager.PlaySound(SoundType.FLIP);
     }
 }

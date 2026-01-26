@@ -33,4 +33,9 @@ public class CursorManager : MonoBehaviour
         if (hoverCount == 0)
             Cursor.SetCursor(defaultCursor, Vector2.zero, CursorMode.Auto);
     }
+
+    public void OnClick()
+    {
+        Cursor.SetCursor(hoverCursor, Vector2.zero, CursorMode.Auto);
+    }
 }
