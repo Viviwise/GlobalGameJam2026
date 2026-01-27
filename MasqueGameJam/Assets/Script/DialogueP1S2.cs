@@ -3,7 +3,7 @@ using Unity.VisualScripting;
 using UnityEngine;
 
 
-public class Dialoguetest : MonoBehaviour, IInteractable
+public class DialogueP1S2 : MonoBehaviour, IInteractable
 {
     private SpriteRenderer spriteRenderer;
 

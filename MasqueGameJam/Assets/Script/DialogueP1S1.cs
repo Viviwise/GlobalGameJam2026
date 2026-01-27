@@ -3,7 +3,7 @@ using Script;
 using UnityEngine;
 
 
-public class ButtonTest : MonoBehaviour, IInteractable
+public class DialogueP1S1 : MonoBehaviour, IInteractable
 {
     public void OnHoverEnter()
     {

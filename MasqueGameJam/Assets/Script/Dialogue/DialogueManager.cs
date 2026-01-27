@@ -3,8 +3,6 @@ using System.Collections;
 using UnityEngine;
 using TMPro;
 using UnityEngine.InputSystem;
-using UnityEngine.UI;
-
 public enum DialogueType
 {
     GREETING,
@@ -25,8 +23,7 @@ public class DialogueManager : MonoBehaviour
     private int currentIndex = 0;
     private Coroutine typingCoroutine;
     private float currentTextSpeed = 0.05f;
-    private bool dialogueFinished = false; 
-    
+    private bool dialogueFinished = false;
     private void Awake()
     {
         instance = this;
@@ -63,7 +60,7 @@ public class DialogueManager : MonoBehaviour
     public static void StartDialogue(DialogueType type, float textSpeed = 0.05f)
     {
         if (!instance.gameObject.activeInHierarchy)
-            instance.gameObject.SetActive(true);  // <- active le GameObject si nécessaire
+            instance.gameObject.SetActive(true); 
 
         instance.currentDialogue = instance.dialogueLists[(int)type].Sentences;
         instance.currentIndex = 0;
@@ -76,6 +73,21 @@ public class DialogueManager : MonoBehaviour
 
             instance.typingCoroutine = instance.StartCoroutine(instance.TypeLine(instance.currentDialogue[0]));
         }
+    }
+    
+    public void StartHappyDialogue()
+    {
+        StartDialogue(DialogueType.HAPPY);
+    }
+
+    public void StartAngryDialogue()
+    {
+        StartDialogue(DialogueType.ANGRY);
+    }
+    
+    public void StartSadDialogue()
+    {
+        StartDialogue(DialogueType.SAD);
     }
 
 

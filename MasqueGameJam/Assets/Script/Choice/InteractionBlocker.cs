@@ -1,7 +1,8 @@
 namespace Script.Choice
 {
-    public class InteractionBlocker
+    public static class InteractionBlocker
     {
-        
+        public static bool BlockAllInteractions = false;
     }
+
 }
