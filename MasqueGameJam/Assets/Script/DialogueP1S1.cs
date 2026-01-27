@@ -2,21 +2,23 @@ using System;
 using Script;
 using UnityEngine;
 
+
 public class ButtonTest : MonoBehaviour, IInteractable
 {
     public void OnHoverEnter()
     {
         SoundManager.PlaySound(SoundType.FLIP);
-
+        CursorManager.Instance.OnHoverEnter();
     }
 
     public void OnHoverExit()
     {
+        CursorManager.Instance.OnHoverExit();
     }
 
     public void OnClick()
     {
-        Debug.Log("Nik fait un truc");
-        DialogueManager.StartDialogue(DialogueType.HAPPY);
+        DialogueManager.StartDialogue(DialogueType.HAPPY); 
+        Destroy(gameObject);
     }
 }
