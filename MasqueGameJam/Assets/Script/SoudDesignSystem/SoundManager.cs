@@ -25,6 +25,36 @@ public class SoundManager : MonoBehaviour
         audioSource = GetComponent<AudioSource>();
     }
 
+    public void PlayFlipSound()
+    {
+        PlaySound(SoundType.FLIP);
+    }
+    
+    public void PlaySingSound()
+    {
+        PlaySound(SoundType.SING);
+    }
+
+    public void PlayDanceSound()
+    {
+        PlaySound(SoundType.DANCE);
+    }
+
+    public void PlayHappySound()
+    {
+        PlaySound(SoundType.HAPPY);
+    }
+
+    public void PlayAngrySound()
+    {
+        PlaySound(SoundType.ANGRY);
+    }
+
+    public void PlayBoredSound()
+    {
+        PlaySound(SoundType.BORED);
+    }
+
     public static void PlaySound(SoundType sound, float volume = 1)
     {
         AudioClip[] clips = instance.soundsList[(int)sound].Sound;
