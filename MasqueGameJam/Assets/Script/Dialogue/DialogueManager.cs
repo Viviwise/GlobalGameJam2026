@@ -23,7 +23,23 @@ public class DialogueManager : MonoBehaviour
     private int currentIndex = 0;
     private Coroutine typingCoroutine;
     private float currentTextSpeed = 0.05f;
-    private bool dialogueFinished = false;
+    public bool dialogueFinished = false;
+    
+    [System.Serializable]
+    public class CustomDialogue
+    {
+        [TextArea(2, 5)]
+        public string[] lines;
+    }
+
+    
+    public static bool IsDialogueFinished
+    {
+        get
+        {
+            return instance != null && instance.dialogueFinished;
+        }
+    }
     private void Awake()
     {
         instance = this;
@@ -52,7 +68,6 @@ public class DialogueManager : MonoBehaviour
             {
                 textComponent.text = string.Empty;
                 currentDialogue = null;
-                dialogueFinished = false;
             }
         }
     }
@@ -60,7 +75,9 @@ public class DialogueManager : MonoBehaviour
     public static void StartDialogue(DialogueType type, float textSpeed = 0.05f)
     {
         if (!instance.gameObject.activeInHierarchy)
-            instance.gameObject.SetActive(true); 
+            instance.gameObject.SetActive(true);
+
+        instance.dialogueFinished = false;
 
         instance.currentDialogue = instance.dialogueLists[(int)type].Sentences;
         instance.currentIndex = 0;
@@ -71,10 +88,35 @@ public class DialogueManager : MonoBehaviour
             if (instance.typingCoroutine != null)
                 instance.StopCoroutine(instance.typingCoroutine);
 
-            instance.typingCoroutine = instance.StartCoroutine(instance.TypeLine(instance.currentDialogue[0]));
+            instance.typingCoroutine = instance.StartCoroutine(
+                instance.TypeLine(instance.currentDialogue[0])
+            );
         }
     }
     
+    public static void StartCustomDialogue(string[] lines, float textSpeed = 0.05f)
+    {
+        if (instance == null) return;
+
+        if (!instance.gameObject.activeInHierarchy)
+            instance.gameObject.SetActive(true);
+
+        instance.dialogueFinished = false;
+        instance.currentDialogue = lines;
+        instance.currentIndex = 0;
+        instance.currentTextSpeed = textSpeed;
+
+        if (lines.Length > 0)
+        {
+            if (instance.typingCoroutine != null)
+                instance.StopCoroutine(instance.typingCoroutine);
+
+            instance.typingCoroutine = instance.StartCoroutine(
+                instance.TypeLine(lines[0])
+            );
+        }
+    }
+
     public void StartHappyDialogue()
     {
         StartDialogue(DialogueType.HAPPY);

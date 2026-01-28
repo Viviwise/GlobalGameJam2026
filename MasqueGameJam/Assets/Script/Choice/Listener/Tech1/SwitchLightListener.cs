@@ -3,10 +3,15 @@ using UnityEngine.UI;
 
 public class SwitchLightListener : MonoBehaviour
 {
-  public Image lightPanel;
+  public SpriteRenderer lightPanel;
 
-  public void SwitchLight()
+  void Start()
   {
-    
+      lightPanel.enabled = false;
+      lightPanel = GetComponent<SpriteRenderer>();
+  }
+  public void LightUp()
+  {
+      lightPanel.enabled = true;
   }
 }

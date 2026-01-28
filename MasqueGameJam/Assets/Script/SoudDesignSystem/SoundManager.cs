@@ -54,6 +54,7 @@ public class SoundManager : MonoBehaviour
     {
         PlaySound(SoundType.BORED);
     }
+    
 
     public static void PlaySound(SoundType sound, float volume = 1)
     {

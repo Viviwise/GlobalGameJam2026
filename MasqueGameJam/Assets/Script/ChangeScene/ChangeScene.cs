@@ -7,7 +7,7 @@ public class ChangeSceneTest : MonoBehaviour
 
     public void ChangeScene()
     {
-        SceneManager.LoadScene(sceneToLoad);
+      //  SceneManager.LoadScene(sceneToLoad);
         Debug.Log(sceneToLoad);
     }
 }

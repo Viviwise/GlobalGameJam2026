@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a328034f1632461ca7bd0a55f391dae3, type: 3}
+  m_Name: Scene01
+  m_EditorClassIdentifier: Assembly-CSharp::SceneSO
+  sceneName: SceneDemo
+  background: {fileID: -108444901144737078, guid: 519238bb0e803ab43b1af86f1185e560, type: 3}
+  characters:
+  - {fileID: 4111302018765514031, guid: 4c3f4c8c6b6f16d448e242b5035b2bb4, type: 3}
+  choices:
+  - {fileID: 11400000, guid: 5d8fefe4cf6bd80439b75c8c1aba561d, type: 2}
