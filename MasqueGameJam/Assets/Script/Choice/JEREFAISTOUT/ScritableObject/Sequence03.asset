@@ -12,4 +12,114 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fafbf8b23f5c4c7d83031f2cb5c59dba, type: 3}
   m_Name: Sequence03
   m_EditorClassIdentifier: Assembly-CSharp::Sequence
-  actions: []
+  groups:
+  - actions:
+    - type: 0
+      character: Tech(Clone)
+      animationClip: {fileID: 7400000, guid: 48f5827175793f241ab0cad483020325, type: 2}
+      dialogueText: 
+      soundType: 0
+      prefabToSpawn: {fileID: 0}
+      duration: 0
+      blocking: 0
+    - type: 2
+      character: 
+      animationClip: {fileID: 0}
+      dialogueText: 
+      soundType: 0
+      prefabToSpawn: {fileID: 3068330992224941267, guid: 632bd42d27ccaa842b0fa05d33a8e5b6, type: 3}
+      duration: 0
+      blocking: 0
+    - type: 0
+      character: Beatrice(Clone)
+      animationClip: {fileID: 7400000, guid: 9f41a4e6520c60847a55e7c7b5d90dcb, type: 2}
+      dialogueText: 
+      soundType: 0
+      prefabToSpawn: {fileID: 0}
+      duration: 0
+      blocking: 0
+    - type: 1
+      character: Beatrice
+      animationClip: {fileID: 0}
+      dialogueText: "William, j\u2019ai une annonce importante \xE0 vous faire, mais
+        je ne vous vois pas tr\xE8s bien"
+      soundType: 0
+      prefabToSpawn: {fileID: 0}
+      duration: 5
+      blocking: 1
+  - actions:
+    - type: 0
+      character: Beatrice(Clone)
+      animationClip: {fileID: 7400000, guid: 8b9792b5de3629d47bc69ce979c1abd8, type: 2}
+      dialogueText: 
+      soundType: 0
+      prefabToSpawn: {fileID: 0}
+      duration: 0
+      blocking: 0
+    - type: 0
+      character: William(Clone)
+      animationClip: {fileID: 7400000, guid: ae7e783137c0455409a49ead4a44c979, type: 2}
+      dialogueText: 
+      soundType: 0
+      prefabToSpawn: {fileID: 0}
+      duration: 0
+      blocking: 0
+    - type: 1
+      character: William
+      animationClip: {fileID: 0}
+      dialogueText: "Ce n\u2019est pas grave, dites-moi tout\u2026"
+      soundType: 0
+      prefabToSpawn: {fileID: 0}
+      duration: 5
+      blocking: 1
+  - actions:
+    - type: 1
+      character: William
+      animationClip: {fileID: 0}
+      dialogueText: "Dites moi tout mon enfant, un malheur vous est arriv\xE9 ?"
+      soundType: 0
+      prefabToSpawn: {fileID: 0}
+      duration: 5
+      blocking: 1
+  - actions:
+    - type: 0
+      character: William(Clone)
+      animationClip: {fileID: 7400000, guid: 6dcf3ba748fe93c4588037a8d380137f, type: 2}
+      dialogueText: 
+      soundType: 0
+      prefabToSpawn: {fileID: 0}
+      duration: 0
+      blocking: 0
+    - type: 0
+      character: Beatrice(Clone)
+      animationClip: {fileID: 7400000, guid: 9f41a4e6520c60847a55e7c7b5d90dcb, type: 2}
+      dialogueText: 
+      soundType: 0
+      prefabToSpawn: {fileID: 0}
+      duration: 0
+      blocking: 0
+    - type: 1
+      character: Beatrice
+      animationClip: {fileID: 0}
+      dialogueText: "Et bien laissez moi vous raconter\u2026"
+      soundType: 0
+      prefabToSpawn: {fileID: 0}
+      duration: 5
+      blocking: 1
+  - actions:
+    - type: 0
+      character: William(Clone)
+      animationClip: {fileID: 7400000, guid: d4404a5e1aff4df449ecb8cef28bb1f5, type: 2}
+      dialogueText: 
+      soundType: 0
+      prefabToSpawn: {fileID: 0}
+      duration: 0
+      blocking: 0
+    - type: 0
+      character: Beatrice(Clone)
+      animationClip: {fileID: 7400000, guid: 8b9792b5de3629d47bc69ce979c1abd8, type: 2}
+      dialogueText: 
+      soundType: 0
+      prefabToSpawn: {fileID: 0}
+      duration: 0
+      blocking: 0

@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1107 &-6092238226864705242
+--- !u!1107 &-8413816255538781914
 AnimatorStateMachine:
   serializedVersion: 6
   m_ObjectHideFlags: 1
@@ -10,32 +10,29 @@ AnimatorStateMachine:
   m_Name: Base Layer
   m_ChildStates:
   - serializedVersion: 1
-    m_State: {fileID: -3391969060978450082}
-    m_Position: {x: 200, y: 0, z: 0}
+    m_State: {fileID: 38376522486216483}
+    m_Position: {x: 190, y: -90, z: 0}
   - serializedVersion: 1
-    m_State: {fileID: 5356384891371800806}
-    m_Position: {x: 270, y: -80, z: 0}
-  - serializedVersion: 1
-    m_State: {fileID: 7558620837227665268}
-    m_Position: {x: 440, y: -10, z: 0}
+    m_State: {fileID: -4561797202773062303}
+    m_Position: {x: 190, y: -10, z: 0}
   m_ChildStateMachines: []
   m_AnyStateTransitions: []
   m_EntryTransitions: []
   m_StateMachineTransitions: {}
   m_StateMachineBehaviours: []
-  m_AnyStatePosition: {x: 50, y: 20, z: 0}
+  m_AnyStatePosition: {x: 10, y: 20, z: 0}
   m_EntryPosition: {x: 50, y: 120, z: 0}
-  m_ExitPosition: {x: 800, y: 120, z: 0}
+  m_ExitPosition: {x: 310, y: 80, z: 0}
   m_ParentStateMachinePosition: {x: 800, y: 20, z: 0}
-  m_DefaultState: {fileID: -3391969060978450082}
---- !u!1102 &-3391969060978450082
+  m_DefaultState: {fileID: -4561797202773062303}
+--- !u!1102 &-4561797202773062303
 AnimatorState:
   serializedVersion: 6
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: WilliamIdle
+  m_Name: TechLightIdle
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions: []
@@ -48,7 +45,7 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: 6dcf3ba748fe93c4588037a8d380137f, type: 2}
+  m_Motion: {fileID: 7400000, guid: 32a72600603108c478b45fc6d69937dd, type: 2}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 
@@ -60,13 +57,13 @@ AnimatorController:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: WilliamAnimator
+  m_Name: TechnicienAnimator
   serializedVersion: 5
   m_AnimatorParameters: []
   m_AnimatorLayers:
   - serializedVersion: 5
     m_Name: Base Layer
-    m_StateMachine: {fileID: -6092238226864705242}
+    m_StateMachine: {fileID: -8413816255538781914}
     m_Mask: {fileID: 0}
     m_Motions: []
     m_Behaviours: []
@@ -76,14 +73,14 @@ AnimatorController:
     m_IKPass: 0
     m_SyncedLayerAffectsTiming: 0
     m_Controller: {fileID: 9100000}
---- !u!1102 &5356384891371800806
+--- !u!1102 &38376522486216483
 AnimatorState:
   serializedVersion: 6
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: WilliamOration
+  m_Name: TechLight
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions: []
@@ -96,33 +93,7 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: ae7e783137c0455409a49ead4a44c979, type: 2}
-  m_Tag: 
-  m_SpeedParameter: 
-  m_MirrorParameter: 
-  m_CycleOffsetParameter: 
-  m_TimeParameter: 
---- !u!1102 &7558620837227665268
-AnimatorState:
-  serializedVersion: 6
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: WilliamEscape
-  m_Speed: 1
-  m_CycleOffset: 0
-  m_Transitions: []
-  m_StateMachineBehaviours: []
-  m_Position: {x: 50, y: 50, z: 0}
-  m_IKOnFeet: 0
-  m_WriteDefaultValues: 1
-  m_Mirror: 0
-  m_SpeedParameterActive: 0
-  m_MirrorParameterActive: 0
-  m_CycleOffsetParameterActive: 0
-  m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: d4404a5e1aff4df449ecb8cef28bb1f5, type: 2}
+  m_Motion: {fileID: 7400000, guid: 48f5827175793f241ab0cad483020325, type: 2}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 

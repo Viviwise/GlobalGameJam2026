@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 157e6e1e4545481f862244244ae9d274, type: 3}
   m_Name: Choice03
   m_EditorClassIdentifier: Assembly-CSharp::Choice
-  label: 
+  label: "Lumi\xE8res sur Beatrice"
   sequence: {fileID: 11400000, guid: d8efd81067213e844b0d332804721948, type: 2}
   targetScene: {fileID: 11400000, guid: 9b880ddc69fe77b4583b65a550ec2f45, type: 2}

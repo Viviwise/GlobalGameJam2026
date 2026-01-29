@@ -15,7 +15,7 @@ MonoBehaviour:
   groups:
   - actions:
     - type: 0
-      character: Beatrice
+      character: Beatrice(Clone)
       animationClip: {fileID: 7400000, guid: 9f41a4e6520c60847a55e7c7b5d90dcb, type: 2}
       dialogueText: 
       soundType: 0
@@ -23,44 +23,77 @@ MonoBehaviour:
       duration: 2
       blocking: 0
     - type: 1
-      character: Beatrice(Clone)
+      character: Beatrice
       animationClip: {fileID: 0}
-      dialogueText: "Yo c'est Beatrice je fais cobaye l\xE0 mtn"
+      dialogueText: "William, j\u2019ai une annonce importante \xE0 vous faire"
       soundType: 0
       prefabToSpawn: {fileID: 0}
       duration: 5
       blocking: 1
-    - type: 4
-      character: 
-      animationClip: {fileID: 0}
+  - actions:
+    - type: 0
+      character: Beatrice(Clone)
+      animationClip: {fileID: 7400000, guid: 8b9792b5de3629d47bc69ce979c1abd8, type: 2}
       dialogueText: 
       soundType: 0
       prefabToSpawn: {fileID: 0}
       duration: 0
       blocking: 0
-  - actions:
-    - type: 3
-      character: 
-      animationClip: {fileID: 0}
+    - type: 0
+      character: William(Clone)
+      animationClip: {fileID: 7400000, guid: ae7e783137c0455409a49ead4a44c979, type: 2}
       dialogueText: 
       soundType: 0
       prefabToSpawn: {fileID: 0}
-      duration: 2
+      duration: 0
+      blocking: 0
+    - type: 1
+      character: William
+      animationClip: {fileID: 0}
+      dialogueText: "Dites moi tout mon enfant, un malheur vous est arriv\xE9 ?"
+      soundType: 0
+      prefabToSpawn: {fileID: 0}
+      duration: 5
       blocking: 1
   - actions:
+    - type: 0
+      character: William(Clone)
+      animationClip: {fileID: 7400000, guid: 6dcf3ba748fe93c4588037a8d380137f, type: 2}
+      dialogueText: 
+      soundType: 0
+      prefabToSpawn: {fileID: 0}
+      duration: 0
+      blocking: 0
     - type: 0
       character: Beatrice(Clone)
       animationClip: {fileID: 7400000, guid: 9f41a4e6520c60847a55e7c7b5d90dcb, type: 2}
       dialogueText: 
       soundType: 0
       prefabToSpawn: {fileID: 0}
-      duration: 5
+      duration: 0
       blocking: 0
     - type: 1
-      character: Beatrice(Clone)
+      character: Beatrice
       animationClip: {fileID: 0}
-      dialogueText: Regardez comment je me scale, WOOOOOOOOOOOOOOOW....
+      dialogueText: "Et bien laissez moi vous raconter\u2026"
       soundType: 0
       prefabToSpawn: {fileID: 0}
-      duration: 6
+      duration: 0
+      blocking: 0
+  - actions:
+    - type: 0
+      character: Beatrice(Clone)
+      animationClip: {fileID: 7400000, guid: 8b9792b5de3629d47bc69ce979c1abd8, type: 2}
+      dialogueText: 
+      soundType: 0
+      prefabToSpawn: {fileID: 0}
+      duration: 0
+      blocking: 0
+    - type: 0
+      character: William(Clone)
+      animationClip: {fileID: 7400000, guid: d4404a5e1aff4df449ecb8cef28bb1f5, type: 2}
+      dialogueText: 
+      soundType: 0
+      prefabToSpawn: {fileID: 0}
+      duration: 0
       blocking: 1

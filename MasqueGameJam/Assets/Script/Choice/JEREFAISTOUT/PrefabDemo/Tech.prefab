@@ -11,8 +11,9 @@ GameObject:
   - component: {fileID: 8286177750933085514}
   - component: {fileID: 505087783938567367}
   - component: {fileID: 6279685528796913108}
+  - component: {fileID: 3327428337546792051}
   m_Layer: 0
-  m_Name: Technicien
+  m_Name: Tech
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -27,7 +28,7 @@ Transform:
   m_GameObject: {fileID: 8032391905397900563}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 1}
+  m_LocalPosition: {x: 6, y: 4, z: 1}
   m_LocalScale: {x: 0.67071986, y: 0.67071986, z: 0.67071986}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -137,3 +138,25 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 3.75, y: 4.36}
   m_EdgeRadius: 0
+--- !u!95 &3327428337546792051
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8032391905397900563}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 59b411c387690b14b89e72547c304a8f, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
