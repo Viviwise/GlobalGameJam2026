@@ -143,17 +143,27 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SoundManager
   soundsList:
-  - name: ORATION
+  - name: IntroductionAct
     sounds:
-    - {fileID: 8300000, guid: 8a6e2b32a8b2a0040bfe6af065633977, type: 3}
-    - {fileID: 8300000, guid: eafcb687e5e5d994a845395d89c255ee, type: 3}
-  - name: SING
-    sounds: []
-  - name: DANCE
-    sounds: []
-  - name: HAPPY
-    sounds: []
-  - name: ANGRY
-    sounds: []
-  - name: BORED
-    sounds: []
+    - {fileID: 8300000, guid: b66481635d259034f99442953e6dfb7e, type: 3}
+  - name: CalmAmbiance
+    sounds:
+    - {fileID: 8300000, guid: b031dfc4fc5291b4aa3329eca3216ae0, type: 3}
+  - name: Applause
+    sounds:
+    - {fileID: 8300000, guid: 45d7f98b67c3cd04191c7d4bd05973ee, type: 3}
+  - name: CatharsysLaugh
+    sounds:
+    - {fileID: 8300000, guid: 4478949db934c214e9807c5de137d00b, type: 3}
+  - name: CharacterExplosion
+    sounds:
+    - {fileID: 8300000, guid: 90681b303ea826e4dbbb28d3400d6f23, type: 3}
+  - name: Clic
+    sounds:
+    - {fileID: 8300000, guid: 6b96081ffcc4862429821a96f3a4a5bb, type: 3}
+    - {fileID: 8300000, guid: 2c1868971c863c34ca88aba8ff2ea0ad, type: 3}
+  - name: JohanTalk
+    sounds:
+    - {fileID: 8300000, guid: c203d5aa5cda69d46a1997e749b8e2a6, type: 3}
+    - {fileID: 8300000, guid: 4d3c4309720233646b1be48a9aa30d54, type: 3}
+    - {fileID: 8300000, guid: 2150d932e6630f04eb27724f98db4961, type: 3}
