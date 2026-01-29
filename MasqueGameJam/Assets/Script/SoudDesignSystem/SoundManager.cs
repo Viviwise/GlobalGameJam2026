@@ -2,12 +2,13 @@ using System;
 using UnityEngine;
 public enum SoundType
 {
-    ORATION,
-    SING,
-    DANCE,
-    HAPPY,
-    ANGRY,
-    BORED
+    IntroductionAct,
+    CalmAmbiance,
+    Applause,
+    CatharsysLaugh,
+    CharacterExplosion,
+    Clic,
+    JohanTalk,
 }
 [RequireComponent(typeof(AudioSource)), ExecuteInEditMode]
 public class SoundManager : MonoBehaviour
@@ -27,32 +28,17 @@ public class SoundManager : MonoBehaviour
 
     public void PlayFlipSound()
     {
-        PlaySound(SoundType.ORATION);
+        //
     }
     
     public void PlaySingSound()
     {
-        PlaySound(SoundType.SING);
+        //
     }
 
     public void PlayDanceSound()
     {
-        PlaySound(SoundType.DANCE);
-    }
-
-    public void PlayHappySound()
-    {
-        PlaySound(SoundType.HAPPY);
-    }
-
-    public void PlayAngrySound()
-    {
-        PlaySound(SoundType.ANGRY);
-    }
-
-    public void PlayBoredSound()
-    {
-        PlaySound(SoundType.BORED);
+        //
     }
     
 
