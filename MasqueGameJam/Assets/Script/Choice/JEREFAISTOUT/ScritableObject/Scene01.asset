@@ -15,6 +15,7 @@ MonoBehaviour:
   sceneName: SceneDemo
   background: {fileID: -108444901144737078, guid: 519238bb0e803ab43b1af86f1185e560, type: 3}
   characters:
-  - {fileID: 4111302018765514031, guid: 4c3f4c8c6b6f16d448e242b5035b2bb4, type: 3}
+  - {fileID: 1136054562188435810, guid: 9652116c4f214ad4eb461f56052749a9, type: 3}
+  - {fileID: 7271378170700332483, guid: e77702a4bbea66343a780b95b7bfc939, type: 3}
   choices:
   - {fileID: 11400000, guid: 5d8fefe4cf6bd80439b75c8c1aba561d, type: 2}

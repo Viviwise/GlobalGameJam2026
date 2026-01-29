@@ -34,8 +34,8 @@ public class SceneSequenceController : MonoBehaviour
     {
         //  Béatrice oration + dialogue
         beatriceAnimator.SetTrigger(beatriceOrationTrigger);
-        DialogueManager.StartCustomDialogue(beatriceDialogue1.lines);
-        yield return new WaitUntil(() => DialogueManager.IsDialogueFinished);
+        DialogueManagerAncien.StartCustomDialogue(beatriceDialogue1.lines);
+        yield return new WaitUntil(() => DialogueManagerAncien.IsDialogueFinished);
 
         //  Béatrice idle
         beatriceAnimator.SetTrigger(beatriceIdleTrigger);
@@ -43,16 +43,16 @@ public class SceneSequenceController : MonoBehaviour
 
         //  William oration + dialogue
         williamAnimator.SetTrigger(williamOrationTrigger);
-        DialogueManager.StartCustomDialogue(williamDialogue.lines);
-        yield return new WaitUntil(() => DialogueManager.IsDialogueFinished);
+        DialogueManagerAncien.StartCustomDialogue(williamDialogue.lines);
+        yield return new WaitUntil(() => DialogueManagerAncien.IsDialogueFinished);
 
         //  William idle
         williamAnimator.SetTrigger(williamIdleTrigger);
         yield return new WaitForSeconds(0.2f);
 
         //  Béatrice reparle
-        DialogueManager.StartCustomDialogue(beatriceDialogue2.lines);
-        yield return new WaitUntil(() => DialogueManager.IsDialogueFinished);
+        DialogueManagerAncien.StartCustomDialogue(beatriceDialogue2.lines);
+        yield return new WaitUntil(() => DialogueManagerAncien.IsDialogueFinished);
 
         //  William se déplace et sort
         williamAnimator.SetTrigger(williamMoveTrigger);

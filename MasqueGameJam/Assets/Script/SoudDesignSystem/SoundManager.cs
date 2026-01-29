@@ -2,7 +2,7 @@ using System;
 using UnityEngine;
 public enum SoundType
 {
-    FLIP,
+    ORATION,
     SING,
     DANCE,
     HAPPY,
@@ -13,7 +13,7 @@ public enum SoundType
 public class SoundManager : MonoBehaviour
 {
     [SerializeField] private SoundList[] soundsList;
-    private static SoundManager instance;
+    public static SoundManager instance;
     private AudioSource audioSource;
 
     private void Awake()
@@ -27,7 +27,7 @@ public class SoundManager : MonoBehaviour
 
     public void PlayFlipSound()
     {
-        PlaySound(SoundType.FLIP);
+        PlaySound(SoundType.ORATION);
     }
     
     public void PlaySingSound()
