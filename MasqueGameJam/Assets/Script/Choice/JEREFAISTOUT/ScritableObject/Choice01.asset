@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 157e6e1e4545481f862244244ae9d274, type: 3}
   m_Name: Choice01
   m_EditorClassIdentifier: Assembly-CSharp::Choice
-  label: "Pr\xE9sentation"
+  label: L'annonce de Beatrice
   sequence: {fileID: 11400000, guid: 3a0b49a166c59b646ae5e77db122916a, type: 2}
   targetScene: {fileID: 11400000, guid: 9b880ddc69fe77b4583b65a550ec2f45, type: 2}
