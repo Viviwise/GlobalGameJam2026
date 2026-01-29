@@ -11,7 +11,7 @@ public class SequenceAction
     public AnimationClip animationClip; 
 
     [TextArea] public string dialogueText;
-    public AudioClip soundToPLay;
+    public SoundType soundType;
 
     public GameObject prefabToSpawn;
     public float duration = 1f;      

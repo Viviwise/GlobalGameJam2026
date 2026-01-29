@@ -15,35 +15,52 @@ MonoBehaviour:
   groups:
   - actions:
     - type: 0
-      character: Mephisto
-      animationClip: {fileID: 0}
+      character: Beatrice(Clone)
+      animationClip: {fileID: 7400000, guid: 9f41a4e6520c60847a55e7c7b5d90dcb, type: 2}
       dialogueText: 
-      soundToPLay: {fileID: 0}
+      soundType: 0
       prefabToSpawn: {fileID: 0}
       duration: 2
       blocking: 0
     - type: 1
-      character: Mephisto
+      character: Beatrice(Clone)
       animationClip: {fileID: 0}
-      dialogueText: "Yo c'est Mephisto je fais cobaye l\xE0 mtn"
-      soundToPLay: {fileID: 0}
+      dialogueText: "Yo c'est Beatrice je fais cobaye l\xE0 mtn"
+      soundType: 0
       prefabToSpawn: {fileID: 0}
       duration: 5
       blocking: 1
-  - actions:
-    - type: 0
-      character: Mephisto
+    - type: 4
+      character: 
       animationClip: {fileID: 0}
       dialogueText: 
-      soundToPLay: {fileID: 0}
+      soundType: 0
+      prefabToSpawn: {fileID: 0}
+      duration: 0
+      blocking: 0
+  - actions:
+    - type: 3
+      character: 
+      animationClip: {fileID: 0}
+      dialogueText: 
+      soundType: 0
+      prefabToSpawn: {fileID: 0}
+      duration: 2
+      blocking: 1
+  - actions:
+    - type: 0
+      character: Beatrice(Clone)
+      animationClip: {fileID: 7400000, guid: 9f41a4e6520c60847a55e7c7b5d90dcb, type: 2}
+      dialogueText: 
+      soundType: 0
       prefabToSpawn: {fileID: 0}
       duration: 5
       blocking: 0
     - type: 1
-      character: Mephisto
+      character: Beatrice(Clone)
       animationClip: {fileID: 0}
-      dialogueText: Regardez comment je dance, WOOOOOOOOOOOOOOOW....
-      soundToPLay: {fileID: 0}
+      dialogueText: Regardez comment je me scale, WOOOOOOOOOOOOOOOW....
+      soundType: 0
       prefabToSpawn: {fileID: 0}
       duration: 6
       blocking: 1

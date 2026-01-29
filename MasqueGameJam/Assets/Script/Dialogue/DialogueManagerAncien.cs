@@ -13,10 +13,10 @@ public enum DialogueType
 }
 
 [RequireComponent(typeof(TextMeshProUGUI))]
-public class DialogueManager : MonoBehaviour
+public class DialogueManagerAncien : MonoBehaviour
 {
     [SerializeField] private DialogueList[] dialogueLists;
-    private static DialogueManager instance;
+    private static DialogueManagerAncien instance;
     private TextMeshProUGUI textComponent;
 
     private string[] currentDialogue;

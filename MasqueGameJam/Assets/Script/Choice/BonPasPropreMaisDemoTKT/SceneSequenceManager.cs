@@ -1,19 +1,24 @@
 using System.Collections;
 using System.Collections.Generic;
+using Script.Choice.BonPasPropreMaisDemoTKT;
 using UnityEngine;
 using UnityEngine.UI;
-using TMPro; // Pour TextMeshPro
+using TMPro; 
 
-public class SceneManager : MonoBehaviour
+public class SceneSequenceManager : MonoBehaviour
 {
     [Header("UI References")]
-    public SpriteRenderer backgroundImage;         // UI Image pour le background
-    public Transform choicePanel;         // Panel pour afficher les boutons
-    public GameObject choiceButtonPrefab; // Prefab du bouton (TMP_Text à l'intérieur)
+    public SpriteRenderer backgroundImage;         
+    public Transform choicePanel;         
+    public GameObject choiceButtonPrefab; 
 
     [Header("Scene Setup")]
-    public Transform characterContainer;  // Container pour les personnages
-    public SceneSO firstScene;            // Première scène à charger
+    public Transform characterContainer;  
+    public SceneSO firstScene;
+    
+    [Header("Dialogue")]
+    public DialogueManager dialogueManager;
+
 
     private SceneSO currentScene;
 
@@ -21,16 +26,12 @@ public class SceneManager : MonoBehaviour
     {
         if (firstScene == null)
         {
-            Debug.LogError("First Scene non assignée !");
             return;
         }
 
         LoadScene(firstScene);
     }
-
-    /// <summary>
-    /// Charge une scène ScriptableObject
-    /// </summary>
+    
     public void LoadScene(SceneSO scene)
     {
         currentScene = scene;
@@ -49,25 +50,19 @@ public class SceneManager : MonoBehaviour
         // --- Choices ---
         ShowChoices(scene.choices);
     }
-
-    /// <summary>
-    /// Affiche les boutons de choix dynamiquement
-    /// </summary>
+    
     void ShowChoices(Choice[] choices)
     {
         if (choicePanel == null || choiceButtonPrefab == null)
         {
-            Debug.LogError("Choice Panel ou Button Prefab non assigné !");
             return;
         }
 
-        // Clear old buttons
         foreach (Transform t in choicePanel)
             Destroy(t.gameObject);
 
         if (choices == null || choices.Length == 0)
         {
-            Debug.LogWarning("Cette scène n'a aucun choix !");
             return;
         }
 
@@ -79,7 +74,6 @@ public class SceneManager : MonoBehaviour
 
             if (text == null)
             {
-                Debug.LogError("Le bouton prefab doit contenir un TMP_Text");
                 continue;
             }
 
@@ -88,13 +82,9 @@ public class SceneManager : MonoBehaviour
             button.onClick.AddListener(() => OnChoiceClicked(choice));
         }
     }
-
-    /// <summary>
-    /// Quand le joueur clique sur un choix
-    /// </summary>
+    
     void OnChoiceClicked(Choice choice)
     {
-        // Désactive tous les boutons pour éviter les clics multiples
         foreach (Transform t in choicePanel)
         {
             var btn = t.GetComponent<Button>();
@@ -104,19 +94,15 @@ public class SceneManager : MonoBehaviour
         StartCoroutine(PlaySequence(choice.sequence, choice.targetScene));
     }
 
-    /// <summary>
-    /// Exécute la séquence du choix, avec ActionGroup pour actions simultanées
-    /// </summary>
     IEnumerator PlaySequence(Sequence sequence, SceneSO nextScene)
     {
         if (sequence == null || sequence.groups == null || sequence.groups.Length == 0)
         {
-            Debug.LogWarning("Sequence vide !");
             ShowNextSceneButton(nextScene);
             yield break;
         }
 
-        // Parcours chaque groupe (simultanéité à l'intérieur du groupe)
+
         foreach (var group in sequence.groups)
         {
             if (group.actions == null || group.actions.Length == 0)
@@ -129,18 +115,13 @@ public class SceneManager : MonoBehaviour
                 runningCoroutines.Add(StartCoroutine(ExecuteAction(action)));
             }
 
-            // Attend que toutes les actions de ce groupe soient terminées
             foreach (var c in runningCoroutines)
                 yield return c;
         }
 
-        // Après la séquence, afficher le bouton "Suivant"
         ShowNextSceneButton(nextScene);
     }
 
-    /// <summary>
-    /// Execute une seule action (PlayAnimation, Dialogue, Wait, Spawn)
-    /// </summary>
     IEnumerator ExecuteAction(SequenceAction action)
     {
         if (action == null)
@@ -149,26 +130,68 @@ public class SceneManager : MonoBehaviour
         switch (action.type)
         {
             case ActionType.PlayAnimation:
+            {
+                if (characterContainer == null)
                 {
-                    var actor = characterContainer.Find(action.character);
-                    
-                    var animator = actor.GetComponent<Animator>();
-                    if(animator != null && action.animationClip != null)
-                    {
-                        animator.Play(action.animationClip.name); // Safe : on prend le nom du clip assigné
-                    }
-
-
-                    break;
+                    yield break;
                 }
+
+                Transform actor = characterContainer.Find(action.character);
+                if (actor == null)
+                {
+                    yield break;
+                }
+
+                Animator animator = actor.GetComponent<Animator>();
+                if (animator == null)
+                {
+                    yield break;
+                }
+
+                if (action.animationClip == null)
+                {
+                    yield break;
+                }
+                
+                animator.Play(action.animationClip.name, 0, 0f);
+
+                yield return null;
+
+                break;
+            }
+            
+            case ActionType.Sound:
+            {
+                if (SoundManager.instance != null)
+                {
+                    SoundManager.PlaySound(action.soundType);
+                }
+                if (action.blocking)
+                {
+                    float wait = action.duration > 0 ? action.duration : 1f;
+                    yield return new WaitForSeconds(wait);
+                }
+                break;
+            }
+
+
+
             case ActionType.Dialogue:
+            {
+                if (dialogueManager != null)
+                {
+                    float duration = action.duration > 0 ? action.duration : 2f;
+                    dialogueManager.ShowDialogue(action.character, action.dialogueText, duration);
+                    yield return new WaitForSeconds(duration);
+                }
+                else
                 {
                     Debug.Log($"{action.character}: {action.dialogueText}");
-                    // Attend la durée si définie, sinon 1 seconde par défaut
-                    float duration = action.duration > 0 ? action.duration : 1f;
-                    yield return new WaitForSeconds(duration);
-                    break;
+                    yield return new WaitForSeconds(action.duration > 0 ? action.duration : 2f);
                 }
+                break;
+            }
+
             case ActionType.Wait:
                 {
                     float duration = action.duration > 0 ? action.duration : 1f;
@@ -185,15 +208,11 @@ public class SceneManager : MonoBehaviour
 
         yield return null;
     }
-
-    /// <summary>
-    /// Affiche un bouton "Suivant" pour passer à la scène suivante
-    /// </summary>
+    
     void ShowNextSceneButton(SceneSO nextScene)
     {
         if (choiceButtonPrefab == null || choicePanel == null)
         {
-            Debug.LogError("Button Prefab ou Choice Panel manquant pour Suivant !");
             return;
         }
 

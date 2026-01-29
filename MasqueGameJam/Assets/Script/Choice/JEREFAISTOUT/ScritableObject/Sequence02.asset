@@ -12,4 +12,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fafbf8b23f5c4c7d83031f2cb5c59dba, type: 3}
   m_Name: Sequence02
   m_EditorClassIdentifier: Assembly-CSharp::Sequence
-  actions: []
+  groups: []
