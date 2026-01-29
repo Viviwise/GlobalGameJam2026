@@ -15,7 +15,7 @@ MonoBehaviour:
   groups:
   - actions:
     - type: 0
-      character: Beatrice(Clone)
+      character: Beatrice
       animationClip: {fileID: 7400000, guid: 9f41a4e6520c60847a55e7c7b5d90dcb, type: 2}
       dialogueText: 
       soundType: 0
