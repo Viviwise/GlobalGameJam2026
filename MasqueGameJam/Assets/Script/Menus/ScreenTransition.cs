@@ -12,10 +12,13 @@ public class ScreenTransition : MonoBehaviour
     [SerializeField] private MainMenuManager mainMenuManager;
     private Color transparent = new Color(0f, 0f, 0f, 0f);
     private Color black = new Color(0f, 0f, 0f, 1f);
-
+    public float transitionTime = 2f;
     private void OnEnable()
     {
-        mainMenuManager.ChangeScene += TransitionEntrance;
+        if (mainMenuManager != null)
+        {
+            mainMenuManager.ChangeScene += TransitionAppear;
+        }
     }
 
     void Start()
@@ -23,15 +26,15 @@ public class ScreenTransition : MonoBehaviour
         blackScreen = gameObject.GetComponent<Image>();
         blackScreen.color = transparent;
         blackScreen.enabled = false;
-        TransitionOut();
+        TransitionDisappear();
     }
 
-    public void TransitionEntrance(SceneAsset sceneToLaunch=null)
+    public void TransitionAppear(SceneAsset sceneToLaunch=null)
     {
         StartCoroutine(Appear(sceneToLaunch));
     }
 
-    public void TransitionOut(SceneAsset sceneToLaunch = null)
+    public void TransitionDisappear(SceneAsset sceneToLaunch = null)
     {
         StartCoroutine(Disappear(sceneToLaunch));
     }
@@ -40,7 +43,7 @@ public class ScreenTransition : MonoBehaviour
     {
         blackScreen.enabled = true;
         blackScreen.color = transparent;
-        float duration = 1f;
+        float duration = transitionTime;
         float elapsedTime = 0f;
         while (elapsedTime < duration)
         {
@@ -59,7 +62,7 @@ public class ScreenTransition : MonoBehaviour
     {
         blackScreen.enabled = true;
         blackScreen.color = black;
-        float duration = 1f;
+        float duration = transitionTime;
         float elapsedTime = 0f;
         while (elapsedTime < duration)
         {
