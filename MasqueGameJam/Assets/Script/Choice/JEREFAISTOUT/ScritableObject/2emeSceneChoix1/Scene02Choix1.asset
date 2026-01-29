@@ -17,6 +17,7 @@ MonoBehaviour:
   characters:
   - {fileID: 1136054562188435810, guid: 9652116c4f214ad4eb461f56052749a9, type: 3}
   - {fileID: 5089035912491000137, guid: 81e17f9a859e61240b0f44660835dcae, type: 3}
+  - {fileID: 59093865780919552, guid: 3824905742d03ea458e2da58884c3e86, type: 3}
   choices:
   - {fileID: 11400000, guid: edb1c72698e778640ba1b530d4c75f1e, type: 2}
   - {fileID: 11400000, guid: 4553280c36d772c4998819b99efb8eba, type: 2}

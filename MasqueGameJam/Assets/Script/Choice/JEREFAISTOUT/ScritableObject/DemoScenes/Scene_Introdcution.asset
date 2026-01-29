@@ -15,6 +15,8 @@ MonoBehaviour:
   sceneName: L'introduction
   background: {fileID: 0}
   characters:
-  - {fileID: 0}
+  - {fileID: 1136054562188435810, guid: 9652116c4f214ad4eb461f56052749a9, type: 3}
+  - {fileID: 8032391905397900563, guid: 981c7a1cd12d1bb45b5c24691575a6be, type: 3}
+  - {fileID: 7271378170700332483, guid: e77702a4bbea66343a780b95b7bfc939, type: 3}
   choices:
   - {fileID: 11400000, guid: 00b107a26b1397d4db0ef08848364527, type: 2}

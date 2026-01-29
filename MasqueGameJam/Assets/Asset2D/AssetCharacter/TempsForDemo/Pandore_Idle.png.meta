@@ -1,13 +1,16 @@
 fileFormatVersion: 2
-guid: f735fe4c51fa9e5408935258a901523f
+guid: 5a49bcd6466257c488edd31d468f4d1c
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 1888931777348091458
-    second: Technician_Rope_Idle_0
+      213: 2186199150834582510
+    second: Pandore_Idle_0
   - first:
-      213: 429528951762923068
-    second: Technician_Rope_Idle_1
+      213: 186881090606528006
+    second: Pandore_Idle_1
+  - first:
+      213: -3065534198169302785
+    second: Pandore_Idle_2
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -75,12 +78,12 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 4
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 512
+    maxTextureSize: 1024
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 1
     compressionQuality: 50
-    crunchedCompression: 1
+    crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
     ignorePlatformSupport: 0
@@ -103,13 +106,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Technician_Rope_Idle_0
+      name: Pandore_Idle_0
       rect:
         serializedVersion: 2
-        x: 84
-        y: 63
-        width: 337
-        height: 366
+        x: 90
+        y: 935
+        width: 15
+        height: 19
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -118,20 +121,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 24eb7c98175d63a10800000000000000
-      internalID: 1888931777348091458
+      spriteID: ee381c17b80f65e10800000000000000
+      internalID: 2186199150834582510
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Technician_Rope_Idle_1
+      name: Pandore_Idle_1
       rect:
         serializedVersion: 2
-        x: 262
-        y: 55
-        width: 8
-        height: 18
+        x: 210
+        y: 0
+        width: 740
+        height: 1024
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -140,8 +143,30 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: c3e239e4e4ef5f500800000000000000
-      internalID: 429528951762923068
+      spriteID: 606f6dc9c5fe79200800000000000000
+      internalID: 186881090606528006
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pandore_Idle_2
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 691
+        width: 9
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ff88e4f73e80575d0800000000000000
+      internalID: -3065534198169302785
       vertices: []
       indices: 
       edges: []
@@ -160,8 +185,9 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Technician_Rope_Idle_0: 1888931777348091458
-      Technician_Rope_Idle_1: 429528951762923068
+      Pandore_Idle_0: 2186199150834582510
+      Pandore_Idle_1: 186881090606528006
+      Pandore_Idle_2: -3065534198169302785
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

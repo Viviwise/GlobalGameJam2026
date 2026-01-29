@@ -1,13 +1,10 @@
 fileFormatVersion: 2
-guid: e31ab0f4b1b02464cb8a8b0abc8f6bfa
+guid: dd5c697334ae8ae45995a09c4343c27b
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -188716446440954162
-    second: Technician_Light_Action_0
-  - first:
-      213: -2839475670200201828
-    second: Technician_Light_Action_1
+      213: 6869002657242496921
+    second: Technician_Light_Action_Line_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -75,12 +72,12 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 4
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 512
+    maxTextureSize: 1024
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 1
     compressionQuality: 50
-    crunchedCompression: 1
+    crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
     ignorePlatformSupport: 0
@@ -103,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Technician_Light_Action_0
+      name: Technician_Light_Action_Line_0
       rect:
         serializedVersion: 2
         x: 158
-        y: 33
-        width: 224
-        height: 452
+        y: 29
+        width: 226
+        height: 456
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -118,30 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: ec6ec9e446b816df0800000000000000
-      internalID: -188716446440954162
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Technician_Light_Action_1
-      rect:
-        serializedVersion: 2
-        x: 164
-        y: 188
-        width: 8
-        height: 10
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: c9d4a511ce72898d0800000000000000
-      internalID: -2839475670200201828
+      spriteID: 99f3722f589935f50800000000000000
+      internalID: 6869002657242496921
       vertices: []
       indices: 
       edges: []
@@ -160,8 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Technician_Light_Action_0: -188716446440954162
-      Technician_Light_Action_1: -2839475670200201828
+      Technician_Light_Action_Line_0: 6869002657242496921
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

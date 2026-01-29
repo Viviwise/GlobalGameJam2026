@@ -2,7 +2,7 @@
 %TAG !u! tag:unity3d.com,2011:
 --- !u!78 &1
 TagManager:
-  serializedVersion: 2
+  serializedVersion: 3
   tags: []
   layers:
   - Default
@@ -41,3 +41,20 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: VeryBackground
+    uniqueID: 7875429
+    locked: 0
+  - name: Scene
+    uniqueID: 2639422119
+    locked: 0
+  - name: Decors
+    uniqueID: 2668152921
+    locked: 0
+  - name: Actors
+    uniqueID: 922875145
+    locked: 0
+  - name: FrontGround
+    uniqueID: 213083567
+    locked: 0
+  m_RenderingLayers:
+  - Default

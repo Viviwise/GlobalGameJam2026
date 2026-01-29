@@ -9,7 +9,8 @@ namespace Script.Choice.BonPasPropreMaisDemoTKT
         Johann,
         Mephisto,
         Pandore,
-        Tech
+        Tech,
+        Decor
     }
     public class CharacterActor : MonoBehaviour
     {

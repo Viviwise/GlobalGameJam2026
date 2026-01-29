@@ -15,7 +15,15 @@ MonoBehaviour:
   groups:
   - actions:
     - type: 0
-      character: Beatrice
+      character: 1
+      animationClip: {fileID: 7400000, guid: 9f41a4e6520c60847a55e7c7b5d90dcb, type: 2}
+      dialogueText: 
+      soundType: 0
+      prefabToSpawn: {fileID: 0}
+      duration: 2
+      blocking: 0
+    - type: 1
+      character: 1
       animationClip: {fileID: 7400000, guid: 9f41a4e6520c60847a55e7c7b5d90dcb, type: 2}
       dialogueText: "\u201CWilliam, j\u2019ai une annonce importante \xE0 vous faire\u201D"
       soundType: 0
@@ -24,10 +32,76 @@ MonoBehaviour:
       blocking: 1
   - actions:
     - type: 0
-      character: Beatrice
-      animationClip: {fileID: 7400000, guid: 9f41a4e6520c60847a55e7c7b5d90dcb, type: 2}
-      dialogueText: "\u201CWilliam, j\u2019ai une annonce importante \xE0 vous faire\u201D"
+      character: 0
+      animationClip: {fileID: 7400000, guid: ae7e783137c0455409a49ead4a44c979, type: 2}
+      dialogueText: 
+      soundType: 0
+      prefabToSpawn: {fileID: 0}
+      duration: 2
+      blocking: 0
+    - type: 1
+      character: 0
+      animationClip: {fileID: 7400000, guid: ae7e783137c0455409a49ead4a44c979, type: 2}
+      dialogueText: "Dites moi tout mon enfant, un malheur vous est arriv\xE9 ? "
+      soundType: 0
+      prefabToSpawn: {fileID: 0}
+      duration: 2
+      blocking: 0
+    - type: 0
+      character: 0
+      animationClip: {fileID: 7400000, guid: 6dcf3ba748fe93c4588037a8d380137f, type: 2}
+      dialogueText: 
       soundType: 0
       prefabToSpawn: {fileID: 0}
       duration: 2
       blocking: 1
+  - actions:
+    - type: 0
+      character: 1
+      animationClip: {fileID: 7400000, guid: 9f41a4e6520c60847a55e7c7b5d90dcb, type: 2}
+      dialogueText: 
+      soundType: 0
+      prefabToSpawn: {fileID: 0}
+      duration: 2
+      blocking: 0
+    - type: 1
+      character: 1
+      animationClip: {fileID: 7400000, guid: 9f41a4e6520c60847a55e7c7b5d90dcb, type: 2}
+      dialogueText: "Et bien laissez moi vous raconter\u2026"
+      soundType: 0
+      prefabToSpawn: {fileID: 0}
+      duration: 2
+      blocking: 0
+    - type: 0
+      character: 1
+      animationClip: {fileID: 7400000, guid: 8b9792b5de3629d47bc69ce979c1abd8, type: 2}
+      dialogueText: 
+      soundType: 0
+      prefabToSpawn: {fileID: 0}
+      duration: 2
+      blocking: 0
+  - actions:
+    - type: 0
+      character: 5
+      animationClip: {fileID: 7400000, guid: 48f5827175793f241ab0cad483020325, type: 2}
+      dialogueText: 
+      soundType: 0
+      prefabToSpawn: {fileID: 0}
+      duration: 2
+      blocking: 0
+    - type: 1
+      character: 1
+      animationClip: {fileID: 7400000, guid: 9f41a4e6520c60847a55e7c7b5d90dcb, type: 2}
+      dialogueText: "Et bien laissez moi vous raconter\u2026"
+      soundType: 0
+      prefabToSpawn: {fileID: 0}
+      duration: 2
+      blocking: 0
+    - type: 0
+      character: 1
+      animationClip: {fileID: 7400000, guid: 8b9792b5de3629d47bc69ce979c1abd8, type: 2}
+      dialogueText: 
+      soundType: 0
+      prefabToSpawn: {fileID: 0}
+      duration: 2
+      blocking: 0
