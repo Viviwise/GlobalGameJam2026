@@ -3,6 +3,7 @@ using System.Collections;
 using Script.Menus;
 using UnityEditor;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class ScreenTransition : MonoBehaviour
@@ -25,17 +26,17 @@ public class ScreenTransition : MonoBehaviour
         TransitionOut();
     }
 
-    public void TransitionEntrance(SceneAsset sceneToLaunch=null, SceneManager sceneManager=null)
+    public void TransitionEntrance(SceneAsset sceneToLaunch=null)
     {
-        StartCoroutine(Appear(sceneToLaunch, sceneManager));
+        StartCoroutine(Appear(sceneToLaunch));
     }
 
-    public void TransitionOut(SceneAsset sceneToLaunch = null, SceneManager sceneManager = null)
+    public void TransitionOut(SceneAsset sceneToLaunch = null)
     {
-        StartCoroutine(Disappear(sceneToLaunch, sceneManager));
+        StartCoroutine(Disappear(sceneToLaunch));
     }
 
-    IEnumerator Appear(SceneAsset sceneToLaunch=null, SceneManager sceneManager=null)
+    IEnumerator Appear(SceneAsset sceneToLaunch=null)
     {
         blackScreen.enabled = true;
         blackScreen.color = transparent;
@@ -51,10 +52,10 @@ public class ScreenTransition : MonoBehaviour
 
         if (sceneToLaunch != null)
         {
-            //
+            SceneManager.LoadScene(sceneToLaunch.name);
         }
     }
-    IEnumerator Disappear(SceneAsset sceneToLaunch=null, SceneManager sceneManager=null)
+    IEnumerator Disappear(SceneAsset sceneToLaunch=null)
     {
         blackScreen.enabled = true;
         blackScreen.color = black;
@@ -71,7 +72,7 @@ public class ScreenTransition : MonoBehaviour
 
         if (sceneToLaunch != null)
         {
-            //
+            SceneManager.LoadScene(sceneToLaunch.name);
         }
     }
 }
