@@ -15,7 +15,7 @@ MonoBehaviour:
   groups:
   - actions:
     - type: 0
-      character: Beatrice(Clone)
+      character: 1
       animationClip: {fileID: 7400000, guid: 9f41a4e6520c60847a55e7c7b5d90dcb, type: 2}
       dialogueText: 
       soundType: 0
@@ -23,7 +23,7 @@ MonoBehaviour:
       duration: 0
       blocking: 0
     - type: 1
-      character: Beatrice
+      character: 1
       animationClip: {fileID: 0}
       dialogueText: "William je\u2026"
       soundType: 0
@@ -32,7 +32,7 @@ MonoBehaviour:
       blocking: 1
   - actions:
     - type: 0
-      character: William(Clone)
+      character: 0
       animationClip: {fileID: 7400000, guid: ae7e783137c0455409a49ead4a44c979, type: 2}
       dialogueText: 
       soundType: 0
@@ -40,7 +40,7 @@ MonoBehaviour:
       duration: 0
       blocking: 0
     - type: 1
-      character: William
+      character: 0
       animationClip: {fileID: 0}
       dialogueText: Oui ?
       soundType: 0
@@ -48,7 +48,7 @@ MonoBehaviour:
       duration: 5
       blocking: 1
     - type: 0
-      character: Beatrice(Clone)
+      character: 1
       animationClip: {fileID: 7400000, guid: 8b9792b5de3629d47bc69ce979c1abd8, type: 2}
       dialogueText: 
       soundType: 0
@@ -57,7 +57,7 @@ MonoBehaviour:
       blocking: 0
   - actions:
     - type: 0
-      character: Beatrice(Clone)
+      character: 1
       animationClip: {fileID: 7400000, guid: 9f41a4e6520c60847a55e7c7b5d90dcb, type: 2}
       dialogueText: 
       soundType: 0
@@ -65,7 +65,7 @@ MonoBehaviour:
       duration: 0
       blocking: 0
     - type: 1
-      character: Beatrice
+      character: 1
       animationClip: {fileID: 0}
       dialogueText: "Non je ne peux pas vous demander \xE7a"
       soundType: 0
@@ -73,7 +73,7 @@ MonoBehaviour:
       duration: 5
       blocking: 1
     - type: 0
-      character: William(Clone)
+      character: 0
       animationClip: {fileID: 7400000, guid: 6dcf3ba748fe93c4588037a8d380137f, type: 2}
       dialogueText: 
       soundType: 0
@@ -82,7 +82,7 @@ MonoBehaviour:
       blocking: 0
   - actions:
     - type: 0
-      character: Beatrice(Clone)
+      character: 1
       animationClip: {fileID: 7400000, guid: e07865bfcb2467242abbffeb2d6a2e7e, type: 2}
       dialogueText: 
       soundType: 0
@@ -90,7 +90,7 @@ MonoBehaviour:
       duration: 0
       blocking: 0
     - type: 1
-      character: William
+      character: 0
       animationClip: {fileID: 0}
       dialogueText: Attendez !
       soundType: 0
@@ -98,8 +98,8 @@ MonoBehaviour:
       duration: 5
       blocking: 1
     - type: 0
-      character: William(Clone)
-      animationClip: {fileID: 7400000, guid: 9f41a4e6520c60847a55e7c7b5d90dcb, type: 2}
+      character: 0
+      animationClip: {fileID: 7400000, guid: 9211303c9d188394e9f322f08bae151a, type: 2}
       dialogueText: 
       soundType: 0
       prefabToSpawn: {fileID: 0}

@@ -3,35 +3,35 @@ using System.Collections.Generic;
 using Script.Choice.BonPasPropreMaisDemoTKT;
 using UnityEngine;
 using UnityEngine.UI;
-using TMPro; 
+using TMPro;
 
 public class SceneSequenceManager : MonoBehaviour
 {
     [Header("UI References")]
-    public SpriteRenderer backgroundImage;         
-    public Transform choicePanel;         
-    public GameObject choiceButtonPrefab; 
+    public SpriteRenderer backgroundImage;
+    public Transform choicePanel;
+    public GameObject choiceButtonPrefab;
 
     [Header("Scene Setup")]
-    public Transform characterContainer;  
+    public Transform characterContainer;
     public SceneSO firstScene;
-    
+
     [Header("Dialogue")]
     public DialogueManager dialogueManager;
 
-
     private SceneSO currentScene;
+
+    private Dictionary<CharacterID, CharacterActor> actors =
+        new Dictionary<CharacterID, CharacterActor>();
 
     void Start()
     {
         if (firstScene == null)
-        {
             return;
-        }
 
         LoadScene(firstScene);
     }
-    
+
     public void LoadScene(SceneSO scene)
     {
         currentScene = scene;
@@ -44,50 +44,56 @@ public class SceneSequenceManager : MonoBehaviour
         foreach (Transform t in characterContainer)
             Destroy(t.gameObject);
 
-        foreach (var character in scene.characters)
-            Instantiate(character, characterContainer);
+        actors.Clear();
+
+        foreach (var prefab in scene.characters)
+        {
+            GameObject go = Instantiate(prefab, characterContainer);
+
+            CharacterActor actor = go.GetComponent<CharacterActor>();
+            if (actor == null)
+            {
+                Debug.LogError($"Prefab {prefab.name} n'a pas de CharacterActor !");
+                continue;
+            }
+
+            actors.Add(actor.characterID, actor);
+        }
 
         // --- Choices ---
         ShowChoices(scene.choices);
     }
-    
+
     void ShowChoices(Choice[] choices)
     {
         if (choicePanel == null || choiceButtonPrefab == null)
-        {
             return;
-        }
 
         foreach (Transform t in choicePanel)
             Destroy(t.gameObject);
 
         if (choices == null || choices.Length == 0)
-        {
             return;
-        }
 
         foreach (var choice in choices)
         {
-            var buttonGO = Instantiate(choiceButtonPrefab, choicePanel);
-            var button = buttonGO.GetComponent<Button>();
-            var text = buttonGO.GetComponentInChildren<TMP_Text>();
+            GameObject buttonGO = Instantiate(choiceButtonPrefab, choicePanel);
+            Button button = buttonGO.GetComponent<Button>();
+            TMP_Text text = buttonGO.GetComponentInChildren<TMP_Text>();
 
             if (text == null)
-            {
                 continue;
-            }
 
             text.text = choice.label;
-
             button.onClick.AddListener(() => OnChoiceClicked(choice));
         }
     }
-    
+
     void OnChoiceClicked(Choice choice)
     {
         foreach (Transform t in choicePanel)
         {
-            var btn = t.GetComponent<Button>();
+            Button btn = t.GetComponent<Button>();
             if (btn != null) btn.interactable = false;
         }
 
@@ -102,7 +108,6 @@ public class SceneSequenceManager : MonoBehaviour
             yield break;
         }
 
-
         foreach (var group in sequence.groups)
         {
             if (group.actions == null || group.actions.Length == 0)
@@ -111,9 +116,7 @@ public class SceneSequenceManager : MonoBehaviour
             List<Coroutine> runningCoroutines = new List<Coroutine>();
 
             foreach (var action in group.actions)
-            {
                 runningCoroutines.Add(StartCoroutine(ExecuteAction(action)));
-            }
 
             foreach (var c in runningCoroutines)
                 yield return c;
@@ -131,41 +134,24 @@ public class SceneSequenceManager : MonoBehaviour
         {
             case ActionType.PlayAnimation:
             {
-                if (characterContainer == null)
+                if (!actors.TryGetValue(action.character, out var actor))
                 {
+                    Debug.LogError($"Actor {action.character} introuvable !");
                     yield break;
                 }
 
-                Transform actor = characterContainer.Find(action.character);
-                if (actor == null)
-                {
+                if (actor.animator == null || action.animationClip == null)
                     yield break;
-                }
 
-                Animator animator = actor.GetComponent<Animator>();
-                if (animator == null)
-                {
-                    yield break;
-                }
-
-                if (action.animationClip == null)
-                {
-                    yield break;
-                }
-                
-                animator.Play(action.animationClip.name, 0, 0f);
-
-                yield return null;
-
+                actor.animator.Play(action.animationClip.name, 0, 0f);
                 break;
             }
-            
+
             case ActionType.Sound:
             {
                 if (SoundManager.instance != null)
-                {
                     SoundManager.PlaySound(action.soundType);
-                }
+
                 if (action.blocking)
                 {
                     float wait = action.duration > 0 ? action.duration : 1f;
@@ -174,53 +160,56 @@ public class SceneSequenceManager : MonoBehaviour
                 break;
             }
 
-
-
             case ActionType.Dialogue:
             {
+                if (!actors.TryGetValue(action.character, out var actor))
+                    yield break;
+
+                float duration = action.duration > 0 ? action.duration : 2f;
+
                 if (dialogueManager != null)
                 {
-                    float duration = action.duration > 0 ? action.duration : 2f;
-                    dialogueManager.ShowDialogue(action.character, action.dialogueText, duration);
-                    yield return new WaitForSeconds(duration);
+                    dialogueManager.ShowDialogue(
+                        actor.displayName,
+                        action.dialogueText,
+                        duration
+                    );
                 }
                 else
                 {
-                    Debug.Log($"{action.character}: {action.dialogueText}");
-                    yield return new WaitForSeconds(action.duration > 0 ? action.duration : 2f);
+                    Debug.Log($"{actor.displayName} : {action.dialogueText}");
                 }
+
+                yield return new WaitForSeconds(duration);
                 break;
             }
 
             case ActionType.Wait:
-                {
-                    float duration = action.duration > 0 ? action.duration : 1f;
-                    yield return new WaitForSeconds(duration);
-                    break;
-                }
-            case ActionType.Spawn:
-                {
-                    if (action.prefabToSpawn != null)
-                        Instantiate(action.prefabToSpawn, characterContainer);
-                    break;
-                }
-        }
+            {
+                float duration = action.duration > 0 ? action.duration : 1f;
+                yield return new WaitForSeconds(duration);
+                break;
+            }
 
-        yield return null;
+            case ActionType.Spawn:
+            {
+                if (action.prefabToSpawn != null)
+                    Instantiate(action.prefabToSpawn, characterContainer);
+                break;
+            }
+        }
     }
-    
+
     void ShowNextSceneButton(SceneSO nextScene)
     {
         if (choiceButtonPrefab == null || choicePanel == null)
-        {
             return;
-        }
 
-        var buttonGO = Instantiate(choiceButtonPrefab, choicePanel);
-        var text = buttonGO.GetComponentInChildren<TMP_Text>();
+        GameObject buttonGO = Instantiate(choiceButtonPrefab, choicePanel);
+        TMP_Text text = buttonGO.GetComponentInChildren<TMP_Text>();
         text.text = "Suivant";
 
-        var button = buttonGO.GetComponent<Button>();
+        Button button = buttonGO.GetComponent<Button>();
         button.onClick.AddListener(() => LoadScene(nextScene));
     }
 }

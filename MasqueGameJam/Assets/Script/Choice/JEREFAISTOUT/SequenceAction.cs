@@ -1,3 +1,4 @@
+using Script.Choice.BonPasPropreMaisDemoTKT;
 using UnityEngine;
 
 public enum ActionType { PlayAnimation, Dialogue, Spawn, Wait, Sound }
@@ -6,7 +7,7 @@ public enum ActionType { PlayAnimation, Dialogue, Spawn, Wait, Sound }
 public class SequenceAction
 {
     public ActionType type;
-    public string character;        
+    public CharacterID character;
 
     public AnimationClip animationClip; 
 
