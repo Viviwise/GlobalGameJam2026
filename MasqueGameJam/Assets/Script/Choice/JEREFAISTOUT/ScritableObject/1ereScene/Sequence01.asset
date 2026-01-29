@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fafbf8b23f5c4c7d83031f2cb5c59dba, type: 3}
-  m_Name: Sequence02
+  m_Name: Sequence01
   m_EditorClassIdentifier: Assembly-CSharp::Sequence
   groups:
   - actions:
@@ -20,17 +20,25 @@ MonoBehaviour:
       dialogueText: 
       soundType: 0
       prefabToSpawn: {fileID: 0}
-      duration: 0
+      duration: 2
       blocking: 0
     - type: 1
       character: 1
       animationClip: {fileID: 0}
-      dialogueText: "William je\u2026"
+      dialogueText: "William, j\u2019ai une annonce importante \xE0 vous faire"
       soundType: 0
       prefabToSpawn: {fileID: 0}
       duration: 5
       blocking: 1
   - actions:
+    - type: 0
+      character: 1
+      animationClip: {fileID: 7400000, guid: 8b9792b5de3629d47bc69ce979c1abd8, type: 2}
+      dialogueText: 
+      soundType: 0
+      prefabToSpawn: {fileID: 0}
+      duration: 0
+      blocking: 0
     - type: 0
       character: 0
       animationClip: {fileID: 7400000, guid: ae7e783137c0455409a49ead4a44c979, type: 2}
@@ -42,20 +50,20 @@ MonoBehaviour:
     - type: 1
       character: 0
       animationClip: {fileID: 0}
-      dialogueText: Oui ?
+      dialogueText: "Dites moi tout mon enfant, un malheur vous est arriv\xE9 ?"
       soundType: 0
       prefabToSpawn: {fileID: 0}
       duration: 5
       blocking: 1
+  - actions:
     - type: 0
-      character: 1
-      animationClip: {fileID: 7400000, guid: 8b9792b5de3629d47bc69ce979c1abd8, type: 2}
+      character: 0
+      animationClip: {fileID: 7400000, guid: 6dcf3ba748fe93c4588037a8d380137f, type: 2}
       dialogueText: 
       soundType: 0
       prefabToSpawn: {fileID: 0}
       duration: 0
       blocking: 0
-  - actions:
     - type: 0
       character: 1
       animationClip: {fileID: 7400000, guid: 9f41a4e6520c60847a55e7c7b5d90dcb, type: 2}
@@ -67,15 +75,7 @@ MonoBehaviour:
     - type: 1
       character: 1
       animationClip: {fileID: 0}
-      dialogueText: "Non je ne peux pas vous demander \xE7a"
-      soundType: 0
-      prefabToSpawn: {fileID: 0}
-      duration: 5
-      blocking: 1
-    - type: 0
-      character: 0
-      animationClip: {fileID: 7400000, guid: 6dcf3ba748fe93c4588037a8d380137f, type: 2}
-      dialogueText: 
+      dialogueText: "Et bien laissez moi vous raconter\u2026"
       soundType: 0
       prefabToSpawn: {fileID: 0}
       duration: 0
@@ -83,25 +83,26 @@ MonoBehaviour:
   - actions:
     - type: 0
       character: 1
-      animationClip: {fileID: 7400000, guid: e07865bfcb2467242abbffeb2d6a2e7e, type: 2}
+      animationClip: {fileID: 7400000, guid: 8b9792b5de3629d47bc69ce979c1abd8, type: 2}
       dialogueText: 
       soundType: 0
       prefabToSpawn: {fileID: 0}
       duration: 0
       blocking: 0
-    - type: 1
-      character: 0
-      animationClip: {fileID: 0}
-      dialogueText: Attendez !
-      soundType: 0
-      prefabToSpawn: {fileID: 0}
-      duration: 5
-      blocking: 1
     - type: 0
       character: 0
-      animationClip: {fileID: 7400000, guid: 9211303c9d188394e9f322f08bae151a, type: 2}
+      animationClip: {fileID: 7400000, guid: d4404a5e1aff4df449ecb8cef28bb1f5, type: 2}
       dialogueText: 
       soundType: 0
+      prefabToSpawn: {fileID: 0}
+      duration: 0
+      blocking: 1
+  - actions:
+    - type: 4
+      character: 1
+      animationClip: {fileID: 0}
+      dialogueText: 
+      soundType: 2
       prefabToSpawn: {fileID: 0}
       duration: 0
       blocking: 0

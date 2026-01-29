@@ -1,0 +1,74 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fafbf8b23f5c4c7d83031f2cb5c59dba, type: 3}
+  m_Name: Sequence1
+  m_EditorClassIdentifier: Assembly-CSharp::Sequence
+  groups:
+  - actions:
+    - type: 1
+      character: 2
+      animationClip: {fileID: 0}
+      dialogueText: "B\xE9atrice ! Vous voil\xE0 enfin ! Je dois vous annoncer quelque
+        chose"
+      soundType: 0
+      prefabToSpawn: {fileID: 0}
+      duration: 4
+      blocking: 1
+    - type: 0
+      character: 1
+      animationClip: {fileID: 7400000, guid: 8b9792b5de3629d47bc69ce979c1abd8, type: 2}
+      dialogueText: 
+      soundType: 0
+      prefabToSpawn: {fileID: 0}
+      duration: 0
+      blocking: 0
+    - type: 4
+      character: 2
+      animationClip: {fileID: 0}
+      dialogueText: 
+      soundType: 6
+      prefabToSpawn: {fileID: 0}
+      duration: 0
+      blocking: 0
+    - type: 0
+      character: 2
+      animationClip: {fileID: 7400000, guid: c7c5e70cc5396254eb8bea72e727a841, type: 2}
+      dialogueText: 
+      soundType: 6
+      prefabToSpawn: {fileID: 0}
+      duration: 0
+      blocking: 0
+  - actions:
+    - type: 1
+      character: 1
+      animationClip: {fileID: 0}
+      dialogueText: "Quoi ? Qu\u2019est ce ? Que se passe t\u2019il ?"
+      soundType: 0
+      prefabToSpawn: {fileID: 0}
+      duration: 4
+      blocking: 1
+    - type: 0
+      character: 1
+      animationClip: {fileID: 7400000, guid: 9f41a4e6520c60847a55e7c7b5d90dcb, type: 2}
+      dialogueText: 
+      soundType: 0
+      prefabToSpawn: {fileID: 0}
+      duration: 0
+      blocking: 0
+    - type: 0
+      character: 2
+      animationClip: {fileID: 7400000, guid: 0602ebe6f6f275b4d88a062ecaec5eea, type: 2}
+      dialogueText: 
+      soundType: 6
+      prefabToSpawn: {fileID: 0}
+      duration: 0
+      blocking: 0
