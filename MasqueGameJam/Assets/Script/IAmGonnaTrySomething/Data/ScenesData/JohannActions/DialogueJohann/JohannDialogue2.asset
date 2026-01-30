@@ -10,9 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 02ea93aca384ff847b1603e62d2389a4, type: 3}
-  m_Name: DialogueWilliam1
+  m_Name: JohannDialogue2
   m_EditorClassIdentifier: Assembly-CSharp::DialogueEvent
   eventType: 2
-  character: 1
-  content: "Dites moi tout mon enfant, un malheur vous est arriv\xE9 ? "
+  character: 2
+  content: "Me voil\xE0 ruin\xE9, j\u2019ai tout perdu hier soir au jeu"
   displayTime: 4

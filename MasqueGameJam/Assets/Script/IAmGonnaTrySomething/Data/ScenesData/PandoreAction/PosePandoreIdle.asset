@@ -9,8 +9,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e4411ff2ab6741b8b8db763fad6af7b6, type: 3}
-  m_Name: DelayEvent2
-  m_EditorClassIdentifier: Assembly-CSharp::DelayEvent
-  eventType: 5
-  duration: 2
+  m_Script: {fileID: 11500000, guid: 96ac548253db39a4e91e48d053cdd06c, type: 3}
+  m_Name: PosePandoreIdle
+  m_EditorClassIdentifier: Assembly-CSharp::ChangePoseEvent
+  eventType: 4
+  id: 3
+  newPose: {fileID: 21300000, guid: 5a49bcd6466257c488edd31d468f4d1c, type: 3}

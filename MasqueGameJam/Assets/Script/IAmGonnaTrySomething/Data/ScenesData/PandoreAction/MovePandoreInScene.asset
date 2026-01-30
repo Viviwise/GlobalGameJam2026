@@ -9,8 +9,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e4411ff2ab6741b8b8db763fad6af7b6, type: 3}
-  m_Name: DelayEvent2
-  m_EditorClassIdentifier: Assembly-CSharp::DelayEvent
-  eventType: 5
-  duration: 2
+  m_Script: {fileID: 11500000, guid: 3bf64500ab7817e478f6daf2ba01a82c, type: 3}
+  m_Name: MovePandoreInScene
+  m_EditorClassIdentifier: Assembly-CSharp::MovementEvent
+  eventType: 0
+  target: 3
+  speed: 5
+  position: {x: 5, y: 0, z: 0}

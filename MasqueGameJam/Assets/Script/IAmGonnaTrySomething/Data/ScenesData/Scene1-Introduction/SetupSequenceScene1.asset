@@ -17,6 +17,12 @@ MonoBehaviour:
   sequenceName: SetUpSequenceScene1
   events:
   - {fileID: 11400000, guid: 91ad17a31d58d61438b1e8fc453142a0, type: 2}
-  - {fileID: 11400000, guid: f7f37a497709b694795c67ff7209727e, type: 2}
   - {fileID: 11400000, guid: 9e0b0db3cf82b074283330c873975095, type: 2}
+  - {fileID: 11400000, guid: f3235f4a4ff98ef4092fc13799c913b2, type: 2}
+  - {fileID: 11400000, guid: cb4da6958e402964d882396350c623a2, type: 2}
+  - {fileID: 11400000, guid: bb0d1b64b4f1bb44c9ecec0f31ff0862, type: 2}
+  cleanUpSequence: {fileID: 0}
   nextScene: {fileID: 0}
+  CatharsysReaction: {fileID: 0}
+  wheelScore: 0
+  reactionText: 

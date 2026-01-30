@@ -10,15 +10,16 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b0e845809c39396478739c1f9a52ab43, type: 3}
-  m_Name: Scene2_SetUpScene
+  m_Name: SetUp_Scene2-TerribleEvenement
   m_EditorClassIdentifier: Assembly-CSharp::SequenceForScene
   isSetUp: 1
   isCleanUp: 0
   sequenceName: 
   events:
-  - {fileID: 11400000, guid: f3235f4a4ff98ef4092fc13799c913b2, type: 2}
-  cleanUpSequence: {fileID: 0}
+  - {fileID: 11400000, guid: 15883966f06140d408e20934369b5410, type: 2}
+  - {fileID: 11400000, guid: f7f37a497709b694795c67ff7209727e, type: 2}
+  cleanUpSequence: {fileID: 11400000, guid: 1f6821d6b1d169f43bd843a659ff6899, type: 2}
   nextScene: {fileID: 11400000, guid: c20cd069e9c195f44ac0d8a838755c9e, type: 2}
-  CatharsysReaction: {fileID: 0}
+  CatharsysReaction: {fileID: 21300000, guid: 94f3f469674ec91448f5eb784a79a80e, type: 3}
   wheelScore: 0
-  reactionText: 
+  reactionText: "Un d\xE9but ma foi fort classique, mais j\u2019attends la suite"

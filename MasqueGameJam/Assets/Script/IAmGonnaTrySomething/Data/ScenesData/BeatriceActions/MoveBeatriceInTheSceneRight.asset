@@ -9,10 +9,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 02ea93aca384ff847b1603e62d2389a4, type: 3}
-  m_Name: DialogueBerenice2
-  m_EditorClassIdentifier: Assembly-CSharp::DialogueEvent
-  eventType: 2
-  character: 0
-  content: "Et bien laissez moi vous raconter\u2026"
-  displayTime: 4
+  m_Script: {fileID: 11500000, guid: 3bf64500ab7817e478f6daf2ba01a82c, type: 3}
+  m_Name: MoveBeatriceInTheSceneRight
+  m_EditorClassIdentifier: Assembly-CSharp::MovementEvent
+  eventType: 0
+  target: 0
+  speed: 5
+  position: {x: 3, y: 0, z: 0}

@@ -14,5 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::SceneData
   sequences:
   - {fileID: 11400000, guid: 4c57ec35d23e2454ab5ca127f6dbff49, type: 2}
-  actors: 000000000200000008000000
+  actors: 00000000020000000800000001000000
   setUpSequence: {fileID: 11400000, guid: c7b5d4bbf30eb8241a1e5b23ccb3e5d8, type: 2}

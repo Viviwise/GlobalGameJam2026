@@ -9,8 +9,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e4411ff2ab6741b8b8db763fad6af7b6, type: 3}
-  m_Name: DelayEvent2
-  m_EditorClassIdentifier: Assembly-CSharp::DelayEvent
-  eventType: 5
-  duration: 2
+  m_Script: {fileID: 11500000, guid: 02ea93aca384ff847b1603e62d2389a4, type: 3}
+  m_Name: DialogueWillFuite2
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueEvent
+  eventType: 2
+  character: 1
+  content: Attendez !
+  displayTime: 3
