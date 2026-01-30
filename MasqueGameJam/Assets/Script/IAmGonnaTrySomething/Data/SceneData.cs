@@ -5,6 +5,6 @@ public class SceneData : ScriptableObject
 {
     public SequenceForScene[] sequences;
     
-    public DramaObject[] actors;
+    public ObjectsID[] actors;
     public SequenceForScene setUpSequence;
 }

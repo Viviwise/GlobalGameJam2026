@@ -1,9 +1,7 @@
 using UnityEngine;
+[CreateAssetMenu(fileName = "DelayEvent", menuName = "Test/Events/DelayEvent")]
 
-namespace Script.IAmGonnaTrySomething.Data.EventsScripts
+public class DelayEvent : EventForScene
 {
-    public class DelayEvent : EventForScene
-    {
-        public float duration;
-    }
+    public float duration;
 }

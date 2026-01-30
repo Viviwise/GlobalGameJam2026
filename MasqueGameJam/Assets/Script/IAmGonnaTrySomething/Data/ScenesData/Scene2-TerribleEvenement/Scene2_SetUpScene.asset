@@ -10,11 +10,15 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b0e845809c39396478739c1f9a52ab43, type: 3}
-  m_Name: Sequence_AnnonceBea
+  m_Name: Scene2_SetUpScene
   m_EditorClassIdentifier: Assembly-CSharp::SequenceForScene
-  isSetUp: 0
-  sequenceName: "B\xE9atrice fait une annonce"
+  isSetUp: 1
+  isCleanUp: 0
+  sequenceName: 
   events:
-  - {fileID: 11400000, guid: b18d0fcb361d70243a9c9ac8768ca16e, type: 2}
-  - {fileID: 11400000, guid: 42b58eed90f6b104c971f9010791aca9, type: 2}
-  nextScene: {fileID: 11400000, guid: 08d8f6197281cb643817cc60531911b2, type: 2}
+  - {fileID: 11400000, guid: f3235f4a4ff98ef4092fc13799c913b2, type: 2}
+  cleanUpSequence: {fileID: 0}
+  nextScene: {fileID: 11400000, guid: c20cd069e9c195f44ac0d8a838755c9e, type: 2}
+  CatharsysReaction: {fileID: 0}
+  wheelScore: 0
+  reactionText: 

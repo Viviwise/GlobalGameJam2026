@@ -1,0 +1,35 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b0e845809c39396478739c1f9a52ab43, type: 3}
+  m_Name: Sequence_AnnonceBeatrice
+  m_EditorClassIdentifier: Assembly-CSharp::SequenceForScene
+  isSetUp: 0
+  isCleanUp: 0
+  sequenceName: "B\xE9atrice fait une annonce"
+  events:
+  - {fileID: 11400000, guid: 6c51e3da1c6eb81439a7d13165e9dbb9, type: 2}
+  - {fileID: 11400000, guid: 34935dd65780dd946b594591b4335313, type: 2}
+  - {fileID: 11400000, guid: 1d823b6bd25db0f49b56594870e00256, type: 2}
+  - {fileID: 11400000, guid: 74aa6a73f77d23b45be62a1be24b3e59, type: 2}
+  - {fileID: 11400000, guid: af6171f6435971440b1013f31f582d6b, type: 2}
+  - {fileID: 11400000, guid: 5464ed4da55c2764a97681ed36051871, type: 2}
+  - {fileID: 11400000, guid: efa0ebd1747dea3499555a62a60dbc48, type: 2}
+  - {fileID: 11400000, guid: 74aa6a73f77d23b45be62a1be24b3e59, type: 2}
+  - {fileID: 11400000, guid: 6c51e3da1c6eb81439a7d13165e9dbb9, type: 2}
+  - {fileID: 11400000, guid: 27a08186e56c651498a3904cd5966e85, type: 2}
+  - {fileID: 11400000, guid: 1d823b6bd25db0f49b56594870e00256, type: 2}
+  - {fileID: 11400000, guid: 74aa6a73f77d23b45be62a1be24b3e59, type: 2}
+  - {fileID: 11400000, guid: aa0da02215dca7b4fbac0e9f86b0f47d, type: 2}
+  - {fileID: 11400000, guid: 3afae5568e98fdb4e922a696dd5a7678, type: 2}
+  - {fileID: 11400000, guid: 09e41a6518a4e844fac1ffd0fceb176c, type: 2}
+  cleanUpSequence: {fileID: 11400000, guid: 8b33e37a70e50cd4b806dbc80de2e858, type: 2}
+  nextScene: {fileID: 11400000, guid: 08d8f6197281cb643817cc60531911b2, type: 2}

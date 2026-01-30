@@ -1,5 +1,6 @@
+using System;
 using System.Collections;
-using Script.IAmGonnaTrySomething.Data.EventsScripts;
+using System.Linq;
 using Script.IAmGonnaTrySomething.Gameplay;
 using UnityEngine;
 using UnityEngine.Events;
@@ -10,13 +11,16 @@ public class ScenarioManager : MonoBehaviour
     [SerializeField] private SceneData firstScene;
     private GameObject[] allObjectsRefs;
     private SceneData currentScene;
+    private Vector3 objectsOffset;
 
     [SerializeField] private ChoiceButton[] buttonsForChoices;
     [SerializeField] private DialoguePanel dialoguePanel;
     [SerializeField] private ScreenTransition screenTransition;
 
+    public Action<SequenceForScene> SceneFinishedAction;
     void Start()
     {
+        objectsOffset = new Vector3(0, -1.5f, 0);
         currentScene = firstScene;
         allObjectsRefs = new GameObject[allObjects.Length];
         for (int i = 0; i < allObjects.Length; i++)
@@ -29,7 +33,11 @@ public class ScenarioManager : MonoBehaviour
         {
             buttonsForChoices[i].gameObject.SetActive(false);
         }
-        DisplayChoices();
+
+        if (currentScene.setUpSequence != null)
+        {
+            CallSequence(currentScene.setUpSequence);
+        }
     }
 
     public void DisplayChoices()
@@ -60,10 +68,13 @@ public class ScenarioManager : MonoBehaviour
             {
                 case ScenarioEventTypes.Movement:
                 {
-                    Debug.Log("movement started");
                     MovementEvent currentMovementEvent = (MovementEvent)sequence.events[currentEventIndex];
                     Transform objectToMove = FindTarget(currentMovementEvent.target).transform;
-                    Vector3 target = currentMovementEvent.position;
+                    if (objectToMove == null)
+                    {
+                        break;
+                    }
+                    Vector3 target = currentMovementEvent.position+objectsOffset;
                     while (Vector3.Distance(objectToMove.position, target) > 0.1f)
                     {
                         objectToMove.position = Vector3.MoveTowards(objectToMove.position, target, Time.deltaTime * currentMovementEvent.speed);
@@ -75,7 +86,11 @@ public class ScenarioManager : MonoBehaviour
                 {
                     TeleportationEvent currentTeleportationEvent = (TeleportationEvent)sequence.events[currentEventIndex];
                     Transform objectToMove = FindTarget(currentTeleportationEvent.target).transform;
-                    Vector3 target = currentTeleportationEvent.position;
+                    if (objectToMove == null)
+                    {
+                        break;
+                    }
+                    Vector3 target = currentTeleportationEvent.position+objectsOffset;
                     objectToMove.position = target;
                     break;
                 }
@@ -96,6 +111,10 @@ public class ScenarioManager : MonoBehaviour
                 {
                     ChangePoseEvent currentChangePoseEvent = (ChangePoseEvent)sequence.events[currentEventIndex];
                     SpriteRenderer characterSprite = FindTarget(currentChangePoseEvent.id).gameObject.GetComponent<SpriteRenderer>();
+                    if (characterSprite == null)
+                    {
+                        break;
+                    }
                     characterSprite.sprite = currentChangePoseEvent.newPose;
                     break;
                 }
@@ -115,6 +134,21 @@ public class ScenarioManager : MonoBehaviour
         {
             DisplayChoices();
         }
+        else if (!sequence.isCleanUp)
+        {
+            if (sequence.cleanUpSequence != null)
+            {
+                CallSequence(sequence.cleanUpSequence);
+            }
+            else
+            {
+                currentScene = sequence.nextScene; 
+                screenTransition.TransitionAppear(); 
+                yield return new WaitForSeconds(screenTransition.transitionTime); 
+                screenTransition.TransitionDisappear(); 
+                DisplayChoices();
+            }
+        }
         else
         {
             currentScene = sequence.nextScene; 
@@ -132,7 +166,10 @@ public class ScenarioManager : MonoBehaviour
         {
             if (obj.GetComponent<DramaObject>().id == id)
             {
-                return obj;
+                if (currentScene.actors.Contains(id))
+                {
+                    return obj;
+                }
             }
         }
         return null;

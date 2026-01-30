@@ -1,3 +1,4 @@
+using System;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UIElements;
@@ -6,7 +7,12 @@ using Button = UnityEngine.UI.Button;
 public class ChoiceButton : MonoBehaviour
 {
     [SerializeField] private TextMeshProUGUI textBox;
-    [SerializeField] public Button choiceButton;
+    [SerializeField] private Button choiceButton;
+
+    private void OnEnable()
+    {
+        choiceButton = gameObject.GetComponent<Button>();
+    }
 
     public void SetUp(ScenarioManager manager, SequenceForScene sequence)
     {

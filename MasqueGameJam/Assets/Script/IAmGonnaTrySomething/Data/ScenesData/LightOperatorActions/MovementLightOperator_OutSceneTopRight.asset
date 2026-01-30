@@ -10,9 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3bf64500ab7817e478f6daf2ba01a82c, type: 3}
-  m_Name: MoveBeatriceLeft
+  m_Name: MovementLightOperator_OutSceneTopRight
   m_EditorClassIdentifier: Assembly-CSharp::MovementEvent
   eventType: 0
-  target: {fileID: -5984179959459200945, guid: 6675100b61fd3bb4cb8f9265ef5c6adc, type: 3}
-  speed: 1
-  position: {x: 3, y: 0, z: 0}
+  target: 5
+  speed: 5
+  position: {x: 4.7, y: 6, z: 0}
