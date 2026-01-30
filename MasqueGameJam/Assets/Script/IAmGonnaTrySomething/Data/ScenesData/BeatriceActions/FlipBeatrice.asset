@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ab85bd6520a04e2bae1674b8c03f2515, type: 3}
   m_Name: FlipBeatrice
   m_EditorClassIdentifier: Assembly-CSharp::Script.IAmGonnaTrySomething.Data.EventsScripts.FlipPoseEvent
-  eventType: 0
+  eventType: 6
   target: 0

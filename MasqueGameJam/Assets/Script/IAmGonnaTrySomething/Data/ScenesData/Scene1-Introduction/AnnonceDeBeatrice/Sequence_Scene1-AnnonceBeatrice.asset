@@ -27,6 +27,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 27a08186e56c651498a3904cd5966e85, type: 2}
   - {fileID: 11400000, guid: 1d823b6bd25db0f49b56594870e00256, type: 2}
   - {fileID: 11400000, guid: 74aa6a73f77d23b45be62a1be24b3e59, type: 2}
+  - {fileID: 11400000, guid: d16df8950cbc2e04499a06dc5f384761, type: 2}
   - {fileID: 11400000, guid: aa0da02215dca7b4fbac0e9f86b0f47d, type: 2}
   - {fileID: 11400000, guid: 3afae5568e98fdb4e922a696dd5a7678, type: 2}
   - {fileID: 11400000, guid: 09e41a6518a4e844fac1ffd0fceb176c, type: 2}
@@ -34,6 +35,6 @@ MonoBehaviour:
   - {fileID: 11400000, guid: fd3ca4f27ccbcba4684ac052188f535a, type: 2}
   cleanUpSequence: {fileID: 11400000, guid: 8b33e37a70e50cd4b806dbc80de2e858, type: 2}
   nextScene: {fileID: 11400000, guid: c20cd069e9c195f44ac0d8a838755c9e, type: 2}
-  CatharsysReaction: {fileID: 0}
+  CatharsysReaction: {fileID: 21300000, guid: 69578ee4b7dabfc4cacf004330d33570, type: 3}
   wheelScore: 0
-  reactionText: 
+  reactionText: Je suis curieux de la suite.

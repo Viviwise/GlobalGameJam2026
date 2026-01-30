@@ -13,7 +13,6 @@ MonoBehaviour:
   m_Name: Scene2_Sequence_JohannPanique
   m_EditorClassIdentifier: Assembly-CSharp::SequenceForScene
   isSetUp: 0
-  isCleanUp: 0
   sequenceName: "Johann arriv\xE9e paniqu\xE9"
   events:
   - {fileID: 11400000, guid: b9053a5fcbae20e4e86a271fbae1e3af, type: 2}
@@ -33,6 +32,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 656c1acb0f23d6442b39c1964b8bff2c, type: 2}
   - {fileID: 11400000, guid: 1d823b6bd25db0f49b56594870e00256, type: 2}
   - {fileID: 11400000, guid: 74aa6a73f77d23b45be62a1be24b3e59, type: 2}
+  - {fileID: 11400000, guid: 879afe8f841139d488d5c37aa410f1b5, type: 2}
   - {fileID: 11400000, guid: 26c6ad2d800f94b4cba39b1b094fbd5c, type: 2}
   - {fileID: 11400000, guid: 74aa6a73f77d23b45be62a1be24b3e59, type: 2}
   - {fileID: 11400000, guid: b9053a5fcbae20e4e86a271fbae1e3af, type: 2}
@@ -41,10 +41,11 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 74aa6a73f77d23b45be62a1be24b3e59, type: 2}
   - {fileID: 11400000, guid: 3aa41a254c418e447b2bee3ef6dd2619, type: 2}
   - {fileID: 11400000, guid: 89fe4ffe68058b147b9fb8c28edede5b, type: 2}
+  - {fileID: 11400000, guid: 879afe8f841139d488d5c37aa410f1b5, type: 2}
   - {fileID: 11400000, guid: 63b0c241f56439a4fa7af21efb6d3c54, type: 2}
   - {fileID: 11400000, guid: aab9fc1f241573a42b225eb82fb1c97d, type: 2}
   cleanUpSequence: {fileID: 0}
   nextScene: {fileID: 11400000, guid: 08d8f6197281cb643817cc60531911b2, type: 2}
-  CatharsysReaction: {fileID: 0}
-  wheelScore: 0
-  reactionText: 
+  CatharsysReaction: {fileID: 21300000, guid: 94f3f469674ec91448f5eb784a79a80e, type: 3}
+  wheelScore: 1
+  reactionText: Il est un peu to much lui non ?

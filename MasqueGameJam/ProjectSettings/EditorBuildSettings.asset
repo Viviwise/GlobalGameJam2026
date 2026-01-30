@@ -9,17 +9,17 @@ EditorBuildSettings:
     path: Assets/Scenes/SceneVivi.unity
     guid: adb1631b4559fbb4cbe10f99f8f393a8
   - enabled: 1
+    path: Assets/Scenes/IntroductionScene.unity
+    guid: bac47a87f54644c4589edff35378c3bd
+  - enabled: 1
+    path: Assets/Scenes/SceneDemoNewSystem.unity
+    guid: 328896ee2a3c7bb439f85c39763bb8bd
+  - enabled: 1
     path: Assets/Scenes/SampleScene.unity
     guid: 8c9cfa26abfee488c85f1582747f6a02
   - enabled: 1
-    path: Assets/Scenes/SceneDemo.unity
-    guid: 835e604cd31eff24290ad30024257722
-  - enabled: 1
     path: Assets/Scenes/MainMenuScene.unity
     guid: 2d144777cd0a6f24baae00992155ccf7
-  - enabled: 1
-    path: Assets/Scenes/IntroductionScene.unity
-    guid: bac47a87f54644c4589edff35378c3bd
   - enabled: 1
     path: Assets/Scenes/CreditsScene.unity
     guid: 4247f341df284da4883e388daa9764fe

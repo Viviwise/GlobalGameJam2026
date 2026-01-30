@@ -13,7 +13,6 @@ MonoBehaviour:
   m_Name: SetupSequenceScene1
   m_EditorClassIdentifier: Assembly-CSharp::SequenceForScene
   isSetUp: 1
-  isCleanUp: 0
   sequenceName: SetUpSequenceScene1
   events:
   - {fileID: 11400000, guid: 91ad17a31d58d61438b1e8fc453142a0, type: 2}
@@ -21,6 +20,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: f3235f4a4ff98ef4092fc13799c913b2, type: 2}
   - {fileID: 11400000, guid: cb4da6958e402964d882396350c623a2, type: 2}
   - {fileID: 11400000, guid: bb0d1b64b4f1bb44c9ecec0f31ff0862, type: 2}
+  - {fileID: 11400000, guid: d16df8950cbc2e04499a06dc5f384761, type: 2}
   cleanUpSequence: {fileID: 0}
   nextScene: {fileID: 0}
   CatharsysReaction: {fileID: 0}
