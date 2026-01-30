@@ -19,6 +19,6 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 61ad39ca0838d0b42956fed81eb201b2, type: 2}
   cleanUpSequence: {fileID: 0}
   nextScene: {fileID: 11400000, guid: c20cd069e9c195f44ac0d8a838755c9e, type: 2}
-  CatharsysReaction: {fileID: 0}
+  CatharsysReaction: {fileID: 21300000, guid: 94f3f469674ec91448f5eb784a79a80e, type: 3}
   wheelScore: 0
-  reactionText: 
+  reactionText: "Un d\xE9but ma foi fort classique, mais j\u2019attends la suite"

@@ -1,9 +1,11 @@
 using System;
 using System.Collections;
 using System.Linq;
+using Script.IAmGonnaTrySomething.Data.EventsScripts;
 using Script.IAmGonnaTrySomething.Gameplay;
 using UnityEngine;
 using UnityEngine.Events;
+using UnityEngine.Rendering.Universal;
 
 public class ScenarioManager : MonoBehaviour
 {
@@ -13,14 +15,17 @@ public class ScenarioManager : MonoBehaviour
     private SceneData currentScene;
     private Vector3 objectsOffset;
 
+    [SerializeField] private Light2D light;
     [SerializeField] private ChoiceButton[] buttonsForChoices;
     [SerializeField] private DialoguePanel dialoguePanel;
+    [SerializeField] private GameObject smallWheel;
     [SerializeField] private ScreenTransition screenTransition;
 
-    public Action<SequenceForScene> SceneFinishedAction;
+    public event Action<SequenceForScene> SceneFinishedAction;
     void Start()
     {
         objectsOffset = new Vector3(0, -1.5f, 0);
+        light.gameObject.SetActive(false);
         currentScene = firstScene;
         allObjectsRefs = new GameObject[allObjects.Length];
         for (int i = 0; i < allObjects.Length; i++)
@@ -42,6 +47,7 @@ public class ScenarioManager : MonoBehaviour
 
     public void DisplayChoices()
     {
+        StartCoroutine(ShowWheel());
         for (int i = 0; i < currentScene.sequences.Length; i++)
         {
             buttonsForChoices[i].gameObject.SetActive(true);
@@ -51,6 +57,7 @@ public class ScenarioManager : MonoBehaviour
     
     public void CallSequence(SequenceForScene sequence)
     {
+        StartCoroutine(HideWheel());
         for (int i = 0; i < buttonsForChoices.Length; i++)
         {
             buttonsForChoices[i].gameObject.SetActive(false);
@@ -105,6 +112,8 @@ public class ScenarioManager : MonoBehaviour
                 }
                 case ScenarioEventTypes.Sound:
                 {
+                    SoundEvent currentSoundEvent = (SoundEvent)sequence.events[currentEventIndex];
+                    SoundManager.PlaySound(currentSoundEvent.soundType, currentSoundEvent.volume);
                     break;
                 }
                 case ScenarioEventTypes.ChangePose:
@@ -124,7 +133,67 @@ public class ScenarioManager : MonoBehaviour
                     yield return new WaitForSeconds(currentDelayEvent.duration);
                     break;
                 }
-                    
+                case ScenarioEventTypes.FlipPose:
+                {
+                    FlipPoseEvent currentFlipPoseEvent = (FlipPoseEvent)sequence.events[currentEventIndex];
+                    SpriteRenderer objectToFlip = FindTarget(currentFlipPoseEvent.target).gameObject.GetComponent<SpriteRenderer>();
+                    if (objectToFlip == null)
+                    {
+                        break;
+                    }
+                    if (objectToFlip.flipX)
+                    {
+                        objectToFlip.flipX = false;
+                    }
+                    else
+                    {
+                        objectToFlip.flipX = true;
+                    }
+                    break;
+                }
+                case ScenarioEventTypes.Disappear:
+                {
+                    DisappearEvent currentDisappearEvent = (DisappearEvent)sequence.events[currentEventIndex];
+                    SpriteRenderer objectToDisappear = FindTarget(currentDisappearEvent.target).gameObject.GetComponent<SpriteRenderer>();
+                    if (objectToDisappear == null)
+                    {
+                        break;
+                    }
+
+                    objectToDisappear.sprite = null;
+                    break;
+                }
+                case ScenarioEventTypes.Light:
+                {
+                    LightEvent currentLightEvent = (LightEvent)sequence.events[currentEventIndex];
+                    GameObject objectToLight = FindTarget(currentLightEvent.target).gameObject;
+                    GameObject lightOperator = FindTarget(ObjectsID.LightOperator).gameObject;
+                    if (objectToLight == null || lightOperator == null)
+                    {
+                        break;
+                    }
+                    light.gameObject.SetActive(true);
+                    light.gameObject.transform.position = lightOperator.transform.position;
+                    Vector2 direction = objectToLight.transform.position - light.transform.position;
+                    float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
+                    Debug.Log(angle);
+                    light.transform.rotation = Quaternion.Euler(0f, 0f, (angle-110));
+                    light.color = currentLightEvent.lightColor;
+                    if (currentLightEvent.general)
+                    {
+                        light.falloffIntensity = 0.5f;
+                    }
+                    else
+                    {
+                        light.falloffIntensity = 0.8f;
+                    }
+                    break;
+                }
+                case ScenarioEventTypes.Unlight:
+                {
+                    light.gameObject.SetActive(false);
+                    break;
+                }
             }
             currentEventIndex++;
             yield return null;
@@ -134,32 +203,38 @@ public class ScenarioManager : MonoBehaviour
         {
             DisplayChoices();
         }
-        else if (!sequence.isCleanUp)
+        else 
         {
-            if (sequence.cleanUpSequence != null)
-            {
-                CallSequence(sequence.cleanUpSequence);
-            }
-            else
-            {
                 currentScene = sequence.nextScene; 
                 screenTransition.TransitionAppear(); 
                 yield return new WaitForSeconds(screenTransition.transitionTime); 
-                screenTransition.TransitionDisappear(); 
-                DisplayChoices();
-            }
-        }
-        else
-        {
-            currentScene = sequence.nextScene; 
-            screenTransition.TransitionAppear(); 
-            yield return new WaitForSeconds(screenTransition.transitionTime); 
-            CallSequence(currentScene.setUpSequence);
-            screenTransition.TransitionDisappear(); 
-            DisplayChoices();
+                light.gameObject.SetActive(false);
+                Debug.Log(light.gameObject.activeInHierarchy);
+                SceneFinishedAction?.Invoke(sequence);
         }
     }
 
+    IEnumerator ShowWheel()
+    {
+        Vector2 targetPosition = new Vector2(0, -3.5f);
+        float speed = 1.5f;
+        while (smallWheel.transform.position.y < targetPosition.y)
+        {
+            smallWheel.transform.position = Vector3.MoveTowards(smallWheel.transform.position, targetPosition, Time.deltaTime *speed );
+            yield return null;
+        }
+    }
+
+    IEnumerator HideWheel()
+    {
+        Vector2 targetPosition = new Vector2(0, -8f);
+        float speed = 1.5f;
+        while (smallWheel.transform.position.y > targetPosition.y)
+        {
+            smallWheel.transform.position = Vector3.MoveTowards(smallWheel.transform.position, targetPosition, Time.deltaTime *speed );
+            yield return null;
+        }        
+    }
     private GameObject FindTarget(ObjectsID id)
     {
         foreach (GameObject obj in allObjectsRefs)
@@ -174,5 +249,17 @@ public class ScenarioManager : MonoBehaviour
         }
         return null;
     }
-    
+
+    public void NextScene()
+    {
+        screenTransition.TransitionDisappear();
+        if (currentScene.setUpSequence != null)
+        {
+            CallSequence(currentScene.setUpSequence);
+        }
+        else
+        {
+            DisplayChoices();
+        }
+    }
 }

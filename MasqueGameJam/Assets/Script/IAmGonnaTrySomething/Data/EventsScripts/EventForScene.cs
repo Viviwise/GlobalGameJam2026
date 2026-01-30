@@ -12,5 +12,9 @@ public enum ScenarioEventTypes
     Sound,
     ChangePose,
     Delay,
+    FlipPose,
+    Disappear,
+    Light,
+    Unlight,
     
 }

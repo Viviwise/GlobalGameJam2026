@@ -3,7 +3,6 @@ using UnityEngine;
 public class SequenceForScene : ScriptableObject
 {
     public bool isSetUp;
-    public bool isCleanUp;
     
     public string sequenceName;
     public EventForScene[] events;
