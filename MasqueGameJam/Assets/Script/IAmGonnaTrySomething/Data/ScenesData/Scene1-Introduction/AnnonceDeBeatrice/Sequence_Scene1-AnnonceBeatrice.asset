@@ -15,7 +15,6 @@ MonoBehaviour:
   isSetUp: 0
   sequenceName: "B\xE9atrice fait une annonce"
   events:
-  - {fileID: 11400000, guid: 9c4f71456faaf9147adeb165efd52f2c, type: 2}
   - {fileID: 11400000, guid: 6c51e3da1c6eb81439a7d13165e9dbb9, type: 2}
   - {fileID: 11400000, guid: 34935dd65780dd946b594591b4335313, type: 2}
   - {fileID: 11400000, guid: 1d823b6bd25db0f49b56594870e00256, type: 2}

@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 2024813535345710519}
   - component: {fileID: 6402097150658996378}
   - component: {fileID: 176123087391889495}
+  - component: {fileID: 7426046562767768388}
   m_Layer: 0
   m_Name: PrefabJohann
   m_TagString: Untagged
@@ -104,3 +105,25 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DramaObject
   id: 2
+--- !u!95 &7426046562767768388
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8251583362457629056}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 8d22d3677d3646240acdf683cc66738a, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
