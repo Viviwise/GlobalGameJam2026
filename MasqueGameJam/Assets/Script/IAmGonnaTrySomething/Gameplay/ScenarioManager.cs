@@ -6,6 +6,7 @@ using Script.IAmGonnaTrySomething.Gameplay;
 using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.Rendering.Universal;
+using UnityEngine.Serialization;
 
 public class ScenarioManager : MonoBehaviour
 {
@@ -15,7 +16,7 @@ public class ScenarioManager : MonoBehaviour
     private SceneData currentScene;
     private Vector3 objectsOffset;
 
-    [SerializeField] private Light2D light;
+    [SerializeField] private Light2D lightObject;
     [SerializeField] private ChoiceButton[] buttonsForChoices;
     [SerializeField] private DialoguePanel dialoguePanel;
     [SerializeField] private GameObject smallWheel;
@@ -25,7 +26,7 @@ public class ScenarioManager : MonoBehaviour
     void Start()
     {
         objectsOffset = new Vector3(0, -1.5f, 0);
-        light.gameObject.SetActive(false);
+        lightObject.gameObject.SetActive(false);
         currentScene = firstScene;
         allObjectsRefs = new GameObject[allObjects.Length];
         for (int i = 0; i < allObjects.Length; i++)
@@ -172,26 +173,26 @@ public class ScenarioManager : MonoBehaviour
                     {
                         break;
                     }
-                    light.gameObject.SetActive(true);
-                    light.gameObject.transform.position = lightOperator.transform.position;
-                    Vector2 direction = objectToLight.transform.position - light.transform.position;
+                    lightObject.gameObject.SetActive(true);
+                    lightObject.gameObject.transform.position = lightOperator.transform.position;
+                    Vector2 direction = objectToLight.transform.position - lightObject.transform.position;
                     float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
                     Debug.Log(angle);
-                    light.transform.rotation = Quaternion.Euler(0f, 0f, (angle-110));
-                    light.color = currentLightEvent.lightColor;
+                    lightObject.transform.rotation = Quaternion.Euler(0f, 0f, (angle-110));
+                    lightObject.color = currentLightEvent.lightColor;
                     if (currentLightEvent.general)
                     {
-                        light.falloffIntensity = 0.5f;
+                        lightObject.falloffIntensity = 0.5f;
                     }
                     else
                     {
-                        light.falloffIntensity = 1f;
+                        lightObject.falloffIntensity = 1f;
                     }
                     break;
                 }
                 case ScenarioEventTypes.Unlight:
                 {
-                    light.gameObject.SetActive(false);
+                    lightObject.gameObject.SetActive(false);
                     break;
                 }
             }
@@ -208,8 +209,8 @@ public class ScenarioManager : MonoBehaviour
                 currentScene = sequence.nextScene; 
                 screenTransition.TransitionAppear(); 
                 yield return new WaitForSeconds(screenTransition.transitionTime); 
-                light.gameObject.SetActive(false);
-                Debug.Log(light.gameObject.activeInHierarchy);
+                lightObject.gameObject.SetActive(false);
+                Debug.Log(lightObject.gameObject.activeInHierarchy);
                 SceneFinishedAction?.Invoke(sequence);
         }
     }

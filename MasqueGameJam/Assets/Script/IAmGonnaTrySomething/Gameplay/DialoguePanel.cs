@@ -1,3 +1,4 @@
+using System;
 using TMPro;
 using UnityEngine;
 
@@ -7,10 +8,22 @@ namespace Script.IAmGonnaTrySomething.Gameplay
     {
         [SerializeField] private TextMeshProUGUI textArea, nameArea;
         
-        public void SetUp(string dialogue, string speaker)
+        public int SetUp(string dialogue, string speaker)
         {
-            textArea.text = dialogue;
             nameArea.text = speaker;
+            int maxChars = 24;
+            if (dialogue.Length > maxChars)
+            {
+                textArea.text = dialogue[Range.EndAt(maxChars -1)];
+                return maxChars+1;
+            }
+            else
+            {
+                textArea.text = dialogue;
+                return dialogue.Length;
+            }
+            textArea.text = dialogue;
+            
         }
     }
 }

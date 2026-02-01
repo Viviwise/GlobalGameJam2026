@@ -10,8 +10,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 02ea93aca384ff847b1603e62d2389a4, type: 3}
-  m_Name: Pandore_Dialogue_Scene1_1_4
+  m_Name: MissSisyphe_Dialogue_Scene1_1_1
   m_EditorClassIdentifier: Assembly-CSharp::DialogueEvent
   eventType: 2
-  character: 3
-  content: ' Reprenons je vous en prie'
+  character: 5
+  content: C'est que son masque n'a pas les trous en face de ses yeux hahaha

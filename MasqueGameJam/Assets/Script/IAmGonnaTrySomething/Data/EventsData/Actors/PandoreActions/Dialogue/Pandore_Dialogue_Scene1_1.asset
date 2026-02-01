@@ -10,8 +10,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 02ea93aca384ff847b1603e62d2389a4, type: 3}
-  m_Name: Johann_Dialogue_Scene1_1_4
+  m_Name: Pandore_Dialogue_Scene1_1
   m_EditorClassIdentifier: Assembly-CSharp::DialogueEvent
   eventType: 2
-  character: 2
-  content: "Euh...Pandore? Un probl\xE8me ?"
+  character: 3
+  content: "Johann ! Arr\xEAte ! L\u2019espace d\u2019un instant, pose-toi et r\xE9fl\xE9chis\u2026"

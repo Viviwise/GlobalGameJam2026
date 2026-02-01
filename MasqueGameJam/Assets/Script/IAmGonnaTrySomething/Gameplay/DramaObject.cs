@@ -13,9 +13,11 @@ public enum ObjectsID
     Johann,
     Pandore,
     Mephisto,
+    MissSisyphe,
     LightOperator,
     RopeOperator,
     SoundOperator,
     TowerObject,
     ChandelierObject,
+    
 }

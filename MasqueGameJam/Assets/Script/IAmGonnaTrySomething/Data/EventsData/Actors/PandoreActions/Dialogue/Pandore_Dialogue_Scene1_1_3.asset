@@ -14,5 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::DialogueEvent
   eventType: 2
   character: 3
-  content: "Veuillez m'excuser, je me suis laiss\xE9e emport\xE9e par mes \xE9motions
-    car vous m'aviez cri\xE9 dessus."
+  content: "Toi qui ne penses qu\u2019\xE0 t\u2019\xE9lever, seras-tu aussi cr\xE9dule
+    ? Seras-tu aussi candide pour accepter la tentation du Malin ?"

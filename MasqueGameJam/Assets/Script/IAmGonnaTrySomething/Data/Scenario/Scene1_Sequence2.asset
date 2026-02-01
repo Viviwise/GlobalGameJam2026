@@ -15,6 +15,7 @@ MonoBehaviour:
   isSetUp: 0
   sequenceName: "Pour une fois, ne pense pas qu\u2019\xE0 toi, pense aux cons\xE9quences
     que cela peut avoir !"
+  giver: {fileID: 21300000, guid: 5a49bcd6466257c488edd31d468f4d1c, type: 3}
   events:
   - {fileID: 11400000, guid: 195a2386bb9cf084582a36bc61d5c85b, type: 2}
   - {fileID: 11400000, guid: 9ce6bd3fa3b2dda4ab3fbd3e388320b4, type: 2}
