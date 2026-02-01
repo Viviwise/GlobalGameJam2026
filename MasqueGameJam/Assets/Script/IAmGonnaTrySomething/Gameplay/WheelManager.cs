@@ -22,13 +22,56 @@ namespace Script.IAmGonnaTrySomething.Gameplay
                 score -= 1;
                 StartCoroutine(DramaticWheelTurnLeft());
             }
-            else
+            else if (wheelScore == WheelScore.Bad)
             {
                 score += 1;
                 StartCoroutine(DramaticWheelTurnRight());
             }
+            else if (wheelScore == WheelScore.Good)
+            {
+                StartCoroutine(DramaticWheelNoTurn());
+            }
         }
 
+        IEnumerator DramaticWheelNoTurn()
+        {
+            float goalAngle = mainCursor.transform.eulerAngles.z%360f;
+            float speed = 5f;
+            int baitDirection = Random.Range(0,2);
+            if (baitDirection == 0)
+            {
+                float elapsedAngles = 0;
+                while (elapsedAngles < angleBySegment / 4)
+                {
+                    mainCursor.transform.eulerAngles = new Vector3(0, 0, mainCursor.transform.eulerAngles.z%360f + speed * Time.deltaTime);
+                    elapsedAngles += Time.deltaTime * speed;
+                    yield return null;
+                }
+                speed = speed * 6;
+                while (mainCursor.transform.eulerAngles.z > goalAngle)
+                {
+                    mainCursor.transform.eulerAngles = new Vector3(0, 0, mainCursor.transform.eulerAngles.z%360f - speed * Time.deltaTime);
+                    yield return null;
+                }
+            }
+            else if (baitDirection == 1)
+            {
+                float elapsedAngles = 0;
+                while (elapsedAngles < angleBySegment / 4)
+                {
+                    mainCursor.transform.eulerAngles = new Vector3(0, 0, mainCursor.transform.eulerAngles.z%360f - speed * Time.deltaTime);
+                    elapsedAngles += Time.deltaTime * speed;
+                    yield return null;
+                }
+                speed = speed * 6;
+                while (mainCursor.transform.eulerAngles.z > goalAngle)
+                {
+                    mainCursor.transform.eulerAngles = new Vector3(0, 0, mainCursor.transform.eulerAngles.z%360f - speed * Time.deltaTime);
+                    yield return null;
+                }
+            }
+            EndPhase();
+        }
         IEnumerator DramaticWheelTurnLeft()
         {
             float goalAngle = mainCursor.transform.eulerAngles.z%360f+angleBySegment;

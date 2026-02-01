@@ -106,7 +106,7 @@ public class ScenarioManager : MonoBehaviour
                     dialoguePanel.gameObject.SetActive(true);
                     DialogueEvent currentDialogueEvent = (DialogueEvent)sequence.events[currentEventIndex];
                     dialoguePanel.SetUp(currentDialogueEvent.content, currentDialogueEvent.character.ToString());
-                    yield return new WaitForSeconds(currentDialogueEvent.displayTime);
+                    yield return new WaitForSeconds((currentDialogueEvent.content.Length*0.01f)+3);
                     dialoguePanel.gameObject.SetActive(false);
                     break;
                 }
@@ -185,7 +185,7 @@ public class ScenarioManager : MonoBehaviour
                     }
                     else
                     {
-                        light.falloffIntensity = 0.8f;
+                        light.falloffIntensity = 1f;
                     }
                     break;
                 }

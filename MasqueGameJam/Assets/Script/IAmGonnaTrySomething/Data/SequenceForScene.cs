@@ -6,7 +6,6 @@ public class SequenceForScene : ScriptableObject
     
     public string sequenceName;
     public EventForScene[] events;
-    public SequenceForScene cleanUpSequence;
     public SceneData nextScene;
     
     public Sprite CatharsysReaction;

@@ -1,0 +1,38 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b0e845809c39396478739c1f9a52ab43, type: 3}
+  m_Name: Scene1_SetUp
+  m_EditorClassIdentifier: Assembly-CSharp::SequenceForScene
+  isSetUp: 1
+  sequenceName: SetUpScene1
+  events:
+  - {fileID: 11400000, guid: defb0b90110e446498ccc5abf5bfaa2c, type: 2}
+  - {fileID: 11400000, guid: 189759f7eac531a4894f625881c434d9, type: 2}
+  - {fileID: 11400000, guid: dd4e0ad7086f3034999df2e31fd2dddd, type: 2}
+  - {fileID: 11400000, guid: eb7420af8e064a14f970724ff1de3bd3, type: 2}
+  - {fileID: 11400000, guid: 853600c36f4f22c498d2734b08096d72, type: 2}
+  - {fileID: 11400000, guid: 5a807e37fdedb9c4a9ef6a889a84804c, type: 2}
+  - {fileID: 11400000, guid: 7a29be8038376064cb1585bf49941a98, type: 2}
+  - {fileID: 11400000, guid: 08dadeb584ea2e14a846941bcc4ef6f7, type: 2}
+  - {fileID: 11400000, guid: a9f9abf6d7c8a9c4a87384aecf037876, type: 2}
+  - {fileID: 11400000, guid: 704e89f4c7078114386bc70d85add4ea, type: 2}
+  - {fileID: 11400000, guid: 4c139c9f728b2c749866d7afce779f07, type: 2}
+  - {fileID: 11400000, guid: f03711cba184ccf409eac61a4fc48022, type: 2}
+  - {fileID: 11400000, guid: 6a6c74084a3da3c4dbfe33c1b337ea66, type: 2}
+  - {fileID: 11400000, guid: 0111103193fd6814d92b43ebc4ab71ff, type: 2}
+  - {fileID: 11400000, guid: 9dd351d178fdbf647b520d75c54fc3f7, type: 2}
+  - {fileID: 11400000, guid: 0584cb63a7251534183b3aa194ea955f, type: 2}
+  - {fileID: 11400000, guid: facead6bdb3afd943ac59a40eed04628, type: 2}
+  nextScene: {fileID: 0}
+  CatharsysReaction: {fileID: 0}
+  wheelScore: 0
+  reactionText: 

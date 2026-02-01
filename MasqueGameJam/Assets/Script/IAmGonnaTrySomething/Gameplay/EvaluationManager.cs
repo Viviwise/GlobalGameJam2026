@@ -61,4 +61,5 @@ public enum WheelScore
 {
     Boredom,
     Bad,
+    Good,
 }

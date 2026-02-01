@@ -1,0 +1,36 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b0e845809c39396478739c1f9a52ab43, type: 3}
+  m_Name: Scene1_Sequence1
+  m_EditorClassIdentifier: Assembly-CSharp::SequenceForScene
+  isSetUp: 0
+  sequenceName: "Seras-tu \xE0 ce point cr\xE9dule pour accepter cette tentation
+    ?"
+  events:
+  - {fileID: 11400000, guid: 195a2386bb9cf084582a36bc61d5c85b, type: 2}
+  - {fileID: 11400000, guid: 0225305e9813e3745b698927df8a8668, type: 2}
+  - {fileID: 11400000, guid: bcb5f47de4315bf4280af7075ba3bea9, type: 2}
+  - {fileID: 11400000, guid: 75f0016d40d696242a1c037caa69378f, type: 2}
+  - {fileID: 11400000, guid: f1e8fa94e2518514198f421e3b867c73, type: 2}
+  - {fileID: 11400000, guid: bdef49a36f4c88e4b88d8e5dcff94458, type: 2}
+  - {fileID: 11400000, guid: a17b1c48754d9d643886463f1ccffcc5, type: 2}
+  - {fileID: 11400000, guid: 9d66a686f8a717b47b09061a9235baef, type: 2}
+  - {fileID: 11400000, guid: fd9dface8ee1808439c04338233ec8e3, type: 2}
+  - {fileID: 11400000, guid: de5601ab5b2845c4d8fa6c6da49c8c45, type: 2}
+  - {fileID: 11400000, guid: bcb5f47de4315bf4280af7075ba3bea9, type: 2}
+  - {fileID: 11400000, guid: 8b1f415b2fc776244a18a399d1d1ddfc, type: 2}
+  - {fileID: 11400000, guid: af8c5e8905ace6341a41b9d96c03cb1f, type: 2}
+  nextScene: {fileID: 11400000, guid: 66427bc802747ce49886f413376f2c1e, type: 2}
+  CatharsysReaction: {fileID: 21300000, guid: 94f3f469674ec91448f5eb784a79a80e, type: 3}
+  wheelScore: 1
+  reactionText: "Vient elle vraiment de fondre en larmes sur sc\xE8ne ? Je me demande
+    bien ce qui la stress comme cela"

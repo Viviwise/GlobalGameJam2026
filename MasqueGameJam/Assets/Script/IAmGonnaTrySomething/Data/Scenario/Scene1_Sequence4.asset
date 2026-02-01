@@ -1,0 +1,31 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b0e845809c39396478739c1f9a52ab43, type: 3}
+  m_Name: Scene1_Sequence4
+  m_EditorClassIdentifier: Assembly-CSharp::SequenceForScene
+  isSetUp: 0
+  sequenceName: "Lumi\xE8re sur Johann"
+  events:
+  - {fileID: 11400000, guid: 153a84be8fe2104469f5bba3d9456f0e, type: 2}
+  - {fileID: 11400000, guid: 15789876ef1489641824a78995ddf253, type: 2}
+  - {fileID: 11400000, guid: bcb5f47de4315bf4280af7075ba3bea9, type: 2}
+  - {fileID: 11400000, guid: fd9dface8ee1808439c04338233ec8e3, type: 2}
+  - {fileID: 11400000, guid: 31e8378df2dba6a488c792ab8705fb0a, type: 2}
+  - {fileID: 11400000, guid: 9191be32e275c8d43baf211a49c92565, type: 2}
+  - {fileID: 11400000, guid: fd9dface8ee1808439c04338233ec8e3, type: 2}
+  - {fileID: 11400000, guid: d60e730b2632c234bb8a3b1870073108, type: 2}
+  - {fileID: 11400000, guid: 70888a4bd2f54d343a32996f52b851c9, type: 2}
+  - {fileID: 11400000, guid: 195a2386bb9cf084582a36bc61d5c85b, type: 2}
+  nextScene: {fileID: 11400000, guid: 66427bc802747ce49886f413376f2c1e, type: 2}
+  CatharsysReaction: {fileID: 21300000, guid: 69578ee4b7dabfc4cacf004330d33570, type: 3}
+  wheelScore: 2
+  reactionText: "Nous avons le droit \xE0 du grand art ce soir !"
