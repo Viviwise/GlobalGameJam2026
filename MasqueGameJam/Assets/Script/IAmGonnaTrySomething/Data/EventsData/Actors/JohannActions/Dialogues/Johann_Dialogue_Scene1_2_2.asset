@@ -14,5 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::DialogueEvent
   eventType: 2
   character: 2
-  content: "Fadaises et billeves\xE9es ! Moi seul d\xE9cide du sort de ma carri\xE8re
-    ! Quant \xE0 vous autres\u2026 Juste une vulgaire \xE9tape !"
+  contents:
+  - "Fadaises et billeves\xE9es ! Moi seul d\xE9cide du sort de ma carri\xE8re !"
+  - "Quant \xE0 vous autres\u2026 Juste une vulgaire \xE9tape !"
+  - "Et pourtant\u2026 Toi ! Tu continues de briller ! D\u2019une lueur qui m\u2019\xE9clipse
+    ! Intol\xE9rable !"

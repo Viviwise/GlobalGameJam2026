@@ -14,4 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::DialogueEvent
   eventType: 2
   character: 3
-  content: Veuillez m'excuser, je vous avoue que je suis quelque peu perdue
+  contents:
+  - Veuillez m'excuser, je suis quelque peu perdue

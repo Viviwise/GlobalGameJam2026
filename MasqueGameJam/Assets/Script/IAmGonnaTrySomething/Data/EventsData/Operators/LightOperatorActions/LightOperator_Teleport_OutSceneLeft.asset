@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: LightOperator_Teleport_OutSceneLeft
   m_EditorClassIdentifier: Assembly-CSharp::TeleportationEvent
   eventType: 1
-  target: 5
+  target: 6
   position: {x: -6, y: 2, z: 0}

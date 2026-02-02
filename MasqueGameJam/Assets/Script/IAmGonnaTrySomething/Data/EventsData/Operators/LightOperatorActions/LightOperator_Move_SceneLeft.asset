@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: LightOperator_Move_SceneLeft
   m_EditorClassIdentifier: Assembly-CSharp::MovementEvent
   eventType: 0
-  target: 5
+  target: 6
   speed: 5
   position: {x: -4.7, y: 2, z: 0}

@@ -7,6 +7,7 @@ using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.Rendering.Universal;
 using UnityEngine.Serialization;
+using Random = System.Random;
 
 public class ScenarioManager : MonoBehaviour
 {
@@ -17,6 +18,7 @@ public class ScenarioManager : MonoBehaviour
     private Vector3 objectsOffset;
 
     [SerializeField] private Light2D lightObject;
+    [SerializeField] private ParticleSystem explosionEffect;
     [SerializeField] private ChoiceButton[] buttonsForChoices;
     [SerializeField] private DialoguePanel dialoguePanel;
     [SerializeField] private GameObject smallWheel;
@@ -107,8 +109,14 @@ public class ScenarioManager : MonoBehaviour
                 {
                     dialoguePanel.gameObject.SetActive(true);
                     DialogueEvent currentDialogueEvent = (DialogueEvent)sequence.events[currentEventIndex];
-                    dialoguePanel.SetUp(currentDialogueEvent.content, currentDialogueEvent.character.ToString());
-                    yield return new WaitForSeconds((currentDialogueEvent.content.Length*0.01f)+3);
+                    int dialogueIndex = 0;
+                    float textSpeed = 0.01f;
+                    while (dialogueIndex < currentDialogueEvent.contents.Length)
+                    {
+                        dialoguePanel.SetUp(currentDialogueEvent.contents[dialogueIndex], currentDialogueEvent.character.ToString(), textSpeed);
+                        yield return new WaitForSeconds((currentDialogueEvent.contents[dialogueIndex].Length*textSpeed)+3);
+                        dialogueIndex++;
+                    }
                     dialoguePanel.gameObject.SetActive(false);
                     break;
                 }
@@ -126,7 +134,15 @@ public class ScenarioManager : MonoBehaviour
                     {
                         break;
                     }
-                    characterSprite.sprite = currentChangePoseEvent.newPose;
+
+                    if (characterSprite.gameObject.GetComponent<DramaObject>().dead)
+                    {
+                        characterSprite.sprite = currentChangePoseEvent.newPoseDead;
+                    }
+                    else
+                    {
+                        characterSprite.sprite = currentChangePoseEvent.newPose;
+                    }
                     break;
                 }
                 case ScenarioEventTypes.Delay:
@@ -219,7 +235,7 @@ public class ScenarioManager : MonoBehaviour
     IEnumerator ShowWheel()
     {
         Vector2 targetPosition = new Vector2(0, -3.5f);
-        float speed = 1.5f;
+        float speed = 3f;
         while (smallWheel.transform.position.y < targetPosition.y)
         {
             smallWheel.transform.position = Vector3.MoveTowards(smallWheel.transform.position, targetPosition, Time.deltaTime *speed );
@@ -230,7 +246,7 @@ public class ScenarioManager : MonoBehaviour
     IEnumerator HideWheel()
     {
         Vector2 targetPosition = new Vector2(0, -8f);
-        float speed = 1.5f;
+        float speed = 3f;
         while (smallWheel.transform.position.y > targetPosition.y)
         {
             smallWheel.transform.position = Vector3.MoveTowards(smallWheel.transform.position, targetPosition, Time.deltaTime *speed );
@@ -250,6 +266,26 @@ public class ScenarioManager : MonoBehaviour
             }
         }
         return null;
+    }
+
+    public void KillActor()
+    {
+        bool targetFound = false;
+        DramaObject target = null;
+        int tries = 0;
+        while (!targetFound && tries < 20)
+        {
+            int randomSelection = UnityEngine.Random.Range(0, allObjects.Length);
+            DramaObject targetObject = allObjects[randomSelection];
+            if (targetObject.killable && targetObject.gameObject.transform.position.x>=-4 && targetObject.gameObject.transform.position.x <=4)
+            {
+                targetFound = true;
+                target = targetObject;
+                tries++;
+            }
+        }
+        target.Explode(explosionEffect);
+
     }
 
     public void NextScene()

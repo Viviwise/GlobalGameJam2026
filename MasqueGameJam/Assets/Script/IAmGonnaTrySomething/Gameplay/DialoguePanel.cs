@@ -1,4 +1,5 @@
 using System;
+using System.Collections;
 using TMPro;
 using UnityEngine;
 
@@ -8,22 +9,22 @@ namespace Script.IAmGonnaTrySomething.Gameplay
     {
         [SerializeField] private TextMeshProUGUI textArea, nameArea;
         
-        public int SetUp(string dialogue, string speaker)
+        public void SetUp(string dialogue, string speaker, float speed)
         {
             nameArea.text = speaker;
-            int maxChars = 24;
-            if (dialogue.Length > maxChars)
-            {
-                textArea.text = dialogue[Range.EndAt(maxChars -1)];
-                return maxChars+1;
-            }
-            else
-            {
-                textArea.text = dialogue;
-                return dialogue.Length;
-            }
-            textArea.text = dialogue;
+            StartCoroutine(DisplayTextDynamic(dialogue, speed));
             
+        }
+
+        IEnumerator DisplayTextDynamic(string text, float letterSpeed)
+        {
+            string currentText = "";
+            for (int i = 0; i < text.Length; i++)
+            {
+                currentText += text[i];
+                textArea.text = currentText;
+                yield return new WaitForSeconds(letterSpeed);
+            }
         }
     }
 }

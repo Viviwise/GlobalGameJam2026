@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: LightOperator_Pose_Active
   m_EditorClassIdentifier: Assembly-CSharp::ChangePoseEvent
   eventType: 4
-  id: 5
+  id: 6
   newPose: {fileID: 21300000, guid: dd5c697334ae8ae45995a09c4343c27b, type: 3}

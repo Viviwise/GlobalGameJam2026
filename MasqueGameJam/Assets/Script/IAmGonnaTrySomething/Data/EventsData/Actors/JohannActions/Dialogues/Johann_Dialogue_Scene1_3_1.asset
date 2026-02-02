@@ -14,4 +14,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::DialogueEvent
   eventType: 2
   character: 2
-  content: "Ne viens pas me parler d\u2019humilit\xE9 Padore! ... euh Pandore! "
+  contents:
+  - "Ne viens pas me parler d\u2019humilit\xE9 Padore ! Euh... Pandore je veux dire
+    !"
+  - "Ce n\u2019est qu\u2019une chim\xE8re pour ceux qui n\u2019ont rien \xE0 d\xE9fendre
+    ! Moi, je vaux plus que cela\u2026"
+  - "Qu\u2019importe le pi\xE8ge ! J\u2019ai une place \xE0 d\xE9crocher ! Une \xE9ternit\xE9
+    \xE0 conqu\xE9rir !"
+  - Et tout cela me revient de droit !

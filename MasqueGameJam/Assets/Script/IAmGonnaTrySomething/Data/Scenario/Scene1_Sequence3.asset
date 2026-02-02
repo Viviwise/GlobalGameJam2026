@@ -21,8 +21,6 @@ MonoBehaviour:
   - {fileID: 11400000, guid: bcb5f47de4315bf4280af7075ba3bea9, type: 2}
   - {fileID: 11400000, guid: 75f0016d40d696242a1c037caa69378f, type: 2}
   - {fileID: 11400000, guid: db545068a09b9ea489893799b5e6eb2a, type: 2}
-  - {fileID: 11400000, guid: 4159e236258584a4ba6e7b0b7812fb50, type: 2}
-  - {fileID: 11400000, guid: 5a581210695c5e34b9d25a32cd756e4b, type: 2}
   - {fileID: 11400000, guid: fd9dface8ee1808439c04338233ec8e3, type: 2}
   nextScene: {fileID: 11400000, guid: 66427bc802747ce49886f413376f2c1e, type: 2}
   CatharsysReaction: {fileID: 21300000, guid: 94f3f469674ec91448f5eb784a79a80e, type: 3}

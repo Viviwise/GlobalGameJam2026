@@ -8,23 +8,32 @@ namespace Script.IAmGonnaTrySomething.Gameplay
     public class WheelManager : MonoBehaviour
     {
         public GameObject mainCursor, smallCursor;
-        
+        [SerializeField] private GameObject[] livesObjects;
         private float angleBySegment = 40f;
         private int score = 0;
 
         public event Action EndPhaseSurviving;
-        public event Action EndPhaseDying;
+        public event Action<int> EndPhaseDying;
+        private int lives=3;
+
+        private void Start()
+        {
+            foreach (GameObject obj in livesObjects)
+            {
+                obj.SetActive(false);
+            }
+        }
 
         public void AjustWheel(WheelScore wheelScore)
         {
             if (wheelScore == WheelScore.Boredom)
             {
-                score -= 1;
+                score -= 3;
                 StartCoroutine(DramaticWheelTurnLeft());
             }
             else if (wheelScore == WheelScore.Bad)
             {
-                score += 1;
+                score += 3;
                 StartCoroutine(DramaticWheelTurnRight());
             }
             else if (wheelScore == WheelScore.Good)
@@ -114,7 +123,6 @@ namespace Script.IAmGonnaTrySomething.Gameplay
         IEnumerator DramaticWheelTurnRight()
         {
             float goalAngle = mainCursor.transform.eulerAngles.z-angleBySegment;
-            Debug.Log(goalAngle);
             float speed = 5f;
             int bait = Random.Range(0,2);
             if (bait == 0)
@@ -126,7 +134,7 @@ namespace Script.IAmGonnaTrySomething.Gameplay
                     elapsedAngles += Time.deltaTime * speed;
                     yield return null;
                 }
-                speed = speed * 4;
+                speed = speed * 6;
                 while (mainCursor.transform.eulerAngles.z > goalAngle)
                 {
                     Debug.Log(speed);
@@ -143,7 +151,7 @@ namespace Script.IAmGonnaTrySomething.Gameplay
                     elapsedAngles += Time.deltaTime * speed;
                     yield return null;
                 }
-                speed = speed * 2;
+                speed = speed * 6;
                 while (mainCursor.transform.eulerAngles.z > goalAngle)
                 {
                     mainCursor.transform.eulerAngles = new Vector3(0, 0, mainCursor.transform.eulerAngles.z - speed * Time.deltaTime);
@@ -156,9 +164,22 @@ namespace Script.IAmGonnaTrySomething.Gameplay
         private void EndPhase()
         {
             smallCursor.transform.eulerAngles = new Vector3(0, 0, mainCursor.transform.eulerAngles.z);
-            if (score == 3 || score == -3)
+            if (score >= 3 || score <= -3)
             {
-                EndPhaseDying?.Invoke();
+                lives--;
+                livesObjects[lives - 1].SetActive(true);
+                if (lives == 0)
+                {
+                    
+                }
+                else
+                {
+                    EndPhaseDying?.Invoke(score);
+                    score = 0;
+                    mainCursor.transform.eulerAngles = new Vector3(0, 0, 0); 
+                    smallCursor.transform.eulerAngles = new Vector3(0, 0, 0); 
+                }
+                
             }
             else
             {
