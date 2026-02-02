@@ -8,12 +8,21 @@ namespace Script.IAmGonnaTrySomething.Gameplay
     public class WheelManager : MonoBehaviour
     {
         public GameObject mainCursor, smallCursor;
-        
+        [SerializeField] private GameObject[] livesObjects;
         private float angleBySegment = 40f;
         private int score = 0;
 
         public event Action EndPhaseSurviving;
         public event Action<int> EndPhaseDying;
+        private int lives=3;
+
+        private void Start()
+        {
+            foreach (GameObject obj in livesObjects)
+            {
+                obj.SetActive(false);
+            }
+        }
 
         public void AjustWheel(WheelScore wheelScore)
         {
@@ -114,7 +123,6 @@ namespace Script.IAmGonnaTrySomething.Gameplay
         IEnumerator DramaticWheelTurnRight()
         {
             float goalAngle = mainCursor.transform.eulerAngles.z-angleBySegment;
-            Debug.Log(goalAngle);
             float speed = 5f;
             int bait = Random.Range(0,2);
             if (bait == 0)
@@ -158,11 +166,20 @@ namespace Script.IAmGonnaTrySomething.Gameplay
             smallCursor.transform.eulerAngles = new Vector3(0, 0, mainCursor.transform.eulerAngles.z);
             if (score >= 3 || score <= -3)
             {
-                EndPhaseDying?.Invoke(score);
-                score = 0;
-                mainCursor.transform.eulerAngles = new Vector3(0, 0, 0);
-                smallCursor.transform.eulerAngles = new Vector3(0, 0, 0);
-                Debug.Log(score);
+                lives--;
+                livesObjects[lives - 1].SetActive(true);
+                if (lives == 0)
+                {
+                    
+                }
+                else
+                {
+                    EndPhaseDying?.Invoke(score);
+                    score = 0;
+                    mainCursor.transform.eulerAngles = new Vector3(0, 0, 0); 
+                    smallCursor.transform.eulerAngles = new Vector3(0, 0, 0); 
+                }
+                
             }
             else
             {
