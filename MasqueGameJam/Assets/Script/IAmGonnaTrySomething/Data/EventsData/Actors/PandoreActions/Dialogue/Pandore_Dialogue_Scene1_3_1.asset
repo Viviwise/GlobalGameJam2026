@@ -14,5 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::DialogueEvent
   eventType: 2
   character: 3
-  content: "Regarde et contemple ta situation\u2026 Ne vois-tu pas l\xE0 le pi\xE8ge
-    \xE9vident ? Pour une fois, fais preuve de retenue et d\u2019humilit\xE9 !"
+  contents:
+  - "Regarde et contemple ta situation\u2026 Ne vois-tu pas l\xE0 le pi\xE8ge \xE9vident
+    ?"
+  - "Pour une fois, fais preuve de retenue et d\u2019humilit\xE9 !"

@@ -1,9 +1,29 @@
+using System.Collections;
 using UnityEngine;
 
 public class DramaObject : MonoBehaviour
 {
     public ObjectsID id;
-    
+    [SerializeField] public bool killable;
+    public bool dead;
+    public Sprite deadSprite;
+    private ParticleSystem explosionEffect;
+
+    public void Explode(ParticleSystem effect)
+    {
+        explosionEffect=effect;
+        explosionEffect.gameObject.SetActive(true);
+        explosionEffect.gameObject.transform.position = transform.position;
+        StartCoroutine(Explosion());
+    }
+
+    IEnumerator Explosion()
+    {
+        yield return new WaitForSeconds(1f);
+        explosionEffect.Play();
+        dead = true;
+        gameObject.GetComponent<SpriteRenderer>().sprite = deadSprite;
+    }
 }
 
 public enum ObjectsID

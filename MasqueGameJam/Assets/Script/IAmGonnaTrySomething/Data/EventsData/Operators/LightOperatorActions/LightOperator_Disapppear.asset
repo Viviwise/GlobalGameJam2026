@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: LightOperator_Disapppear
   m_EditorClassIdentifier: Assembly-CSharp::Script.IAmGonnaTrySomething.Data.EventsScripts.DisappearEvent
   eventType: 0
-  target: 5
+  target: 6

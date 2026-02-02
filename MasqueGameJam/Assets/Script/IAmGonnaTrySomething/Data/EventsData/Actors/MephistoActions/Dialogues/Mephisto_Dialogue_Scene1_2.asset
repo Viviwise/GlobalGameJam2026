@@ -14,5 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::DialogueEvent
   eventType: 2
   character: 4
-  content: "Chers amis, approchez, prenez place ! Emparez-vous de votre r\xF4le et
-    vivez votre texte !"
+  contents:
+  - "Viens Johann, viens \xE0 moi. Approche et n\u2019aie crainte."
+  - "J\u2019ai en mes mains une offre, un cadeau susceptible de r\xE9aliser tes ambitions."
+  - "N\u2019\xE9cris plus. Ne joue plus ! Contente toi de le prendre et de briller
+    !"

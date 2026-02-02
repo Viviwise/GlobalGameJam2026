@@ -14,4 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ChangePoseEvent
   eventType: 0
   id: 7
-  newPose: {fileID: 21300000, guid: 4837f40bd06183c4b9c187583c3eb051, type: 3}
+  newPose: {fileID: 21300000, guid: b637629f28f7d77458f4be3ef88f3e20, type: 3}

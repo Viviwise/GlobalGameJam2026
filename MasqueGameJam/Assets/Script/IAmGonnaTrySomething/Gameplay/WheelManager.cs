@@ -13,18 +13,18 @@ namespace Script.IAmGonnaTrySomething.Gameplay
         private int score = 0;
 
         public event Action EndPhaseSurviving;
-        public event Action EndPhaseDying;
+        public event Action<int> EndPhaseDying;
 
         public void AjustWheel(WheelScore wheelScore)
         {
             if (wheelScore == WheelScore.Boredom)
             {
-                score -= 1;
+                score -= 3;
                 StartCoroutine(DramaticWheelTurnLeft());
             }
             else if (wheelScore == WheelScore.Bad)
             {
-                score += 1;
+                score += 3;
                 StartCoroutine(DramaticWheelTurnRight());
             }
             else if (wheelScore == WheelScore.Good)
@@ -126,7 +126,7 @@ namespace Script.IAmGonnaTrySomething.Gameplay
                     elapsedAngles += Time.deltaTime * speed;
                     yield return null;
                 }
-                speed = speed * 4;
+                speed = speed * 6;
                 while (mainCursor.transform.eulerAngles.z > goalAngle)
                 {
                     Debug.Log(speed);
@@ -143,7 +143,7 @@ namespace Script.IAmGonnaTrySomething.Gameplay
                     elapsedAngles += Time.deltaTime * speed;
                     yield return null;
                 }
-                speed = speed * 2;
+                speed = speed * 6;
                 while (mainCursor.transform.eulerAngles.z > goalAngle)
                 {
                     mainCursor.transform.eulerAngles = new Vector3(0, 0, mainCursor.transform.eulerAngles.z - speed * Time.deltaTime);
@@ -156,9 +156,13 @@ namespace Script.IAmGonnaTrySomething.Gameplay
         private void EndPhase()
         {
             smallCursor.transform.eulerAngles = new Vector3(0, 0, mainCursor.transform.eulerAngles.z);
-            if (score == 3 || score == -3)
+            if (score >= 3 || score <= -3)
             {
-                EndPhaseDying?.Invoke();
+                EndPhaseDying?.Invoke(score);
+                score = 0;
+                mainCursor.transform.eulerAngles = new Vector3(0, 0, 0);
+                smallCursor.transform.eulerAngles = new Vector3(0, 0, 0);
+                Debug.Log(score);
             }
             else
             {

@@ -12,7 +12,8 @@ public class PhasesManager : MonoBehaviour
     {
         cam = Camera.main;
         scenarioManager.SceneFinishedAction += SceneEnded;
-        evaluationManager.EvalutaionPhaseDone += EvaluationEnded;
+        evaluationManager.EvaluationPhaseDone += EvaluationEnded;
+        evaluationManager.KillActor += KillActor;
     }
 
     private void SceneEnded(SequenceForScene sequencePlayed)
@@ -27,6 +28,24 @@ public class PhasesManager : MonoBehaviour
         StartCoroutine(BackToStage());
     }
 
+    private void KillActor()
+    {
+        StartCoroutine(KillActorSequence());
+    }
+
+    IEnumerator KillActorSequence()
+    {
+        screenTransition.TransitionAppear();
+        yield return new WaitForSeconds(screenTransition.transitionTime);
+        cam.transform.position = new Vector3(0, 0 ,-10);
+        screenTransition.TransitionDisappear();
+        scenarioManager.KillActor();
+        yield return new WaitForSeconds(5f);
+        screenTransition.TransitionAppear();
+        yield return new WaitForSeconds(screenTransition.transitionTime);
+        cam.transform.position = new Vector3(50, 0 ,-10);
+        screenTransition.TransitionDisappear();
+    }
     IEnumerator BackToStage()
     {
         screenTransition.TransitionAppear();

@@ -14,4 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::DialogueEvent
   eventType: 2
   character: 3
-  content: " Si tu fais fi de nous, a minima, songes \xE0 ta carri\xE8re !"
+  contents:
+  - "Pri\xE8re de ne pas m'interrompre ! Je disais..."
+  - "Nous entra\xEEnerais-tu avec toi dans cette folie ?"
+  - "Si tu fais fi de nous, a minima, songes \xE0 ta carri\xE8re !"

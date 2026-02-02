@@ -14,4 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::DialogueEvent
   eventType: 2
   character: 3
-  content: "Johann ! Arr\xEAte ! L\u2019espace d\u2019un instant, pose-toi et r\xE9fl\xE9chis\u2026"
+  contents:
+  - "Johann ! Arr\xEAte ! L\u2019espace d\u2019un instant, pose-toi et r\xE9fl\xE9chis\u2026"

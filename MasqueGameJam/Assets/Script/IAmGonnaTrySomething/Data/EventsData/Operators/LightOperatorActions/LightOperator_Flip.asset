@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: LightOperator_Flip
   m_EditorClassIdentifier: Assembly-CSharp::Script.IAmGonnaTrySomething.Data.EventsScripts.FlipPoseEvent
   eventType: 6
-  target: 5
+  target: 6

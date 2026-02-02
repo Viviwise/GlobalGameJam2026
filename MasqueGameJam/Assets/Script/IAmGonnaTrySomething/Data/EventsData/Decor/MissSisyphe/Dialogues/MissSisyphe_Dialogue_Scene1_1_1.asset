@@ -14,4 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::DialogueEvent
   eventType: 2
   character: 5
-  content: C'est que son masque n'a pas les trous en face de ses yeux hahaha
+  contents:
+  - Il faut dire que son masque n'a pas les trous en face de ses yeux hahaha
