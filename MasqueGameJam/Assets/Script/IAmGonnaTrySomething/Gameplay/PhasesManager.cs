@@ -1,13 +1,14 @@
 using System;
 using System.Collections;
 using UnityEngine;
+using UnityEngine.Serialization;
 
 public class PhasesManager : MonoBehaviour
 {
     [SerializeField] private Camera cam;
     [SerializeField] private ScenarioManager scenarioManager;
     [SerializeField] private EvaluationManager evaluationManager;
-    [SerializeField] private ScreenTransition screenTransition;
+    [FormerlySerializedAs("screenTransition")] [SerializeField] private ScreenTransitionCurtain screenTransitionCurtain;
     private void Start()
     {
         cam = Camera.main;
@@ -19,7 +20,7 @@ public class PhasesManager : MonoBehaviour
     private void SceneEnded(SequenceForScene sequencePlayed)
     {
         cam.transform.position = new Vector3(50, 0 ,-10);
-        screenTransition.TransitionDisappear();
+        screenTransitionCurtain.TransitionDisappear();
         evaluationManager.EvaluateSequence(sequencePlayed);
     }
 
@@ -35,21 +36,21 @@ public class PhasesManager : MonoBehaviour
 
     IEnumerator KillActorSequence()
     {
-        screenTransition.TransitionAppear();
-        yield return new WaitForSeconds(screenTransition.transitionTime);
+        screenTransitionCurtain.TransitionAppear();
+        yield return new WaitForSeconds(screenTransitionCurtain.transitionTime);
         cam.transform.position = new Vector3(0, 0 ,-10);
-        screenTransition.TransitionDisappear();
+        screenTransitionCurtain.TransitionDisappear();
         scenarioManager.KillActor();
         yield return new WaitForSeconds(5f);
-        screenTransition.TransitionAppear();
-        yield return new WaitForSeconds(screenTransition.transitionTime);
+        screenTransitionCurtain.TransitionAppear();
+        yield return new WaitForSeconds(screenTransitionCurtain.transitionTime);
         cam.transform.position = new Vector3(50, 0 ,-10);
-        screenTransition.TransitionDisappear();
+        screenTransitionCurtain.TransitionDisappear();
     }
     IEnumerator BackToStage()
     {
-        screenTransition.TransitionAppear();
-        yield return new WaitForSeconds(screenTransition.transitionTime);
+        screenTransitionCurtain.TransitionAppear();
+        yield return new WaitForSeconds(screenTransitionCurtain.transitionTime);
         cam.transform.position = new Vector3(0, 0 ,-10);
         scenarioManager.NextScene();
     }

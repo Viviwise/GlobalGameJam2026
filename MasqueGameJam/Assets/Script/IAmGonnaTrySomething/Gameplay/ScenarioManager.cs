@@ -22,7 +22,7 @@ public class ScenarioManager : MonoBehaviour
     [SerializeField] private ChoiceButton[] buttonsForChoices;
     [SerializeField] private DialoguePanel dialoguePanel;
     [SerializeField] private GameObject smallWheel;
-    [SerializeField] private ScreenTransition screenTransition;
+    [FormerlySerializedAs("screenTransition")] [SerializeField] private ScreenTransitionCurtain screenTransitionCurtain;
 
     public event Action<SequenceForScene> SceneFinishedAction;
     void Start()
@@ -224,8 +224,8 @@ public class ScenarioManager : MonoBehaviour
         else 
         {
                 currentScene = sequence.nextScene; 
-                screenTransition.TransitionAppear(); 
-                yield return new WaitForSeconds(screenTransition.transitionTime); 
+                screenTransitionCurtain.TransitionAppear(); 
+                yield return new WaitForSeconds(screenTransitionCurtain.transitionTime); 
                 lightObject.gameObject.SetActive(false);
                 Debug.Log(lightObject.gameObject.activeInHierarchy);
                 SceneFinishedAction?.Invoke(sequence);
@@ -290,7 +290,7 @@ public class ScenarioManager : MonoBehaviour
 
     public void NextScene()
     {
-        screenTransition.TransitionDisappear();
+        screenTransitionCurtain.TransitionDisappear();
         if (currentScene.setUpSequence != null)
         {
             CallSequence(currentScene.setUpSequence);

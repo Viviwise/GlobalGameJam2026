@@ -23,13 +23,11 @@ public class RideauxTransition : MonoBehaviour
     droitOuvert = droitFerme + Vector2.right * rideauDroit.rect.width;
   }
   
-  IEnumerator Start()
+  void Start()
   {
-    yield return null; 
     StartCoroutine(OuvrirRideaux());
   }
-
-
+  
   public void ChargerScene(string nomScene)
   {
     StartCoroutine(TransitionScene(nomScene));
@@ -64,7 +62,6 @@ public class RideauxTransition : MonoBehaviour
       yield return null;
     }
   }
-
   IEnumerator OuvrirRideaux()
   {
     while (Vector2.Distance(rideauGauche.anchoredPosition, gaucheOuvert) > 1f)
