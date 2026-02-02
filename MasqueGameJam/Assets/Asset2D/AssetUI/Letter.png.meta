@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 8801083e876fdef47948c77463665786
+guid: e2febaa9b037d3544a5b95dbe964ec24
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -403531863181386623
-    second: 2026_01_29_0or_Kleki_0
+      213: -4181906289457810447
+    second: Letter_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: 2026_01_29_0or_Kleki_0
+      name: Letter_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 1711
-        height: 1080
+        x: 123
+        y: 620
+        width: 1802
+        height: 805
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 18c958f88ed566af0800000000000000
-      internalID: -403531863181386623
+      spriteID: 1f335ece262e6f5c0800000000000000
+      internalID: -4181906289457810447
       vertices: []
       indices: 
       edges: []
@@ -135,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      2026_01_29_0or_Kleki_0: -403531863181386623
+      Letter_0: -4181906289457810447
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -45,6 +45,7 @@ public class ScenarioManager : MonoBehaviour
             CallSequence(currentScene.setUpSequence);
         }
     }
+    
 
     public void DisplayChoices()
     {
