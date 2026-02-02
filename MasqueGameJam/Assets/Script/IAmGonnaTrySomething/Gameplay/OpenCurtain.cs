@@ -1,12 +1,11 @@
 using System.Collections;
 using UnityEngine;
-using UnityEngine.UI;
-
-
 public class OpenCurtain : MonoBehaviour
 {
     public Transform rideauGauche;
     public Transform rideauDroit;
+    
+    private static OpenCurtain instance;
     
     public float vitesse = 5f;
 
@@ -16,6 +15,7 @@ public class OpenCurtain : MonoBehaviour
     Vector3 droitOuvert;
     
     private TMPro.TMP_Text sceneName;
+    
 
     void Awake()
     {
@@ -29,12 +29,6 @@ public class OpenCurtain : MonoBehaviour
         gaucheOuvert = gaucheFerme + Vector3.left * largeurGauche;
         droitOuvert = droitFerme + Vector3.right * largeurDroit;
 
-    }
-
-
-    void Start()
-    {
-        Ouvrir();
     }
 
     public void Ouvrir()

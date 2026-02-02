@@ -1,16 +1,20 @@
+using System.Collections;
 using UnityEngine;
 using TMPro;
-using System.Collections;
 
 public class FrameMove : MonoBehaviour
 {
-    public RectTransform cadreAnnonceScene;
-    public TMP_Text sceneNameText;      
-    private ScenarioManager scenarioManager; 
+    public RectTransform cadreAnnonceScene; 
+    public TMP_Text sceneNameText;          
+    public SceneData firstScene;            
 
-    Vector2 cadreHaut;
-    Vector2 cadreBas;
+    public ScenarioManager scenarioManager;
+    public OpenCurtain openCurtain;
+
     public float vitesse = 5f;
+
+    private Vector2 cadreHaut;
+    private Vector2 cadreBas;
 
     private void Awake()
     {
@@ -18,37 +22,42 @@ public class FrameMove : MonoBehaviour
         float hauteurCadre = cadreAnnonceScene.rect.height;
         cadreBas = cadreHaut + Vector2.down * hauteurCadre;
 
-        scenarioManager = FindObjectOfType<ScenarioManager>();
-        
-/*        if (scenarioManager != null && scenarioManager.currentScene!= null)
+        if (firstScene != null)
         {
-            sceneNameText.text = scenarioManager.currentScene.sceneName;
+            sceneNameText.text = firstScene.sceneName;
         }
-        */
     }
 
     private void Start()
     {
-        StartCoroutine(BaisserCadre());
+        StartCoroutine(SequenceIntro());
+        scenarioManager.enabled = false;
     }
 
-    IEnumerator BaisserCadre()
+    private IEnumerator SequenceIntro()
     {
-        while (Vector2.Distance(cadreAnnonceScene.anchoredPosition, cadreBas) > 0.5f)
+        cadreAnnonceScene.gameObject.SetActive(true);
+
+        while (Vector2.Distance(cadreAnnonceScene.anchoredPosition, cadreBas) > 0.1f)
         {
             cadreAnnonceScene.anchoredPosition =
                 Vector2.MoveTowards(cadreAnnonceScene.anchoredPosition, cadreBas, vitesse * Time.deltaTime);
             yield return null;
         }
-    }
 
-    IEnumerator MonterCadre()
-    {
-        while (Vector2.Distance(cadreAnnonceScene.anchoredPosition, cadreHaut) > 0.5f)
+        yield return new WaitForSeconds(4f);
+        
+        openCurtain.Ouvrir();
+        
+        scenarioManager.enabled = true;
+
+        while (Vector2.Distance(cadreAnnonceScene.anchoredPosition, cadreHaut) > 0.1f)
         {
             cadreAnnonceScene.anchoredPosition =
                 Vector2.MoveTowards(cadreAnnonceScene.anchoredPosition, cadreHaut, vitesse * Time.deltaTime);
             yield return null;
         }
+
+        cadreAnnonceScene.gameObject.SetActive(false);
     }
 }
