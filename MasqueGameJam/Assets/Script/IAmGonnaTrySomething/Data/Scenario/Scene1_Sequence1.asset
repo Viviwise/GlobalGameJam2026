@@ -17,6 +17,7 @@ MonoBehaviour:
     ?"
   giver: {fileID: 21300000, guid: 5a49bcd6466257c488edd31d468f4d1c, type: 3}
   events:
+  - {fileID: 11400000, guid: 9fe7357319d62534b810e40ca982a3a0, type: 2}
   - {fileID: 11400000, guid: 195a2386bb9cf084582a36bc61d5c85b, type: 2}
   - {fileID: 11400000, guid: 0111103193fd6814d92b43ebc4ab71ff, type: 2}
   - {fileID: 11400000, guid: 0225305e9813e3745b698927df8a8668, type: 2}
@@ -30,7 +31,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: f1e8fa94e2518514198f421e3b867c73, type: 2}
   - {fileID: 11400000, guid: fd9dface8ee1808439c04338233ec8e3, type: 2}
   nextScene: {fileID: 11400000, guid: 66427bc802747ce49886f413376f2c1e, type: 2}
-  CatharsysReaction: {fileID: 21300000, guid: 94f3f469674ec91448f5eb784a79a80e, type: 3}
+  CatharsysReaction: {fileID: 21300000, guid: 713feac404aee3e46a07b8e176efee43, type: 3}
   wheelScore: 1
   reactionText: "Vient elle vraiment de fondre en larmes sur sc\xE8ne ? Je me demande
     bien ce qui la stress comme cela"

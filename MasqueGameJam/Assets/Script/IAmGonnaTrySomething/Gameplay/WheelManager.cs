@@ -26,14 +26,15 @@ namespace Script.IAmGonnaTrySomething.Gameplay
 
         public void AjustWheel(WheelScore wheelScore)
         {
+            SoundManager.PlaySound(SoundType.WheelDrums,0.9f);
             if (wheelScore == WheelScore.Boredom)
             {
-                score -= 3;
+                score -= 1;
                 StartCoroutine(DramaticWheelTurnLeft());
             }
             else if (wheelScore == WheelScore.Bad)
             {
-                score += 3;
+                score += 1;
                 StartCoroutine(DramaticWheelTurnRight());
             }
             else if (wheelScore == WheelScore.Good)

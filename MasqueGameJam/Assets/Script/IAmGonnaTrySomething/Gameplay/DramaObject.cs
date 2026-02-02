@@ -19,7 +19,8 @@ public class DramaObject : MonoBehaviour
 
     IEnumerator Explosion()
     {
-        yield return new WaitForSeconds(1f);
+        SoundManager.PlaySound(SoundType.CharacterExplosion,0.6f);
+        yield return new WaitForSeconds(3f);
         explosionEffect.Play();
         dead = true;
         gameObject.GetComponent<SpriteRenderer>().sprite = deadSprite;

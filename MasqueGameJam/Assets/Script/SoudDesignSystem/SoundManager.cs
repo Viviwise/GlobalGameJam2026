@@ -9,6 +9,10 @@ public enum SoundType
     CharacterExplosion,
     Clic,
     JohanTalk,
+    Spotlight,
+    Walking,
+    Woosh,
+    WheelDrums
 }
 [RequireComponent(typeof(AudioSource)), ExecuteInEditMode]
 public class SoundManager : MonoBehaviour
@@ -24,21 +28,6 @@ public class SoundManager : MonoBehaviour
     private void Start()
     {
         audioSource = GetComponent<AudioSource>();
-    }
-
-    public void PlayFlipSound()
-    {
-        //
-    }
-    
-    public void PlaySingSound()
-    {
-        //
-    }
-
-    public void PlayDanceSound()
-    {
-        //
     }
     
 

@@ -17,12 +17,14 @@ MonoBehaviour:
   giver: {fileID: 21300000, guid: fb60d118ec765f649b3b34a4daf53477, type: 3}
   events:
   - {fileID: 11400000, guid: 153a84be8fe2104469f5bba3d9456f0e, type: 2}
+  - {fileID: 11400000, guid: 02ab4d0a3d136bf41bb702ddf9548dcc, type: 2}
   - {fileID: 11400000, guid: 15789876ef1489641824a78995ddf253, type: 2}
   - {fileID: 11400000, guid: bcb5f47de4315bf4280af7075ba3bea9, type: 2}
   - {fileID: 11400000, guid: fd9dface8ee1808439c04338233ec8e3, type: 2}
   - {fileID: 11400000, guid: 31e8378df2dba6a488c792ab8705fb0a, type: 2}
   - {fileID: 11400000, guid: fd9dface8ee1808439c04338233ec8e3, type: 2}
   - {fileID: 11400000, guid: d60e730b2632c234bb8a3b1870073108, type: 2}
+  - {fileID: 11400000, guid: 02ab4d0a3d136bf41bb702ddf9548dcc, type: 2}
   - {fileID: 11400000, guid: 70888a4bd2f54d343a32996f52b851c9, type: 2}
   - {fileID: 11400000, guid: 195a2386bb9cf084582a36bc61d5c85b, type: 2}
   nextScene: {fileID: 11400000, guid: 66427bc802747ce49886f413376f2c1e, type: 2}
