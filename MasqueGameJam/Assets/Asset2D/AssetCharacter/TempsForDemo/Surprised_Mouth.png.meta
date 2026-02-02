@@ -1,16 +1,22 @@
 fileFormatVersion: 2
-guid: 499da2c003fd23e438da1d6a69f8f799
+guid: bcf724ec2286e664c9eb41a650f9bb15
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -3488766030339156833
-    second: Miss_Sisyphe (1)_0
+      213: -4427753995896855313
+    second: Surprised_Mouth_0
   - first:
-      213: 4296639975147411947
-    second: Miss_Sisyphe (1)_1
+      213: -5105281981354293609
+    second: Surprised_Mouth_1
   - first:
-      213: 5165026932691607621
-    second: Miss_Sisyphe (1)_2
+      213: 1407446151596519212
+    second: Surprised_Mouth_2
+  - first:
+      213: -2081893430208800683
+    second: Surprised_Mouth_3
+  - first:
+      213: 7455242066887582432
+    second: Surprised_Mouth_4
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -106,13 +112,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Miss_Sisyphe (1)_0
+      name: Surprised_Mouth_0
       rect:
         serializedVersion: 2
-        x: 853
-        y: 1183
-        width: 65
-        height: 64
+        x: 1927
+        y: 1636
+        width: 15
+        height: 13
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -121,20 +127,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: f945f2997c9659fc0800000000000000
-      internalID: -3488766030339156833
+      spriteID: fe460c133357d82c0800000000000000
+      internalID: -4427753995896855313
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Miss_Sisyphe (1)_1
+      name: Surprised_Mouth_1
       rect:
         serializedVersion: 2
-        x: 866
-        y: 550
-        width: 2362
-        height: 1354
+        x: 2154
+        y: 1636
+        width: 15
+        height: 13
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -143,20 +149,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: be99766fa4bb0ab30800000000000000
-      internalID: 4296639975147411947
+      spriteID: 796cc2f36156629b0800000000000000
+      internalID: -5105281981354293609
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Miss_Sisyphe (1)_2
+      name: Surprised_Mouth_2
       rect:
         serializedVersion: 2
-        x: 3178
-        y: 1183
-        width: 65
-        height: 64
+        x: 1951
+        y: 1462
+        width: 184
+        height: 94
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -165,8 +171,52 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 540a86a31acdda740800000000000000
-      internalID: 5165026932691607621
+      spriteID: c2fa66261d0488310800000000000000
+      internalID: 1407446151596519212
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Surprised_Mouth_3
+      rect:
+        serializedVersion: 2
+        x: 2123
+        y: 1474
+        width: 17
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5585f20a4f0ab13e0800000000000000
+      internalID: -2081893430208800683
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Surprised_Mouth_4
+      rect:
+        serializedVersion: 2
+        x: 2176
+        y: 1474
+        width: 19
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0e222670927567760800000000000000
+      internalID: 7455242066887582432
       vertices: []
       indices: 
       edges: []
@@ -185,9 +235,11 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Miss_Sisyphe (1)_0: -3488766030339156833
-      Miss_Sisyphe (1)_1: 4296639975147411947
-      Miss_Sisyphe (1)_2: 5165026932691607621
+      Surprised_Mouth_0: -4427753995896855313
+      Surprised_Mouth_1: -5105281981354293609
+      Surprised_Mouth_2: 1407446151596519212
+      Surprised_Mouth_3: -2081893430208800683
+      Surprised_Mouth_4: 7455242066887582432
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

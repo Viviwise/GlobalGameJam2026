@@ -1,16 +1,13 @@
 fileFormatVersion: 2
-guid: 499da2c003fd23e438da1d6a69f8f799
+guid: ee0e56c57503d094e95ff660775b6a43
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -3488766030339156833
-    second: Miss_Sisyphe (1)_0
+      213: -4388907128426207818
+    second: Sad_Mouth_0
   - first:
-      213: 4296639975147411947
-    second: Miss_Sisyphe (1)_1
-  - first:
-      213: 5165026932691607621
-    second: Miss_Sisyphe (1)_2
+      213: 3310438069197974323
+    second: Sad_Mouth_1
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -106,13 +103,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Miss_Sisyphe (1)_0
+      name: Sad_Mouth_0
       rect:
         serializedVersion: 2
-        x: 853
-        y: 1183
-        width: 65
-        height: 64
+        x: 1946
+        y: 1540
+        width: 12
+        height: 6
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -121,20 +118,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: f945f2997c9659fc0800000000000000
-      internalID: -3488766030339156833
+      spriteID: 6b5e9f958387713c0800000000000000
+      internalID: -4388907128426207818
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Miss_Sisyphe (1)_1
+      name: Sad_Mouth_1
       rect:
         serializedVersion: 2
-        x: 866
-        y: 550
-        width: 2362
-        height: 1354
+        x: 1955
+        y: 1484
+        width: 186
+        height: 118
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -143,30 +140,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: be99766fa4bb0ab30800000000000000
-      internalID: 4296639975147411947
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Miss_Sisyphe (1)_2
-      rect:
-        serializedVersion: 2
-        x: 3178
-        y: 1183
-        width: 65
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 540a86a31acdda740800000000000000
-      internalID: 5165026932691607621
+      spriteID: 33ba97d62e901fd20800000000000000
+      internalID: 3310438069197974323
       vertices: []
       indices: 
       edges: []
@@ -185,9 +160,8 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Miss_Sisyphe (1)_0: -3488766030339156833
-      Miss_Sisyphe (1)_1: 4296639975147411947
-      Miss_Sisyphe (1)_2: 5165026932691607621
+      Sad_Mouth_0: -4388907128426207818
+      Sad_Mouth_1: 3310438069197974323
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
