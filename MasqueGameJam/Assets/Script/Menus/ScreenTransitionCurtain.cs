@@ -16,7 +16,7 @@ public class ScreenTransitionCurtain : MonoBehaviour
     
     public RectTransform rideauGauche;
     public RectTransform rideauDroit;
-    private float vitesse = 800f;
+    public float vitesse;
     
     Vector2 gaucheOuvert;
     Vector2 gaucheFerme;

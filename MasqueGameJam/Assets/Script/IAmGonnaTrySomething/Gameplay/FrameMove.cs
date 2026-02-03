@@ -11,7 +11,7 @@ public class FrameMove : MonoBehaviour
     public ScenarioManager scenarioManager;
     public OpenCurtain openCurtain;
 
-    public float vitesse = 5f;
+    public float speed = 5f;
 
     private Vector2 cadreHaut;
     private Vector2 cadreBas;
@@ -41,7 +41,7 @@ public class FrameMove : MonoBehaviour
         while (Vector2.Distance(cadreAnnonceScene.anchoredPosition, cadreBas) > 0.1f)
         {
             cadreAnnonceScene.anchoredPosition =
-                Vector2.MoveTowards(cadreAnnonceScene.anchoredPosition, cadreBas, vitesse * Time.deltaTime);
+                Vector2.MoveTowards(cadreAnnonceScene.anchoredPosition, cadreBas, speed * Time.deltaTime);
             yield return null;
         }
 
@@ -54,7 +54,7 @@ public class FrameMove : MonoBehaviour
         while (Vector2.Distance(cadreAnnonceScene.anchoredPosition, cadreHaut) > 0.1f)
         {
             cadreAnnonceScene.anchoredPosition =
-                Vector2.MoveTowards(cadreAnnonceScene.anchoredPosition, cadreHaut, vitesse * Time.deltaTime);
+                Vector2.MoveTowards(cadreAnnonceScene.anchoredPosition, cadreHaut, speed * Time.deltaTime);
             yield return null;
         }
 

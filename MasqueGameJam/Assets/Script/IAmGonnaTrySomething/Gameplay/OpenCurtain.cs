@@ -7,7 +7,7 @@ public class OpenCurtain : MonoBehaviour
     
     private static OpenCurtain instance;
     
-    public float vitesse = 5f;
+    public float speed = 10f;
 
     Vector3 gaucheFerme;
     Vector3 droitFerme;
@@ -34,38 +34,38 @@ public class OpenCurtain : MonoBehaviour
     public void Ouvrir()
     {
         StopAllCoroutines();
-        StartCoroutine(OuvrirRideaux());
+        StartCoroutine(OuvrirRideauxScene());
     }
 
     public void Fermer()
     { 
          StopAllCoroutines();
-        StartCoroutine(FermerRideaux());
+        StartCoroutine(FermerRideauxScene());
     }
 
-    IEnumerator OuvrirRideaux()
+    IEnumerator OuvrirRideauxScene()
     {
         while (Vector3.Distance(rideauGauche.position, gaucheOuvert) > 0.01f)
         {
             rideauGauche.position =
-                Vector3.MoveTowards(rideauGauche.position, gaucheOuvert, vitesse * Time.deltaTime);
+                Vector3.MoveTowards(rideauGauche.position, gaucheOuvert, speed * Time.deltaTime);
 
             rideauDroit.position =
-                Vector3.MoveTowards(rideauDroit.position, droitOuvert, vitesse * Time.deltaTime);
+                Vector3.MoveTowards(rideauDroit.position, droitOuvert, speed * Time.deltaTime);
 
             yield return null;
         }
     }
 
-    IEnumerator FermerRideaux()
+    IEnumerator FermerRideauxScene()
     {
         while (Vector3.Distance(rideauGauche.position, gaucheFerme) > 0.01f)
         {
             rideauGauche.position =
-                Vector3.MoveTowards(rideauGauche.position, gaucheFerme, vitesse * Time.deltaTime);
+                Vector3.MoveTowards(rideauGauche.position, gaucheFerme, speed * Time.deltaTime);
 
             rideauDroit.position =
-                Vector3.MoveTowards(rideauDroit.position, droitFerme, vitesse * Time.deltaTime);
+                Vector3.MoveTowards(rideauDroit.position, droitFerme, speed * Time.deltaTime);
 
             yield return null;
         }
