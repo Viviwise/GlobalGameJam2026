@@ -74,12 +74,13 @@ namespace Script.IAmGonnaTrySomething.Gameplay
                     yield return null;
                 }
                 speed = speed * 6;
-                while (mainCursor.transform.eulerAngles.z > goalAngle)
+                while (mainCursor.transform.eulerAngles.z < goalAngle)
                 {
-                    mainCursor.transform.eulerAngles = new Vector3(0, 0, mainCursor.transform.eulerAngles.z%360f - speed * Time.deltaTime);
+                    mainCursor.transform.eulerAngles = new Vector3(0, 0, mainCursor.transform.eulerAngles.z%360f + speed * Time.deltaTime);
                     yield return null;
                 }
             }
+            SoundManager.PlaySound(SoundType.Applause,0.9f);
             EndPhase();
         }
         IEnumerator DramaticWheelTurnLeft()
