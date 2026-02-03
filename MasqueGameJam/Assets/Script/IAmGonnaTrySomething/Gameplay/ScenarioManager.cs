@@ -18,6 +18,7 @@ public class ScenarioManager : MonoBehaviour
     private Vector3 objectsOffset;
 
     [SerializeField] private Light2D lightObject;
+    [SerializeField] private GameObject sisypheMouthPlaceHolder;
     [SerializeField] private ParticleSystem explosionEffect;
     [SerializeField] private ChoiceButton[] buttonsForChoices;
     [SerializeField] private DialoguePanel dialoguePanel;
@@ -28,6 +29,15 @@ public class ScenarioManager : MonoBehaviour
 
     public event Action<SequenceForScene> SceneFinishedAction;
     void Start()
+    {
+        sisypheMouthPlaceHolder.SetActive(false);
+        if (currentScene.setUpSequence != null)
+        {
+            CallSequence(currentScene.setUpSequence);
+        }
+    }
+
+    public void SetUpAll()
     {
         objectsOffset = new Vector3(0, -1.5f, 0);
         lightObject.gameObject.SetActive(false);
@@ -44,10 +54,6 @@ public class ScenarioManager : MonoBehaviour
             buttonsForChoices[i].gameObject.SetActive(false);
         }
 
-        if (currentScene.setUpSequence != null)
-        {
-            CallSequence(currentScene.setUpSequence);
-        }
     }
     
 
@@ -116,7 +122,7 @@ public class ScenarioManager : MonoBehaviour
                     while (dialogueIndex < currentDialogueEvent.contents.Length)
                     {
                         SoundManager.PlaySound(currentDialogueEvent.sound,0.6f);
-                        dialoguePanel.SetUp(currentDialogueEvent.contents[dialogueIndex], currentDialogueEvent.character.ToString(), textSpeed);
+                        dialoguePanel.SetUp(currentDialogueEvent.contents[dialogueIndex], FindTarget(currentDialogueEvent.character).GetComponent<DramaObject>().actorName, textSpeed);
                         yield return new WaitForSeconds((currentDialogueEvent.contents[dialogueIndex].Length*textSpeed)+3);
                         dialogueIndex++;
                     }

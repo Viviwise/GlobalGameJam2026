@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::DialogueEvent
   eventType: 2
   character: 3
-  sound: 24
+  sound: 23
   contents:
   - "Pri\xE8re de ne pas m'interrompre ! Je disais..."
   - "Nous entra\xEEnerais-tu avec toi dans cette folie ?"

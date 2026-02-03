@@ -30,6 +30,7 @@ public class FrameMove : MonoBehaviour
 
     private void Start()
     {
+        scenarioManager.SetUpAll();
         StartCoroutine(SequenceIntro());
         scenarioManager.enabled = false;
     }

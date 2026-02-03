@@ -9,7 +9,7 @@ namespace Script.IAmGonnaTrySomething.Gameplay
     {
         public GameObject mainCursor, smallCursor;
         [SerializeField] private GameObject[] livesObjects;
-        private float angleBySegment = 40f;
+        private float angleBySegment = 35f;
         private int score = 0;
 
         public event Action EndPhaseSurviving;
@@ -30,12 +30,12 @@ namespace Script.IAmGonnaTrySomething.Gameplay
             if (wheelScore == WheelScore.Boredom)
             {
                 score -= 1;
-                StartCoroutine(DramaticWheelTurnLeft());
+                StartCoroutine(DramaticWheelTurnRight());
             }
             else if (wheelScore == WheelScore.Bad)
             {
                 score += 1;
-                StartCoroutine(DramaticWheelTurnRight());
+                StartCoroutine(DramaticWheelTurnLeft());
             }
             else if (wheelScore == WheelScore.Good)
             {

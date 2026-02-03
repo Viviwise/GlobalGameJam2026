@@ -4,6 +4,7 @@ using UnityEngine;
 public class DramaObject : MonoBehaviour
 {
     public ObjectsID id;
+    [SerializeField] public string actorName;
     [SerializeField] public bool killable;
     public bool dead;
     public Sprite deadSprite;

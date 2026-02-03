@@ -31,5 +31,6 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 195a2386bb9cf084582a36bc61d5c85b, type: 2}
   nextScene: {fileID: 11400000, guid: 66427bc802747ce49886f413376f2c1e, type: 2}
   CatharsysReaction: {fileID: 21300000, guid: 69578ee4b7dabfc4cacf004330d33570, type: 3}
+  catharsysReactionSound: 3
   wheelScore: 2
   reactionText: "Nous avons le droit \xE0 du grand art ce soir !"

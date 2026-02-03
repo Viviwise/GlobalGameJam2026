@@ -35,6 +35,6 @@ MonoBehaviour:
   - {fileID: 11400000, guid: fd9dface8ee1808439c04338233ec8e3, type: 2}
   nextScene: {fileID: 11400000, guid: 66427bc802747ce49886f413376f2c1e, type: 2}
   CatharsysReaction: {fileID: 21300000, guid: 713feac404aee3e46a07b8e176efee43, type: 3}
+  catharsysReactionSound: 11
   wheelScore: 1
-  reactionText: "Vient elle vraiment de fondre en larmes sur sc\xE8ne ? Je me demande
-    bien ce qui la stress comme cela"
+  reactionText: "Quelques rat\xE9s, mais je reste patient"

@@ -14,6 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::DialogueEvent
   eventType: 2
   character: 3
-  sound: 20
+  sound: 24
   contents:
   - "Toi qui ne penses qu\u2019\xE0 briller, penses \xE0 ce que cela implique ! Nous..."
