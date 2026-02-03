@@ -144,19 +144,84 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::SoundManager
   soundsList:
   - name: IntroductionAct
-    sounds: []
+    sounds:
+    - {fileID: 8300000, guid: f85c3ffb91b0c504ca9bca7b23857aab, type: 3}
   - name: CalmAmbiance
-    sounds: []
+    sounds:
+    - {fileID: 8300000, guid: 3d2fc37632db88748b16153ca2059069, type: 3}
   - name: Applause
-    sounds: []
+    sounds:
+    - {fileID: 8300000, guid: 7e9791cac00dce74186404661b36a46a, type: 3}
   - name: CatharsysLaugh
-    sounds: []
+    sounds:
+    - {fileID: 8300000, guid: 163eea105203620459beab4ed6e92f3e, type: 3}
   - name: CharacterExplosion
-    sounds: []
+    sounds:
+    - {fileID: 8300000, guid: 9fbe516f0f08b1a49a99c91cbcfd3ed2, type: 3}
   - name: Clic
-    sounds: []
+    sounds:
+    - {fileID: 8300000, guid: fc0ad695391de5a46957f5bbbaa8935a, type: 3}
+    - {fileID: 8300000, guid: b826927a9fd324e4eafeac4b60825e01, type: 3}
   - name: JohanTalk
     sounds: []
   - name: Spotlight
     sounds:
-    - {fileID: 0}
+    - {fileID: 8300000, guid: 36203de2bcc32ef4eb7eeacccf9d2c76, type: 3}
+  - name: Walking
+    sounds:
+    - {fileID: 8300000, guid: cf799214b09a0e34092f2188e06b105f, type: 3}
+  - name: Woosh
+    sounds:
+    - {fileID: 8300000, guid: 6978704b02f321542a9ebbbaeaaff51a, type: 3}
+  - name: WheelDrums
+    sounds:
+    - {fileID: 8300000, guid: 556347d863d7b16439de9e73b1406e04, type: 3}
+  - name: CatharsysMad
+    sounds:
+    - {fileID: 8300000, guid: 0870dd40e53e211438914407555279f9, type: 3}
+  - name: CatharsysBored
+    sounds:
+    - {fileID: 8300000, guid: 6f1e08d57371a9943822cf498ad10500, type: 3}
+  - name: SisypheCry
+    sounds:
+    - {fileID: 8300000, guid: d0b6bc6e9800bb44db5acc40629fe277, type: 3}
+  - name: SisypheLaugh
+    sounds:
+    - {fileID: 8300000, guid: d1dd13069d1fa4741b02f4b531681fa0, type: 3}
+  - name: SisypheSurprised
+    sounds:
+    - {fileID: 8300000, guid: f6ef7e9b342e79f43a06d7af86b8833f, type: 3}
+  - name: BeatriceShortLine
+    sounds: []
+  - name: BeatriceNormalLine
+    sounds: []
+  - name: BeatriceCryLine
+    sounds: []
+  - name: JohannShortLine
+    sounds:
+    - {fileID: 8300000, guid: 5b6443a400248d14f8823f6392614bf9, type: 3}
+  - name: JohannNormalLine
+    sounds:
+    - {fileID: 8300000, guid: bfd8995f8695d2149820d8405c9f1db8, type: 3}
+    - {fileID: 8300000, guid: aee16dc35c85deb479408fbedb602f5c, type: 3}
+  - name: MephistoShortLine
+    sounds:
+    - {fileID: 8300000, guid: 9ca0e1588a986f84ba4f0bcf87d6c232, type: 3}
+  - name: MephistoNormalLine
+    sounds:
+    - {fileID: 8300000, guid: 81ade9f2a8906344fa26fba92ed03036, type: 3}
+    - {fileID: 8300000, guid: 27ee11ba739fdbe4496d9b8c502b1422, type: 3}
+  - name: PandoreShortLine
+    sounds:
+    - {fileID: 8300000, guid: 17e9f574989006747b55a99ca4476140, type: 3}
+  - name: PandoreNormalLine
+    sounds:
+    - {fileID: 8300000, guid: 4b954f4d148e88d4fadd141c5640aeb7, type: 3}
+    - {fileID: 8300000, guid: 754c2bb577f54254ca25cd8fa7b0f3a5, type: 3}
+  - name: WilliamShortLine
+    sounds:
+    - {fileID: 8300000, guid: e90ef6d3b43baaf49a503669bbcddc6a, type: 3}
+  - name: WilliamNormalLine
+    sounds:
+    - {fileID: 8300000, guid: a0e5dec040cbfcf4b9e1bd9413c38eae, type: 3}
+    - {fileID: 8300000, guid: 9ed302e32c90b8647a8756c129ec8d3c, type: 3}

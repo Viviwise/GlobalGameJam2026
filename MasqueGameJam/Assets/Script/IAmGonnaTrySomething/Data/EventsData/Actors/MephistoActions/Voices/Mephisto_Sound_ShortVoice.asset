@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: Mephisto_Sound_ShortVoice
   m_EditorClassIdentifier: Assembly-CSharp::SoundEvent
   eventType: 3
-  soundType: 4
+  soundType: 23
   volume: 0.8

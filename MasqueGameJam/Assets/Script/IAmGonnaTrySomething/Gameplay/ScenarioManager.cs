@@ -115,6 +115,7 @@ public class ScenarioManager : MonoBehaviour
                     float textSpeed = 0.01f;
                     while (dialogueIndex < currentDialogueEvent.contents.Length)
                     {
+                        SoundManager.PlaySound(currentDialogueEvent.sound,0.6f);
                         dialoguePanel.SetUp(currentDialogueEvent.contents[dialogueIndex], currentDialogueEvent.character.ToString(), textSpeed);
                         yield return new WaitForSeconds((currentDialogueEvent.contents[dialogueIndex].Length*textSpeed)+3);
                         dialogueIndex++;

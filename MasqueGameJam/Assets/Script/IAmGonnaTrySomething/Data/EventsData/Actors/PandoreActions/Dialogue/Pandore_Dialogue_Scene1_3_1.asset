@@ -14,6 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::DialogueEvent
   eventType: 2
   character: 3
+  sound: 24
   contents:
   - "Regarde et contemple ta situation\u2026 Ne vois-tu pas l\xE0 le pi\xE8ge \xE9vident
     ?"

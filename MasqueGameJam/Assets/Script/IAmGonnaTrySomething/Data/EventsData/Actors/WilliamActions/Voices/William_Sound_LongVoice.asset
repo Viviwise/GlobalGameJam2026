@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: William_Sound_LongVoice
   m_EditorClassIdentifier: Assembly-CSharp::SoundEvent
   eventType: 3
-  soundType: 4
+  soundType: 31
   volume: 0.8
