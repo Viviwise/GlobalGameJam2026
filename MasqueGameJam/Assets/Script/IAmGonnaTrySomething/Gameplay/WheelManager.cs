@@ -26,14 +26,15 @@ namespace Script.IAmGonnaTrySomething.Gameplay
 
         public void AjustWheel(WheelScore wheelScore)
         {
+            SoundManager.PlaySound(SoundType.WheelDrums,0.9f);
             if (wheelScore == WheelScore.Boredom)
             {
-                score -= 3;
+                score -= 1;
                 StartCoroutine(DramaticWheelTurnLeft());
             }
             else if (wheelScore == WheelScore.Bad)
             {
-                score += 3;
+                score += 1;
                 StartCoroutine(DramaticWheelTurnRight());
             }
             else if (wheelScore == WheelScore.Good)
@@ -73,12 +74,13 @@ namespace Script.IAmGonnaTrySomething.Gameplay
                     yield return null;
                 }
                 speed = speed * 6;
-                while (mainCursor.transform.eulerAngles.z > goalAngle)
+                while (mainCursor.transform.eulerAngles.z < goalAngle)
                 {
-                    mainCursor.transform.eulerAngles = new Vector3(0, 0, mainCursor.transform.eulerAngles.z%360f - speed * Time.deltaTime);
+                    mainCursor.transform.eulerAngles = new Vector3(0, 0, mainCursor.transform.eulerAngles.z%360f + speed * Time.deltaTime);
                     yield return null;
                 }
             }
+            SoundManager.PlaySound(SoundType.Applause,0.9f);
             EndPhase();
         }
         IEnumerator DramaticWheelTurnLeft()

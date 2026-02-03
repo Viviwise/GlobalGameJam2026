@@ -16,6 +16,7 @@ MonoBehaviour:
   sequenceName: "Ne vois-tu pas le pi\xE8ge \xE9vident ?"
   giver: {fileID: 21300000, guid: 5a49bcd6466257c488edd31d468f4d1c, type: 3}
   events:
+  - {fileID: 11400000, guid: 9fe7357319d62534b810e40ca982a3a0, type: 2}
   - {fileID: 11400000, guid: 195a2386bb9cf084582a36bc61d5c85b, type: 2}
   - {fileID: 11400000, guid: 1166a0170c539634a9fc912814b1f211, type: 2}
   - {fileID: 11400000, guid: bcb5f47de4315bf4280af7075ba3bea9, type: 2}
@@ -23,6 +24,6 @@ MonoBehaviour:
   - {fileID: 11400000, guid: db545068a09b9ea489893799b5e6eb2a, type: 2}
   - {fileID: 11400000, guid: fd9dface8ee1808439c04338233ec8e3, type: 2}
   nextScene: {fileID: 11400000, guid: 66427bc802747ce49886f413376f2c1e, type: 2}
-  CatharsysReaction: {fileID: 21300000, guid: 94f3f469674ec91448f5eb784a79a80e, type: 3}
+  CatharsysReaction: {fileID: 21300000, guid: 713feac404aee3e46a07b8e176efee43, type: 3}
   wheelScore: 0
   reactionText: "J'attends de voir la suite pour vraiment me d\xE9cider"

@@ -12,7 +12,7 @@ public class EvaluationManager : MonoBehaviour
     [SerializeField] private SpriteRenderer catharsysFace;
     [SerializeField] public WheelManager wheelManager ;
 
-    [SerializeField] private Sprite maxMadFace, maxBoredFace;
+    [SerializeField] private Sprite baseFace, maxMadFace, maxBoredFace;
     [SerializeField] private string killSentenceBoredom, killSentenceBad, calmedSentence;
     private SequenceForScene currentSequence;
 
@@ -37,6 +37,7 @@ public class EvaluationManager : MonoBehaviour
     }
     IEnumerator CatharsysEntrance()
     {
+        catharsysFace.sprite = baseFace;
         Vector2 goalPosition = new Vector2(50,0);
         while (Vector2.Distance(catharsys.position, goalPosition) > 0.1f)
         {
