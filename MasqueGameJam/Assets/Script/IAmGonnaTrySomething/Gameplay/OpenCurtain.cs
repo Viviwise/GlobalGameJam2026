@@ -43,7 +43,7 @@ public class OpenCurtain : MonoBehaviour
         StartCoroutine(FermerRideauxScene());
     }
 
-    IEnumerator OuvrirRideauxScene()
+    public IEnumerator OuvrirRideauxScene()
     {
         while (Vector3.Distance(rideauGauche.position, gaucheOuvert) > 0.01f)
         {
@@ -57,7 +57,7 @@ public class OpenCurtain : MonoBehaviour
         }
     }
 
-    IEnumerator FermerRideauxScene()
+    public IEnumerator FermerRideauxScene()
     {
         while (Vector3.Distance(rideauGauche.position, gaucheFerme) > 0.01f)
         {

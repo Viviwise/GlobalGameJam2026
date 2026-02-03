@@ -23,6 +23,8 @@ public class ScenarioManager : MonoBehaviour
     [SerializeField] private DialoguePanel dialoguePanel;
     [SerializeField] private GameObject smallWheel;
     [FormerlySerializedAs("screenTransition")] [SerializeField] private ScreenTransitionCurtain screenTransitionCurtain;
+    
+    [SerializeField] private OpenCurtain openCurtain;
 
     public event Action<SequenceForScene> SceneFinishedAction;
     void Start()
@@ -212,6 +214,19 @@ public class ScenarioManager : MonoBehaviour
                     lightObject.gameObject.SetActive(false);
                     break;
                 }
+
+                case ScenarioEventTypes.OpenCurtain:
+                {
+                    openCurtain.Ouvrir();
+                    break;
+                }
+
+                case ScenarioEventTypes.CloseCurtain:
+                {
+                    openCurtain.Fermer();
+                    break;
+                }
+
             }
             currentEventIndex++;
             yield return null;

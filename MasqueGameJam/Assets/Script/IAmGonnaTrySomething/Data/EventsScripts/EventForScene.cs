@@ -16,5 +16,6 @@ public enum ScenarioEventTypes
     Disappear,
     Light,
     Unlight,
-    
+    OpenCurtain,
+    CloseCurtain
 }
