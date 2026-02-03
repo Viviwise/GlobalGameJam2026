@@ -45,6 +45,7 @@ public class EvaluationManager : MonoBehaviour
             yield return null;
         }
         yield return new WaitForSeconds(2f);
+        SoundManager.PlaySound(currentSequence.catharsysReactionSound);
         catharsysFace.sprite = currentSequence.CatharsysReaction;
         dialoguePanel.gameObject.SetActive(true);
         dialoguePanel.SetUp(currentSequence.reactionText, "Catharsys", 0.02f);
@@ -79,10 +80,12 @@ public class EvaluationManager : MonoBehaviour
         dialoguePanel.gameObject.SetActive(true);
         if (score >= 3)
         {
+            SoundManager.PlaySound(SoundType.CatharsysMad);
            dialoguePanel.SetUp(killSentenceBad, "Catharsys", 0.02f); 
         }
         else if (score <= -3)
         {
+            SoundManager.PlaySound(SoundType.CatharsysBored);
             dialoguePanel.SetUp(killSentenceBoredom, "Catharsys", 0.02f);
         }
         yield return new WaitForSeconds(2f);

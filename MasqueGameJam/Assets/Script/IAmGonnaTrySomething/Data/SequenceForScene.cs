@@ -10,6 +10,7 @@ public class SequenceForScene : ScriptableObject
     public SceneData nextScene;
     
     public Sprite CatharsysReaction;
+    public SoundType catharsysReactionSound;
     public WheelScore wheelScore;
     public string reactionText;
 }

@@ -12,7 +12,23 @@ public enum SoundType
     Spotlight,
     Walking,
     Woosh,
-    WheelDrums
+    WheelDrums,
+    CatharsysMad,
+    CatharsysBored,
+    SisypheCry,
+    SisypheLaugh,
+    SisypheSurprised,
+    BeatriceShortLine,
+    BeatriceNormalLine,
+    BeatriceCryLine,
+    JohannShortLine,
+    JohannNormalLine,
+    MephistoShortLine,
+    MephistoNormalLine,
+    PandoreShortLine,
+    PandoreNormalLine,
+    WilliamShortLine,
+    WilliamNormalLine,
 }
 [RequireComponent(typeof(AudioSource)), ExecuteInEditMode]
 public class SoundManager : MonoBehaviour

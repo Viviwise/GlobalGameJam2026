@@ -43,5 +43,6 @@ MonoBehaviour:
   - {fileID: 11400000, guid: facead6bdb3afd943ac59a40eed04628, type: 2}
   nextScene: {fileID: 0}
   CatharsysReaction: {fileID: 0}
+  catharsysReactionSound: 0
   wheelScore: 0
   reactionText: 

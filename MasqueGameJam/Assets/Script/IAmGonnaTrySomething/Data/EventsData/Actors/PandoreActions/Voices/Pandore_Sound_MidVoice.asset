@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: Pandore_Sound_MidVoice
   m_EditorClassIdentifier: Assembly-CSharp::SoundEvent
   eventType: 3
-  soundType: 4
+  soundType: 27
   volume: 0.8

@@ -14,5 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::DialogueEvent
   eventType: 2
   character: 5
+  sound: 14
   contents:
   - Il faut dire que son masque n'a pas les trous en face de ses yeux hahaha

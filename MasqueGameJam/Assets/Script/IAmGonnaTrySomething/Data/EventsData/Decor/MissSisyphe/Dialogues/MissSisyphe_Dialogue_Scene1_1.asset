@@ -14,5 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::DialogueEvent
   eventType: 2
   character: 5
+  sound: 14
   contents:
   - "J'ai h\xE2te, j'ai h\xE2te !"

@@ -14,6 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::DialogueEvent
   eventType: 2
   character: 4
+  sound: 22
   contents:
   - "Viens Johann, viens \xE0 moi. Approche et n\u2019aie crainte."
   - "J\u2019ai en mes mains une offre, un cadeau susceptible de r\xE9aliser tes ambitions."
