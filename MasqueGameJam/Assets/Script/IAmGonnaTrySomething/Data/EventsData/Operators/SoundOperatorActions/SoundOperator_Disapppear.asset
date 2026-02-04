@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: SoundOperator_Disapppear
   m_EditorClassIdentifier: Assembly-CSharp::Script.IAmGonnaTrySomething.Data.EventsScripts.DisappearEvent
   eventType: 0
-  target: 7
+  target: 8

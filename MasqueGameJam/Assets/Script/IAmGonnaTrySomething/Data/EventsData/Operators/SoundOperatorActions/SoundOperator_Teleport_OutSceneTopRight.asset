@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: SoundOperator_Teleport_OutSceneTopRight
   m_EditorClassIdentifier: Assembly-CSharp::TeleportationEvent
   eventType: 1
-  target: 7
+  target: 8
   position: {x: 4.7, y: 6, z: 0}

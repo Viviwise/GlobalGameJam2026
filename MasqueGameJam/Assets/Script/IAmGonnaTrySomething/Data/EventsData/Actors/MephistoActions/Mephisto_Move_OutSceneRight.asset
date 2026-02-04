@@ -15,4 +15,4 @@ MonoBehaviour:
   eventType: 0
   target: 4
   speed: 5
-  position: {x: 8, y: 0, z: 0}
+  position: {x: 10, y: 0, z: 0}

@@ -12,6 +12,7 @@ using Random = System.Random;
 [DefaultExecutionOrder(1)]
 public class ScenarioManager : MonoBehaviour
 {
+    [SerializeField] SceneData testScene ;
     [SerializeField] private DramaObject[] allObjects;
     [SerializeField] private SceneData firstScene;
     private GameObject[] allObjectsRefs;
@@ -41,6 +42,7 @@ public class ScenarioManager : MonoBehaviour
 
     public void SetUpAll()
     {
+        Time.timeScale = 12f;
         objectsOffset = new Vector3(0, -1.5f, 0);
         lightObject.gameObject.SetActive(false);
         currentScene = firstScene;
@@ -332,6 +334,10 @@ public class ScenarioManager : MonoBehaviour
         screenTransitionCurtain.TransitionDisappear();
         if (currentScene.setUpSequence != null)
         {
+            if (currentScene == testScene)
+            {
+                Time.timeScale = 1;
+            }
             CallSequence(currentScene.setUpSequence);
         }
         else
