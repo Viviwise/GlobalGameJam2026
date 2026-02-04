@@ -9,6 +9,7 @@ using UnityEngine.Rendering.Universal;
 using UnityEngine.Serialization;
 using Random = System.Random;
 
+[DefaultExecutionOrder(1)]
 public class ScenarioManager : MonoBehaviour
 {
     [SerializeField] private DramaObject[] allObjects;
@@ -31,6 +32,7 @@ public class ScenarioManager : MonoBehaviour
     void Start()
     {
         sisypheMouthPlaceHolder.SetActive(false);
+        currentScene = firstScene;
         if (currentScene.setUpSequence != null)
         {
             CallSequence(currentScene.setUpSequence);
