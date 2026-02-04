@@ -18,5 +18,6 @@ public enum ScenarioEventTypes
     Unlight,
     OpenCurtain,
     CloseCurtain,
+    FrameMove,
     SisypheAnim
 }
