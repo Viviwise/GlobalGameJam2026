@@ -39,6 +39,7 @@ public enum ObjectsID
     LightOperator,
     RopeOperator,
     SoundOperator,
+    BroomOperator,
     TowerObject,
     ChandelierObject,
     

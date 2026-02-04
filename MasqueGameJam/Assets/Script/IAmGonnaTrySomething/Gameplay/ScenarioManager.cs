@@ -19,7 +19,6 @@ public class ScenarioManager : MonoBehaviour
     private Vector3 objectsOffset;
 
     [SerializeField] private Light2D lightObject;
-    [SerializeField] private GameObject sisypheMouthPlaceHolder;
     [SerializeField] private ParticleSystem explosionEffect;
     [SerializeField] private ChoiceButton[] buttonsForChoices;
     [SerializeField] private DialoguePanel dialoguePanel;
@@ -31,7 +30,6 @@ public class ScenarioManager : MonoBehaviour
     public event Action<SequenceForScene> SceneFinishedAction;
     void Start()
     {
-        sisypheMouthPlaceHolder.SetActive(false);
         currentScene = firstScene;
         if (currentScene.setUpSequence != null)
         {
@@ -235,7 +233,21 @@ public class ScenarioManager : MonoBehaviour
                     openCurtain.Fermer();
                     break;
                 }
+                
+                case ScenarioEventTypes.SisypheAnim:
+                {
+                    SisypheAnimEvent animEvent = (SisypheAnimEvent)sequence.events[currentEventIndex];
 
+                    GameObject target = FindTarget(animEvent.target);
+                    if (target == null) break;
+
+                    Animator animator = target.GetComponent<Animator>();
+                    if (animator == null) break;
+                    animator.Play(animEvent.animatorStateName, 0, 0f);
+
+                    break;
+                }
+                
             }
             currentEventIndex++;
             yield return null;
