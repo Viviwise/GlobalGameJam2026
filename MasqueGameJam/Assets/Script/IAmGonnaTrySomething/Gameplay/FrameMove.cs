@@ -4,61 +4,44 @@ using TMPro;
 
 public class FrameMove : MonoBehaviour
 {
-    public RectTransform cadreAnnonceScene; 
-    public TMP_Text sceneNameText;          
-    public SceneData firstScene;            
+    public RectTransform FrameAct;
+    public TMP_Text sceneNameText;
 
-    public ScenarioManager scenarioManager;
-    public OpenCurtain openCurtain;
-
-    public float speed = 5f;
+    private float speed = 70f;
 
     private Vector2 cadreHaut;
     private Vector2 cadreBas;
 
     private void Awake()
     {
-        cadreHaut = cadreAnnonceScene.anchoredPosition;
-        float hauteurCadre = cadreAnnonceScene.rect.height;
+        cadreHaut = FrameAct.anchoredPosition;
+        float hauteurCadre = FrameAct.rect.height;
         cadreBas = cadreHaut + Vector2.down * hauteurCadre;
 
-        if (firstScene != null)
-        {
-            sceneNameText.text = firstScene.sceneName;
-        }
+        FrameAct.gameObject.SetActive(false);
     }
 
-    private void Start()
+    public IEnumerator PlaySceneTitle(string sceneName)
     {
-        scenarioManager.SetUpAll();
-        StartCoroutine(SequenceIntro());
-        scenarioManager.enabled = false;
-    }
+        sceneNameText.text = sceneName;
+        FrameAct.gameObject.SetActive(true);
 
-    private IEnumerator SequenceIntro()
-    {
-        cadreAnnonceScene.gameObject.SetActive(true);
-
-        while (Vector2.Distance(cadreAnnonceScene.anchoredPosition, cadreBas) > 0.1f)
+        while (Vector2.Distance(FrameAct.anchoredPosition, cadreBas) > 0.1f)
         {
-            cadreAnnonceScene.anchoredPosition =
-                Vector2.MoveTowards(cadreAnnonceScene.anchoredPosition, cadreBas, speed * Time.deltaTime);
+            FrameAct.anchoredPosition =
+                Vector2.MoveTowards(FrameAct.anchoredPosition, cadreBas, speed * Time.deltaTime);
             yield return null;
         }
 
-        yield return new WaitForSeconds(4f);
-        
-        openCurtain.Ouvrir();
-        
-        scenarioManager.enabled = true;
+        yield return new WaitForSeconds(3.5f);
 
-        while (Vector2.Distance(cadreAnnonceScene.anchoredPosition, cadreHaut) > 0.1f)
+        while (Vector2.Distance(FrameAct.anchoredPosition, cadreHaut) > 0.1f)
         {
-            cadreAnnonceScene.anchoredPosition =
-                Vector2.MoveTowards(cadreAnnonceScene.anchoredPosition, cadreHaut, speed * Time.deltaTime);
+            FrameAct.anchoredPosition =
+                Vector2.MoveTowards(FrameAct.anchoredPosition, cadreHaut, speed * Time.deltaTime);
             yield return null;
         }
 
-        cadreAnnonceScene.gameObject.SetActive(false);
+        FrameAct.gameObject.SetActive(false);
     }
 }

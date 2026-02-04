@@ -16,6 +16,7 @@ MonoBehaviour:
   sequenceName: SetUpScene1
   giver: {fileID: 0}
   events:
+  - {fileID: 11400000, guid: dcc87732da8a2dd4cbe7e6387bff3bb6, type: 2}
   - {fileID: 11400000, guid: 37e444dac5f986e4b8cbd94258135cbb, type: 2}
   - {fileID: 11400000, guid: defb0b90110e446498ccc5abf5bfaa2c, type: 2}
   - {fileID: 11400000, guid: 201c213d77762034f8dd3df6e745289f, type: 2}
