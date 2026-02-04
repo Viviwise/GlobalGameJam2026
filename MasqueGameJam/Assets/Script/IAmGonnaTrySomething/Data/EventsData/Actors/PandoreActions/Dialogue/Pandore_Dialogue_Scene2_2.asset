@@ -10,9 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 02ea93aca384ff847b1603e62d2389a4, type: 3}
-  m_Name: DialogueBeaAnnonce2
+  m_Name: Pandore_Dialogue_Scene2_2
   m_EditorClassIdentifier: Assembly-CSharp::DialogueEvent
   eventType: 2
-  character: 0
-  content: "Et bien laissez moi vous raconter\u2026"
-  displayTime: 4
+  character: 3
+  sound: 23
+  contents:
+  - 'Les habitudes ont la vie dure !  '
+  - "Comme \xE0 son accoutum\xE9e, Johann fait des siennes ! Peu satisfait de sa
+    situation, il a fait un pacte avec le Diable !"

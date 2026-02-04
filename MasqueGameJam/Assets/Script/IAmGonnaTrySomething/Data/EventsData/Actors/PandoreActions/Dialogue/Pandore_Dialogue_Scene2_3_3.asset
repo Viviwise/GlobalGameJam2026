@@ -10,9 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 02ea93aca384ff847b1603e62d2389a4, type: 3}
-  m_Name: DialogueWillAnnonce
+  m_Name: Pandore_Dialogue_Scene2_3_3
   m_EditorClassIdentifier: Assembly-CSharp::DialogueEvent
   eventType: 2
-  character: 1
-  content: "Dites moi tout mon enfant, un malheur vous est arriv\xE9 ? "
-  displayTime: 4
+  character: 3
+  sound: 24
+  contents:
+  - "\xC9go\xEFste\u2026"

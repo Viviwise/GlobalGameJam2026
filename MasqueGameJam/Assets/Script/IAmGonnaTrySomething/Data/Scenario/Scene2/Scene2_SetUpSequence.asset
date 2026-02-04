@@ -12,10 +12,29 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b0e845809c39396478739c1f9a52ab43, type: 3}
   m_Name: Scene2_SetUpSequence
   m_EditorClassIdentifier: Assembly-CSharp::SequenceForScene
-  isSetUp: 0
-  sequenceName: 
+  isSetUp: 1
+  sequenceName: SetUpScene2
   giver: {fileID: 0}
-  events: []
+  events:
+  - {fileID: 11400000, guid: f9b7cefd78a5b84428d9b5d087c640c6, type: 2}
+  - {fileID: 11400000, guid: 385734f626e20414d956fe0ccd832361, type: 2}
+  - {fileID: 11400000, guid: 9fe7357319d62534b810e40ca982a3a0, type: 2}
+  - {fileID: 11400000, guid: c98d3fa558a96c64f97ac469916580c5, type: 2}
+  - {fileID: 11400000, guid: 9844af2c6e9533a4f9fc54d2c7514597, type: 2}
+  - {fileID: 11400000, guid: cd39bc890746a3f428563c8c54768645, type: 2}
+  - {fileID: 11400000, guid: ac74b382ba6762c4fb7a5291c6751273, type: 2}
+  - {fileID: 11400000, guid: 74aa6a73f77d23b45be62a1be24b3e59, type: 2}
+  - {fileID: 11400000, guid: ce1a250244e3b2849abb994c78940de2, type: 2}
+  - {fileID: 11400000, guid: cfd9c6f0b9b6993488995b9af10e44e4, type: 2}
+  - {fileID: 11400000, guid: 385734f626e20414d956fe0ccd832361, type: 2}
+  - {fileID: 11400000, guid: 66c164c869fdde54a9468a4f37a1769d, type: 2}
+  - {fileID: 11400000, guid: 065b64bcbd5a0fd46bba05d518bff87d, type: 2}
+  - {fileID: 11400000, guid: 91ad17a31d58d61438b1e8fc453142a0, type: 2}
+  - {fileID: 11400000, guid: 42b58eed90f6b104c971f9010791aca9, type: 2}
+  - {fileID: 11400000, guid: b36f3cb6baf8f9141ad18aeaac9942a1, type: 2}
+  - {fileID: 11400000, guid: 956015fb985bf7c42a77cc06ea4c775b, type: 2}
+  - {fileID: 11400000, guid: 2972834640fa9aa4f867b8600fe0f37a, type: 2}
+  - {fileID: 11400000, guid: f969962d7036c9f47a66c00289e41f6e, type: 2}
   nextScene: {fileID: 0}
   CatharsysReaction: {fileID: 0}
   catharsysReactionSound: 0

@@ -10,9 +10,14 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 02ea93aca384ff847b1603e62d2389a4, type: 3}
-  m_Name: DialogueBeaAnnonce3
+  m_Name: Johann_Dialogue_Scene2_3_1
   m_EditorClassIdentifier: Assembly-CSharp::DialogueEvent
   eventType: 2
-  character: 0
-  content: "Quoi ? Qu\u2019est ce ? Que se passe t\u2019il ?"
-  displayTime: 3
+  character: 2
+  sound: 20
+  contents:
+  - "Tu te crois pure, intacte, voire meilleure\u2026 Mais finalement\u2026"
+  - "Ne tentes-tu pas de m\u2019emp\xEAcher par peur d\u2019\xEAtre surpass\xE9 ?
+    Peur de retourner dans l\u2019ombre ?..."
+  - "Et bien, tremble ! Pour une fois, dans cette pi\xE8ce, j\u2019aurais le mot
+    de la fin, P\xE9n\xE9lope ! "

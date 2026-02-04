@@ -10,9 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 02ea93aca384ff847b1603e62d2389a4, type: 3}
-  m_Name: DialogueWillFuite1
+  m_Name: Johann_Dialogue_Scene2_3_2
   m_EditorClassIdentifier: Assembly-CSharp::DialogueEvent
   eventType: 2
-  character: 1
-  content: Oui ?
-  displayTime: 3
+  character: 2
+  sound: 19
+  contents:
+  - "Ah ! Ainsi parla la proph\xE9tesse !"

@@ -1,0 +1,38 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b0e845809c39396478739c1f9a52ab43, type: 3}
+  m_Name: Scene2_Sequence2
+  m_EditorClassIdentifier: Assembly-CSharp::SequenceForScene
+  isSetUp: 0
+  sequenceName: "Par piti\xE9 Johann, pas encore\u2026"
+  giver: {fileID: 0}
+  events:
+  - {fileID: 11400000, guid: 9fe7357319d62534b810e40ca982a3a0, type: 2}
+  - {fileID: 11400000, guid: 9cc930dc6b0a45a40af259647d576053, type: 2}
+  - {fileID: 11400000, guid: 6c51e3da1c6eb81439a7d13165e9dbb9, type: 2}
+  - {fileID: 11400000, guid: ca1ddf5c67023da419ce54163d666a0d, type: 2}
+  - {fileID: 11400000, guid: 1d823b6bd25db0f49b56594870e00256, type: 2}
+  - {fileID: 11400000, guid: 75f0016d40d696242a1c037caa69378f, type: 2}
+  - {fileID: 11400000, guid: 85922e6cde2ce8f459f1173c55dfe850, type: 2}
+  - {fileID: 11400000, guid: fd9dface8ee1808439c04338233ec8e3, type: 2}
+  - {fileID: 11400000, guid: 6c51e3da1c6eb81439a7d13165e9dbb9, type: 2}
+  - {fileID: 11400000, guid: b59c83dbafacd4f4ab4a72b380db2f33, type: 2}
+  - {fileID: 11400000, guid: 1d823b6bd25db0f49b56594870e00256, type: 2}
+  - {fileID: 11400000, guid: 75f0016d40d696242a1c037caa69378f, type: 2}
+  - {fileID: 11400000, guid: 7f6387a8d5bfe024ba7fb312bc046f51, type: 2}
+  - {fileID: 11400000, guid: fd9dface8ee1808439c04338233ec8e3, type: 2}
+  - {fileID: 11400000, guid: 6d5f7408a1886db41bb3af5dc9518e73, type: 2}
+  nextScene: {fileID: 0}
+  CatharsysReaction: {fileID: 0}
+  catharsysReactionSound: 0
+  wheelScore: 0
+  reactionText: 

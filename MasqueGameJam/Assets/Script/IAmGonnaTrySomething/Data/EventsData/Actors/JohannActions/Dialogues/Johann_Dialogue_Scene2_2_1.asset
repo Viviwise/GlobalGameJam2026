@@ -10,9 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 02ea93aca384ff847b1603e62d2389a4, type: 3}
-  m_Name: DialogueBeaAnnonce1
+  m_Name: Johann_Dialogue_Scene2_2_1
   m_EditorClassIdentifier: Assembly-CSharp::DialogueEvent
   eventType: 2
-  character: 0
-  content: "\u201CWilliam, j\u2019ai une annonce importante \xE0 vous faire\u201D"
-  displayTime: 4
+  character: 2
+  sound: 20
+  contents:
+  - "Pour l\u2019amour de Shakespeare, parle plus fort ! Que ta voix porte ! "
+  - "Pas \xE9tonnant que tu es refoul\xE9 au fin fond du d\xE9cor B\xE9r\xE9nice
+    !"

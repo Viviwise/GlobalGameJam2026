@@ -10,9 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 02ea93aca384ff847b1603e62d2389a4, type: 3}
-  m_Name: DialogueBeaFuite2
+  m_Name: William_Dialogue_Scene2_1_2
   m_EditorClassIdentifier: Assembly-CSharp::DialogueEvent
   eventType: 2
-  character: 0
-  content: "Non je ne peux pas vous demander \xE7a"
-  displayTime: 4
+  character: 1
+  sound: 26
+  contents:
+  - " Je\u2026 Je fournis des efforts, beaucoup d\u2019efforts\u2026 Et... Euh\u2026"
+  - "Et tout le monde n\u2019a pas ton ta-"

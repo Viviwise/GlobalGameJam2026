@@ -81,6 +81,7 @@ public class ScenarioManager : MonoBehaviour
 
     IEnumerator PlaySequence(SequenceForScene sequence)
     {
+        Debug.Log(sequence);
         int currentEventIndex = 0;
         while (currentEventIndex < sequence.events.Length)
         {
@@ -119,6 +120,7 @@ public class ScenarioManager : MonoBehaviour
                 {
                     dialoguePanel.gameObject.SetActive(true);
                     DialogueEvent currentDialogueEvent = (DialogueEvent)sequence.events[currentEventIndex];
+                    Debug.Log(currentDialogueEvent);
                     int dialogueIndex = 0;
                     float textSpeed = 0.01f;
                     while (dialogueIndex < currentDialogueEvent.contents.Length)
@@ -265,7 +267,6 @@ public class ScenarioManager : MonoBehaviour
                 screenTransitionCurtain.TransitionAppear(); 
                 yield return new WaitForSeconds(screenTransitionCurtain.transitionTime); 
                 lightObject.gameObject.SetActive(false);
-                Debug.Log(lightObject.gameObject.activeInHierarchy);
                 SceneFinishedAction?.Invoke(sequence);
         }
     }
