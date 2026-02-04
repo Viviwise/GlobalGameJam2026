@@ -26,6 +26,8 @@ public class ScenarioManager : MonoBehaviour
     [FormerlySerializedAs("screenTransition")] [SerializeField] private ScreenTransitionCurtain screenTransitionCurtain;
     
     [SerializeField] private OpenCurtain openCurtain;
+    [SerializeField] private FrameMove frameMove;
+
 
     public event Action<SequenceForScene> SceneFinishedAction;
     void Start()
@@ -233,7 +235,12 @@ public class ScenarioManager : MonoBehaviour
                     openCurtain.Fermer();
                     break;
                 }
-
+                
+                case ScenarioEventTypes.FrameMove:
+                {
+                    yield return StartCoroutine(frameMove.PlaySceneTitle(currentScene.sceneName));
+                    break;
+                }
             }
             currentEventIndex++;
             yield return null;
