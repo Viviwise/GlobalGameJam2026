@@ -33,6 +33,7 @@ public class ScenarioManager : MonoBehaviour
     public event Action<SequenceForScene> SceneFinishedAction;
     void Start()
     {
+        SetUpAll();
         currentScene = firstScene;
         if (currentScene.setUpSequence != null)
         {

@@ -24,12 +24,11 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 4e8f9024973cbf84e920b3ab53895333, type: 2}
   - {fileID: 11400000, guid: fd9dface8ee1808439c04338233ec8e3, type: 2}
   - {fileID: 11400000, guid: 60f398464572fb147872ba2611ee1a2e, type: 2}
-  - {fileID: 11400000, guid: 385734f626e20414d956fe0ccd832361, type: 2}
   - {fileID: 11400000, guid: bcb5f47de4315bf4280af7075ba3bea9, type: 2}
   - {fileID: 11400000, guid: 75f0016d40d696242a1c037caa69378f, type: 2}
   - {fileID: 11400000, guid: 385734f626e20414d956fe0ccd832361, type: 2}
   - {fileID: 11400000, guid: 60a2baaf0d925b145bea70366ad386b2, type: 2}
-  - {fileID: 11400000, guid: ac74b382ba6762c4fb7a5291c6751273, type: 2}
+  - {fileID: 11400000, guid: 11cbc988ba7404c45bba70d1b028e4ec, type: 2}
   - {fileID: 11400000, guid: fd9dface8ee1808439c04338233ec8e3, type: 2}
   nextScene: {fileID: 11400000, guid: 66427bc802747ce49886f413376f2c1e, type: 2}
   CatharsysReaction: {fileID: 21300000, guid: 023f312761a404d49b33a0a11996f25f, type: 3}
