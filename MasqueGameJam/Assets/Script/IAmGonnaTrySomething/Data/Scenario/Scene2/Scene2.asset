@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ce8a13d67f00ae445a3344c78a203b32, type: 3}
   m_Name: Scene2
   m_EditorClassIdentifier: Assembly-CSharp::SceneData
-  sceneName: 
+  sceneName: Le pacte de Johann
   sequences: []
   actors: 
   setUpSequence: {fileID: 0}
