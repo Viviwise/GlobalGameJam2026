@@ -14,6 +14,7 @@ public class FrameMove : MonoBehaviour
 
     private void Awake()
     {
+        Debug.Log("FrameMove Awake");
         cadreHaut = FrameAct.anchoredPosition;
         float hauteurCadre = FrameAct.rect.height;
         cadreBas = cadreHaut + Vector2.down * hauteurCadre;
@@ -21,6 +22,10 @@ public class FrameMove : MonoBehaviour
         FrameAct.gameObject.SetActive(false);
     }
 
+    public void DisplayFrame(string sceneName)
+    {
+        StartCoroutine(PlaySceneTitle(sceneName));
+    }
     public IEnumerator PlaySceneTitle(string sceneName)
     {
         sceneNameText.text = sceneName;

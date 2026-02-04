@@ -60,7 +60,7 @@ public class OpenCurtain : MonoBehaviour
     public IEnumerator FermerRideauxScene()
     {
         while (Vector3.Distance(rideauGauche.position, gaucheFerme) > 0.01f)
-        {
+        { 
             rideauGauche.position =
                 Vector3.MoveTowards(rideauGauche.position, gaucheFerme, speed * Time.deltaTime);
 

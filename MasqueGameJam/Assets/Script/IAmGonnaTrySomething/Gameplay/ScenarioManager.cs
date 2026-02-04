@@ -24,7 +24,7 @@ public class ScenarioManager : MonoBehaviour
     [SerializeField] private ChoiceButton[] buttonsForChoices;
     [SerializeField] private DialoguePanel dialoguePanel;
     [SerializeField] private GameObject smallWheel;
-    [FormerlySerializedAs("screenTransition")] [SerializeField] private ScreenTransitionCurtain screenTransitionCurtain;
+    [SerializeField] private ScreenTransitionCurtain screenTransitionCurtain;
     
     [SerializeField] private OpenCurtain openCurtain;
     [SerializeField] private FrameMove frameMove;
@@ -43,7 +43,7 @@ public class ScenarioManager : MonoBehaviour
 
     public void SetUpAll()
     {
-        Time.timeScale = 12f;
+        Time.timeScale = 1f;
         objectsOffset = new Vector3(0, -1.5f, 0);
         lightObject.gameObject.SetActive(false);
         currentScene = firstScene;
@@ -254,7 +254,11 @@ public class ScenarioManager : MonoBehaviour
 
                     break;
                 }
-                
+                case ScenarioEventTypes.FrameMove:
+                {
+                    //frameMove.DisplayFrame(currentScene.sceneName);
+                    break;
+                }
             }
             currentEventIndex++;
             yield return null;
