@@ -49,6 +49,17 @@ public class ScreenTransitionCurtain : MonoBehaviour
         TransitionDisappear();
 
     }
+    
+    public IEnumerator FermetureRideauxCoroutine()
+    {
+        yield return StartCoroutine(FermerRideaux());
+    }
+
+    public IEnumerator TransitionAppearCoroutine(string sceneName = null)
+    {
+        yield return StartCoroutine(Appear(sceneName));
+    }
+
 
     public void TransitionAppear(string sceneName = null)
     {
@@ -61,7 +72,17 @@ public class ScreenTransitionCurtain : MonoBehaviour
     }
 
 
-    IEnumerator Appear(string sceneName = null)
+    IEnumerator PlayCloseCurtain()
+    {
+        yield return StartCoroutine(FermerRideaux());
+    }
+
+    IEnumerator PlayAppear()
+    {
+        yield return StartCoroutine(Appear());
+    }
+
+    public IEnumerator Appear(string sceneName = null)
     {
         blackScreen.enabled = true;
         blackScreen.color = transparent;
@@ -81,7 +102,7 @@ public class ScreenTransitionCurtain : MonoBehaviour
         }
     }
 
-    IEnumerator Disappear(string sceneName = null)
+    public IEnumerator Disappear(string sceneName = null)
     {
         blackScreen.enabled = true;
         blackScreen.color = black;
@@ -103,13 +124,6 @@ public class ScreenTransitionCurtain : MonoBehaviour
         }
     }
 
-    
-    IEnumerator TransitionScene(string nomScene)
-    {
-        yield return FermerRideaux();
-        SceneManager.LoadScene(nomScene);
-    }
-
     public void OuvertureRideaux()
     {
         StartCoroutine(OuvrirRideaux());
@@ -119,8 +133,16 @@ public class ScreenTransitionCurtain : MonoBehaviour
     {
         StartCoroutine(FermerRideaux());
     }
+    public IEnumerator TransitionToScene()
+    {
+        Debug.Log("TransitionToScene");
+        yield return StartCoroutine(FermerRideaux());
+        yield return StartCoroutine(Appear());
+    }
 
-    IEnumerator FermerRideaux()
+
+
+    public IEnumerator FermerRideaux()
     {
         while (Vector2.Distance(rideauGauche.anchoredPosition, gaucheFerme) > 1f)
         {
@@ -134,7 +156,7 @@ public class ScreenTransitionCurtain : MonoBehaviour
         }
     }
 
-    IEnumerator OuvrirRideaux()
+    public IEnumerator OuvrirRideaux()
     {
         while (Vector2.Distance(rideauGauche.anchoredPosition, gaucheOuvert) > 1f)
         {

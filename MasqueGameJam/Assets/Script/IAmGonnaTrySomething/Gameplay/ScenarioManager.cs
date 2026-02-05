@@ -6,6 +6,7 @@ using Script.IAmGonnaTrySomething.Gameplay;
 using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.Rendering.Universal;
+using UnityEngine.SceneManagement;
 using UnityEngine.Serialization;
 using Random = System.Random;
 
@@ -259,6 +260,16 @@ public class ScenarioManager : MonoBehaviour
                     //frameMove.DisplayFrame(currentScene.sceneName);
                     break;
                 }
+                case ScenarioEventTypes.ChargeGoodEndScene:
+                {
+                    //yield return StartCoroutine(screenTransitionCurtain.FermetureRideauxCoroutine());
+                    //yield return StartCoroutine(screenTransitionCurtain.TransitionAppearCoroutine());
+                    SceneManager.LoadScene("GoodEnd");
+                    break;
+                }
+
+
+
             }
             currentEventIndex++;
             yield return null;

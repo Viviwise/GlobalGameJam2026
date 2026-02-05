@@ -19,5 +19,6 @@ public enum ScenarioEventTypes
     OpenCurtain,
     CloseCurtain,
     FrameMove,
-    SisypheAnim
+    SisypheAnim,
+    ChargeGoodEndScene
 }
