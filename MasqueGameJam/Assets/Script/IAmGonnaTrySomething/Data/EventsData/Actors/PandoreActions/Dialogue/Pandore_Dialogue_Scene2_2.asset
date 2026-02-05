@@ -17,5 +17,5 @@ MonoBehaviour:
   sound: 23
   contents:
   - 'Les habitudes ont la vie dure !  '
-  - "Comme \xE0 son accoutum\xE9e, Johann fait des siennes ! Peu satisfait de sa
-    situation, il a fait un pacte avec le Diable !"
+  - "Comme \xE0 son accoutum\xE9e, Johann fait des siennes !"
+  - Peu satisfait de sa situation, il a fait un pacte avec le Diable !

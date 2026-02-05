@@ -17,5 +17,6 @@ MonoBehaviour:
   sound: 24
   contents:
   - "Je sais ! Je le sais bien William ! \u2026  "
-  - "Pourtant, il y a toujours une part de moi qui me murmure que j\u2019aurais d\xFB
-    faire plus pour entraver Johann\u2026"
+  - 'Pourtant... '
+  - "Il y a toujours une part de moi qui me murmure que j\u2019aurais d\xFB faire
+    plus pour entraver Johann\u2026"

@@ -16,5 +16,6 @@ MonoBehaviour:
   character: 1
   sound: 26
   contents:
-  - "Pandore, calme-toi ! Respire ! Je sais que la mort de nos camarades te p\xE8se
-    lourd sur la conscience ! Tu n\u2019es en rien responsable ! "
+  - 'Pandore, calme-toi ! Respire ! '
+  - "Je sais que la mort de nos camarades te p\xE8se lourd sur la conscience ! "
+  - "Tu n\u2019es en rien responsable ! "
