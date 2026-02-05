@@ -16,6 +16,7 @@ MonoBehaviour:
   sequenceName: La dispute sous le feu des projecteurs
   giver: {fileID: 21300000, guid: 3cb1e791ad986104fb0acf666be2c6b1, type: 3}
   events:
+  - {fileID: 11400000, guid: 153a84be8fe2104469f5bba3d9456f0e, type: 2}
   - {fileID: 11400000, guid: 02ab4d0a3d136bf41bb702ddf9548dcc, type: 2}
   - {fileID: 11400000, guid: 4248c33692581b940bf8848d9ccee49c, type: 2}
   - {fileID: 11400000, guid: 6c51e3da1c6eb81439a7d13165e9dbb9, type: 2}
@@ -65,6 +66,9 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 0a5666f24ce9e80469b65b7bfcbf9bff, type: 2}
   - {fileID: 11400000, guid: dc45fd092c3350f4aa63b98c320e4413, type: 2}
   - {fileID: 11400000, guid: b740d4d05b9074f449708707a5821644, type: 2}
+  - {fileID: 11400000, guid: 70888a4bd2f54d343a32996f52b851c9, type: 2}
+  - {fileID: 11400000, guid: 9fe7357319d62534b810e40ca982a3a0, type: 2}
+  - {fileID: 11400000, guid: 195a2386bb9cf084582a36bc61d5c85b, type: 2}
   nextScene: {fileID: 11400000, guid: 27bda2ee2c71fe247b827f6c0b3aacb1, type: 2}
   CatharsysReaction: {fileID: 21300000, guid: 023f312761a404d49b33a0a11996f25f, type: 3}
   catharsysReactionSound: 11

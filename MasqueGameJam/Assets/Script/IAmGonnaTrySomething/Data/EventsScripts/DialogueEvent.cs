@@ -5,5 +5,6 @@ public class DialogueEvent : EventForScene
     public ObjectsID character;
     public SoundType sound;
     public string[] contents;
+    public Sprite startSprite, finishSprite;
 
 }

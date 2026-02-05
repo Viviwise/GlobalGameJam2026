@@ -18,8 +18,10 @@ MonoBehaviour:
   contents:
   - "B\xE9atrice\u2026 Tu t\u2019es toujours pos\xE9 trop de questions\u2026 Tu as
     toujours trop d\xE9pendu du regard des autres\u2026"
-  - "B\xE9atrice\u2026 Tu es quelqu\u2019un qui a le c\u0153ur sur la main\u2026
-    Et parfois cela te ronge\u2026 Comme maintenant\u2026"
+  - "B\xE9atrice\u2026 Tu es quelqu\u2019un qui a le coeur sur la main\u2026 Et parfois
+    cela te ronge\u2026 Comme maintenant\u2026"
   - "Alors si ce que tu dois me dire te terrifie \xE0 ce point. Tu n\u2019as pas
     \xE0 me le dire\u2026 "
   - "J\u2019attendrais patiemment que tu sois pr\xEAte\u2026 "
+  startSprite: {fileID: 0}
+  finishSprite: {fileID: 0}

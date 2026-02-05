@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 02ea93aca384ff847b1603e62d2389a4, type: 3}
+  m_Name: Johann_Dialogue_Scene7_1_2
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueEvent
+  eventType: 2
+  character: 2
+  sound: 20
+  contents:
+  - " \u2026 Grrr\u2026 Que t\u2019arrive-t-il aujourd\u2019hui William ? "
+  - 'Pas de trou de textes cette fois-ci ? '
+  startSprite: {fileID: 21300000, guid: 28ac9fae1b0d8114684dc7ceda8963f0, type: 3}
+  finishSprite: {fileID: 21300000, guid: c6cff4ace24fa534ea4795d6f143f4bb, type: 3}

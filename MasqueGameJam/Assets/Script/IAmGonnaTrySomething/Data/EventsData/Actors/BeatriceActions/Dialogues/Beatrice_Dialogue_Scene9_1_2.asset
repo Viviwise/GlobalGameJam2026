@@ -1,0 +1,33 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 02ea93aca384ff847b1603e62d2389a4, type: 3}
+  m_Name: Beatrice_Dialogue_Scene9_1_2
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueEvent
+  eventType: 2
+  character: 0
+  sound: 17
+  contents:
+  - "Je n\u2019ai jamais \xE9t\xE9 la plus dou\xE9e, ni la plus voyante sur sc\xE8ne."
+  - "Cet honneur te revenait \xE0 chaque fois\u2026 Et je l\u2019acceptais. "
+  - "Puisque par-dessus tout, plus que d\u2019\xEAtre au-devant, j\u2019adorais te
+    voir briller. Je voulais continuer de te voir \xE9tinceler \xE9ternellement comme
+    une \xE9toile."
+  - "Je voulais te sauver, comme tu m\u2019as sauv\xE9. Je voulais nous sauver comme
+    tu nous as sauv\xE9."
+  - "Pourtant, aujourd\u2019hui, tu br\xFBles comme une offrande, non parce que tu
+    as \xE9t\xE9 la plus faible mais parce que tu \xE9tais la plus courageuse."
+  - "Et moi, comme \xE0 mon habitude, je pleure."
+  - "Je pleure pour cette injustice\u2026 Tu pars\u2026 Et je reste\u2026 En me laissant
+    ta flamme\u2026"
+  - "Que j\u2019esp\xE8re faire briller pendant encore longtemps. "
+  startSprite: {fileID: 21300000, guid: b45cec34d3e4d2d41a714171e5c6b9ef, type: 3}
+  finishSprite: {fileID: 21300000, guid: 3cb1e791ad986104fb0acf666be2c6b1, type: 3}

@@ -30,9 +30,12 @@ MonoBehaviour:
   - {fileID: 11400000, guid: b671ba5abb1be614080596cf4933cc1b, type: 2}
   - {fileID: 11400000, guid: f5bc9e840261d8145a1d5e8e200aa040, type: 2}
   - {fileID: 11400000, guid: 26c6ad2d800f94b4cba39b1b094fbd5c, type: 2}
+  - {fileID: 11400000, guid: 879afe8f841139d488d5c37aa410f1b5, type: 2}
   - {fileID: 11400000, guid: 2ea7006b5222e9d4ab156cd90f84c1ef, type: 2}
   - {fileID: 11400000, guid: d7c34d79b4f1fda4f9d5651e818adce5, type: 2}
-  nextScene: {fileID: 0}
+  - {fileID: 11400000, guid: 9cc930dc6b0a45a40af259647d576053, type: 2}
+  - {fileID: 11400000, guid: 9fe7357319d62534b810e40ca982a3a0, type: 2}
+  nextScene: {fileID: 11400000, guid: cd1b78a365b27f1418d8c38e22f2b38a, type: 2}
   CatharsysReaction: {fileID: 21300000, guid: cc3dfd10719fac74db170de5cd617874, type: 3}
   catharsysReactionSound: 3
   wheelScore: 2

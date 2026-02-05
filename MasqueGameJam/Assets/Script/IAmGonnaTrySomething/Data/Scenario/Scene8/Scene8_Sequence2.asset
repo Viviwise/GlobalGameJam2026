@@ -1,0 +1,43 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b0e845809c39396478739c1f9a52ab43, type: 3}
+  m_Name: Scene8_Sequence2
+  m_EditorClassIdentifier: Assembly-CSharp::SequenceForScene
+  isSetUp: 0
+  sequenceName: Mephisto est battu
+  giver: {fileID: 21300000, guid: 7d5a26b60ba9f444b8d5d69e7265b475, type: 3}
+  events:
+  - {fileID: 11400000, guid: 153a84be8fe2104469f5bba3d9456f0e, type: 2}
+  - {fileID: 11400000, guid: 02ab4d0a3d136bf41bb702ddf9548dcc, type: 2}
+  - {fileID: 11400000, guid: c9e21dbcd98feb64595841c75c849269, type: 2}
+  - {fileID: 11400000, guid: 8dd80eecef99200439b4ddb68e6443fe, type: 2}
+  - {fileID: 11400000, guid: 02ab4d0a3d136bf41bb702ddf9548dcc, type: 2}
+  - {fileID: 11400000, guid: 171266889e9fcd34fa4650f5781001e3, type: 2}
+  - {fileID: 11400000, guid: 2e014e2e826f7b340b097a9dbec5ea06, type: 2}
+  - {fileID: 11400000, guid: 02ab4d0a3d136bf41bb702ddf9548dcc, type: 2}
+  - {fileID: 11400000, guid: c9e21dbcd98feb64595841c75c849269, type: 2}
+  - {fileID: 11400000, guid: af72a3a71c18477488ed7a8a4aaa295a, type: 2}
+  - {fileID: 11400000, guid: 02ab4d0a3d136bf41bb702ddf9548dcc, type: 2}
+  - {fileID: 11400000, guid: 171266889e9fcd34fa4650f5781001e3, type: 2}
+  - {fileID: 11400000, guid: 4d8d0fe64a2e81b479c81b43618a5324, type: 2}
+  - {fileID: 11400000, guid: 02ab4d0a3d136bf41bb702ddf9548dcc, type: 2}
+  - {fileID: 11400000, guid: c9e21dbcd98feb64595841c75c849269, type: 2}
+  - {fileID: 11400000, guid: 6a045f4b2f8a1b949b7a05da8f2e5f2e, type: 2}
+  - {fileID: 11400000, guid: 02ab4d0a3d136bf41bb702ddf9548dcc, type: 2}
+  - {fileID: 11400000, guid: d60e730b2632c234bb8a3b1870073108, type: 2}
+  - {fileID: 11400000, guid: 70888a4bd2f54d343a32996f52b851c9, type: 2}
+  - {fileID: 11400000, guid: 195a2386bb9cf084582a36bc61d5c85b, type: 2}
+  nextScene: {fileID: 0}
+  CatharsysReaction: {fileID: 21300000, guid: 69578ee4b7dabfc4cacf004330d33570, type: 3}
+  catharsysReactionSound: 0
+  wheelScore: 2
+  reactionText: 'Quel spectacle ! '

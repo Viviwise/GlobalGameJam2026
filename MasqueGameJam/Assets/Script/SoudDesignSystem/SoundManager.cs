@@ -35,6 +35,7 @@ public enum SoundType
     GroundImpact,
     Orchestral,
     Dramatic,
+    Fire,
 }
 [RequireComponent(typeof(AudioSource)), ExecuteInEditMode]
 public class SoundManager : MonoBehaviour

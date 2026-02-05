@@ -1,0 +1,38 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b0e845809c39396478739c1f9a52ab43, type: 3}
+  m_Name: Scene8_Sequence1
+  m_EditorClassIdentifier: Assembly-CSharp::SequenceForScene
+  isSetUp: 0
+  sequenceName: Johann interrompt encore Pandore
+  giver: {fileID: 21300000, guid: 28ac9fae1b0d8114684dc7ceda8963f0, type: 3}
+  events:
+  - {fileID: 11400000, guid: 9fe7357319d62534b810e40ca982a3a0, type: 2}
+  - {fileID: 11400000, guid: 195a2386bb9cf084582a36bc61d5c85b, type: 2}
+  - {fileID: 11400000, guid: 9db733264e6e4964b8fcf337f5fb5273, type: 2}
+  - {fileID: 11400000, guid: 207621d12eabc2a49b7ba9813e3cc635, type: 2}
+  - {fileID: 11400000, guid: 95e9354a54dacf545b4403b0933a949e, type: 2}
+  - {fileID: 11400000, guid: 723b64a42c006f6458ab5d7359bcac4c, type: 2}
+  - {fileID: 11400000, guid: 8d30ad46f4f39974a8d7d2a12d6539f1, type: 2}
+  - {fileID: 11400000, guid: e90bcbde87e88ab48b20d2db4a431999, type: 2}
+  - {fileID: 11400000, guid: e431b019b46513c4e8c119ebb386a32b, type: 2}
+  - {fileID: 11400000, guid: 9ce69392a66cb7e4f87366bf7fce2a69, type: 2}
+  - {fileID: 11400000, guid: 84d6a036417a3b847b5d2cd548eb3802, type: 2}
+  - {fileID: 11400000, guid: 38b0aec4ac64a794aa13673dccd2064d, type: 2}
+  - {fileID: 11400000, guid: 8f048960a6906fa4c8fde60691615a46, type: 2}
+  - {fileID: 11400000, guid: fb270ca3aca61504a87d6ac0b5e0d881, type: 2}
+  - {fileID: 11400000, guid: e4c97021b4228364c9ecb820aaaab56b, type: 2}
+  nextScene: {fileID: 0}
+  CatharsysReaction: {fileID: 21300000, guid: 023f312761a404d49b33a0a11996f25f, type: 3}
+  catharsysReactionSound: 11
+  wheelScore: 1
+  reactionText: "Je n'y crois pas du tout \xE0 votre incendie de pacotille !"

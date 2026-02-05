@@ -13,11 +13,18 @@ MonoBehaviour:
   m_Name: Scene7_Sequence1
   m_EditorClassIdentifier: Assembly-CSharp::SequenceForScene
   isSetUp: 0
-  sequenceName: 
+  sequenceName: William fait appel aux souvenirs
   giver: {fileID: 0}
-  events: []
+  events:
+  - {fileID: 11400000, guid: 013506da90967d14b9a4cb797e1200f6, type: 2}
+  - {fileID: 11400000, guid: fd946ad8b1f768645900ca2f5f796beb, type: 2}
+  - {fileID: 11400000, guid: b709822e9cc7fcd4fbacdf7e5a644923, type: 2}
+  - {fileID: 11400000, guid: faba5ef8cfd862841ac9012c9b41121d, type: 2}
+  - {fileID: 11400000, guid: c6d663f17740a044d9cf825b6963a4e5, type: 2}
+  - {fileID: 11400000, guid: 71d69e916236884459f73eba91e56e8f, type: 2}
+  - {fileID: 11400000, guid: 8af84cd3fff53d64184de172b87be8b8, type: 2}
   nextScene: {fileID: 0}
-  CatharsysReaction: {fileID: 0}
-  catharsysReactionSound: 0
+  CatharsysReaction: {fileID: 21300000, guid: 713feac404aee3e46a07b8e176efee43, type: 3}
+  catharsysReactionSound: 12
   wheelScore: 0
-  reactionText: 
+  reactionText: Comme c'est larmoyant...Mais comme c'est ennuyant...

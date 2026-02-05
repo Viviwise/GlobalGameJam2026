@@ -40,7 +40,7 @@ public enum ObjectsID
     RopeOperator,
     SoundOperator,
     BroomOperator,
-    TowerObject,
+    FireObject,
     MoonObject,
     
 }

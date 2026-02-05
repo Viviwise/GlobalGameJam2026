@@ -46,7 +46,7 @@ public class ScenarioManager : MonoBehaviour
 
     public void SetUpAll()
     {
-       // Time.timeScale = 20f;
+        Time.timeScale = 20f;
         objectsOffset = new Vector3(0, -1.5f, 0);
         lightObject.gameObject.SetActive(false);
         currentScene = firstScene;
@@ -126,15 +126,24 @@ public class ScenarioManager : MonoBehaviour
                 {
                     dialoguePanel.gameObject.SetActive(true);
                     DialogueEvent currentDialogueEvent = (DialogueEvent)sequence.events[currentEventIndex];
-                    Debug.Log(currentDialogueEvent);
                     int dialogueIndex = 0;
                     float textSpeed = 0.01f;
+                    if (currentDialogueEvent.startSprite != null)
+                    {
+                        GameObject speaker = FindTarget(currentDialogueEvent.character);
+                        speaker.GetComponent<SpriteRenderer>().sprite = currentDialogueEvent.startSprite;
+                    }
                     while (dialogueIndex < currentDialogueEvent.contents.Length)
                     {
                         SoundManager.PlaySound(currentDialogueEvent.sound,0.6f);
                         dialoguePanel.SetUp(currentDialogueEvent.contents[dialogueIndex], FindTarget(currentDialogueEvent.character).GetComponent<DramaObject>().actorName, textSpeed);
                         yield return new WaitForSeconds((currentDialogueEvent.contents[dialogueIndex].Length*textSpeed)+3);
                         dialogueIndex++;
+                    }
+                    if (currentDialogueEvent.finishSprite != null)
+                    {
+                        GameObject speaker = FindTarget(currentDialogueEvent.character);
+                        speaker.GetComponent<SpriteRenderer>().sprite = currentDialogueEvent.finishSprite;
                     }
                     dialoguePanel.gameObject.SetActive(false);
                     break;

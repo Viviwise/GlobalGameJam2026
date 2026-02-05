@@ -18,6 +18,8 @@ MonoBehaviour:
   events:
   - {fileID: 11400000, guid: 9fe7357319d62534b810e40ca982a3a0, type: 2}
   - {fileID: 11400000, guid: 195a2386bb9cf084582a36bc61d5c85b, type: 2}
+  - {fileID: 11400000, guid: 9fe7357319d62534b810e40ca982a3a0, type: 2}
+  - {fileID: 11400000, guid: 9cc930dc6b0a45a40af259647d576053, type: 2}
   - {fileID: 11400000, guid: 9e921bd9dff4d314b99a9849e94e96d2, type: 2}
   - {fileID: 11400000, guid: fd6a5f8906450cf4ca1059a9cd427839, type: 2}
   - {fileID: 11400000, guid: fa6acfdd47b344f4b9b5aed4504bc627, type: 2}

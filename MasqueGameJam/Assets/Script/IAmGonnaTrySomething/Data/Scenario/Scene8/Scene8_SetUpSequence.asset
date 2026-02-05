@@ -1,0 +1,64 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b0e845809c39396478739c1f9a52ab43, type: 3}
+  m_Name: Scene8_SetUpSequence
+  m_EditorClassIdentifier: Assembly-CSharp::SequenceForScene
+  isSetUp: 1
+  sequenceName: 
+  giver: {fileID: 0}
+  events:
+  - {fileID: 11400000, guid: 201c213d77762034f8dd3df6e745289f, type: 2}
+  - {fileID: 11400000, guid: 879afe8f841139d488d5c37aa410f1b5, type: 2}
+  - {fileID: 11400000, guid: c406c30d63d7e7c439d5236af55d6a17, type: 2}
+  - {fileID: 11400000, guid: ca5ec90d4d193ae4f8769d5411fc5585, type: 2}
+  - {fileID: 11400000, guid: 9b1dc1604bbd9154a8d644614e33407a, type: 2}
+  - {fileID: 11400000, guid: 596cd7ede09cd4e45a1f2a9dcfb76037, type: 2}
+  - {fileID: 11400000, guid: 0a22c2e96d7e21c449716e1f4899b73d, type: 2}
+  - {fileID: 11400000, guid: 51e0a397887fd7444bc563917c8aa59e, type: 2}
+  - {fileID: 11400000, guid: 866e27676dd134b4e9fd7a74023c43da, type: 2}
+  - {fileID: 11400000, guid: 201c213d77762034f8dd3df6e745289f, type: 2}
+  - {fileID: 11400000, guid: 63b0c241f56439a4fa7af21efb6d3c54, type: 2}
+  - {fileID: 11400000, guid: 201c213d77762034f8dd3df6e745289f, type: 2}
+  - {fileID: 11400000, guid: 16a5d33f51ee0e94aa170926afbd679a, type: 2}
+  - {fileID: 11400000, guid: 201c213d77762034f8dd3df6e745289f, type: 2}
+  - {fileID: 11400000, guid: 7a29be8038376064cb1585bf49941a98, type: 2}
+  - {fileID: 11400000, guid: 201c213d77762034f8dd3df6e745289f, type: 2}
+  - {fileID: 11400000, guid: 1b33cd65e2413d34284b15d063635f08, type: 2}
+  - {fileID: 11400000, guid: 3bbf5f530c95cca4abb7922fcb1f22a7, type: 2}
+  - {fileID: 11400000, guid: d180e52b165aae0419242a08f650a70c, type: 2}
+  - {fileID: 11400000, guid: 4e98edefb66c650488c94f375c8b2bea, type: 2}
+  - {fileID: 11400000, guid: 53e3a93e5aa82ad4fb4f425b45db4341, type: 2}
+  - {fileID: 11400000, guid: d9d1e2b481c3bcd46a85457f2182e4a2, type: 2}
+  - {fileID: 11400000, guid: 23692d6150de5ab44afe6ae771d7a2b4, type: 2}
+  - {fileID: 11400000, guid: 879afe8f841139d488d5c37aa410f1b5, type: 2}
+  - {fileID: 11400000, guid: 201c213d77762034f8dd3df6e745289f, type: 2}
+  - {fileID: 11400000, guid: c406c30d63d7e7c439d5236af55d6a17, type: 2}
+  - {fileID: 11400000, guid: d4dd8c8fb7555bf46b25dc20a7698daf, type: 2}
+  - {fileID: 11400000, guid: 201c213d77762034f8dd3df6e745289f, type: 2}
+  - {fileID: 11400000, guid: 2972834640fa9aa4f867b8600fe0f37a, type: 2}
+  - {fileID: 11400000, guid: defb0b90110e446498ccc5abf5bfaa2c, type: 2}
+  - {fileID: 11400000, guid: 201c213d77762034f8dd3df6e745289f, type: 2}
+  - {fileID: 11400000, guid: 582fb40508e97bc4cbea41c978d21cbb, type: 2}
+  - {fileID: 11400000, guid: 661fde6a48e7d90479ff19179f81e0d1, type: 2}
+  - {fileID: 11400000, guid: 201c213d77762034f8dd3df6e745289f, type: 2}
+  - {fileID: 11400000, guid: a59ac840251c85a4a8a5de21037ca166, type: 2}
+  - {fileID: 11400000, guid: 1ca480666c4ce994caa52f0e3e674d17, type: 2}
+  - {fileID: 11400000, guid: 3afde18e74e8b4d4cba3e9bec82f7584, type: 2}
+  - {fileID: 11400000, guid: 0197b1270f081dd4daec0e0921801211, type: 2}
+  - {fileID: 11400000, guid: a90bf6f3c89a5fd4f8472c49aea6ebdf, type: 2}
+  - {fileID: 11400000, guid: 9fe7357319d62534b810e40ca982a3a0, type: 2}
+  - {fileID: 11400000, guid: 704e89f4c7078114386bc70d85add4ea, type: 2}
+  nextScene: {fileID: 0}
+  CatharsysReaction: {fileID: 0}
+  catharsysReactionSound: 0
+  wheelScore: 0
+  reactionText: 

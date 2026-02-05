@@ -35,11 +35,12 @@ MonoBehaviour:
   - {fileID: 11400000, guid: bcb5f47de4315bf4280af7075ba3bea9, type: 2}
   - {fileID: 11400000, guid: bc74a9e58566ac34b9a1491bcbd87392, type: 2}
   - {fileID: 11400000, guid: 1d823b6bd25db0f49b56594870e00256, type: 2}
+  - {fileID: 11400000, guid: 879afe8f841139d488d5c37aa410f1b5, type: 2}
   - {fileID: 11400000, guid: 201c213d77762034f8dd3df6e745289f, type: 2}
   - {fileID: 11400000, guid: 26c6ad2d800f94b4cba39b1b094fbd5c, type: 2}
   - {fileID: 11400000, guid: 201c213d77762034f8dd3df6e745289f, type: 2}
   - {fileID: 11400000, guid: d7c34d79b4f1fda4f9d5651e818adce5, type: 2}
-  nextScene: {fileID: 0}
+  nextScene: {fileID: 11400000, guid: cd1b78a365b27f1418d8c38e22f2b38a, type: 2}
   CatharsysReaction: {fileID: 21300000, guid: 713feac404aee3e46a07b8e176efee43, type: 3}
   catharsysReactionSound: 12
   wheelScore: 0

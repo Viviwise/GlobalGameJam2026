@@ -13,6 +13,8 @@ MonoBehaviour:
   m_Name: Scene7
   m_EditorClassIdentifier: Assembly-CSharp::SceneData
   sceneName: William, la voix de la raison
-  sequences: []
+  sequences:
+  - {fileID: 11400000, guid: 3edec1f7f4c82154cb95ea5aff8b9e88, type: 2}
+  - {fileID: 11400000, guid: 0dae4eefbd1a30d4287cac118b5d7855, type: 2}
   actors: 0200000001000000000000000300000004000000
-  setUpSequence: {fileID: 0}
+  setUpSequence: {fileID: 11400000, guid: 8daeb8a1b92ad1b4eb0bfb0d32ca987e, type: 2}
