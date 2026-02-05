@@ -29,6 +29,8 @@ public enum SoundType
     PandoreNormalLine,
     WilliamShortLine,
     WilliamNormalLine,
+    TensionMusic,
+    Poof,
 }
 [RequireComponent(typeof(AudioSource)), ExecuteInEditMode]
 public class SoundManager : MonoBehaviour

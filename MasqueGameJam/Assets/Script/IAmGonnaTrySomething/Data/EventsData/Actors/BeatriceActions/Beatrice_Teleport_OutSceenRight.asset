@@ -14,4 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::TeleportationEvent
   eventType: 1
   target: 0
-  position: {x: 8, y: 0, z: 0}
+  position: {x: 10, y: 0, z: 0}

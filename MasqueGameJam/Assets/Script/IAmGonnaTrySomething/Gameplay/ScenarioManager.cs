@@ -12,6 +12,7 @@ using Random = System.Random;
 [DefaultExecutionOrder(1)]
 public class ScenarioManager : MonoBehaviour
 {
+    [SerializeField] SceneData testScene ;
     [SerializeField] private DramaObject[] allObjects;
     [SerializeField] private SceneData firstScene;
     private GameObject[] allObjectsRefs;
@@ -23,7 +24,7 @@ public class ScenarioManager : MonoBehaviour
     [SerializeField] private ChoiceButton[] buttonsForChoices;
     [SerializeField] private DialoguePanel dialoguePanel;
     [SerializeField] private GameObject smallWheel;
-    [FormerlySerializedAs("screenTransition")] [SerializeField] private ScreenTransitionCurtain screenTransitionCurtain;
+    [SerializeField] private ScreenTransitionCurtain screenTransitionCurtain;
     
     [SerializeField] private OpenCurtain openCurtain;
     [SerializeField] private FrameMove frameMove;
@@ -32,6 +33,7 @@ public class ScenarioManager : MonoBehaviour
     public event Action<SequenceForScene> SceneFinishedAction;
     void Start()
     {
+        SetUpAll();
         currentScene = firstScene;
         if (currentScene.setUpSequence != null)
         {
@@ -41,6 +43,7 @@ public class ScenarioManager : MonoBehaviour
 
     public void SetUpAll()
     {
+        Time.timeScale = 1f;
         objectsOffset = new Vector3(0, -1.5f, 0);
         lightObject.gameObject.SetActive(false);
         currentScene = firstScene;
@@ -81,6 +84,7 @@ public class ScenarioManager : MonoBehaviour
 
     IEnumerator PlaySequence(SequenceForScene sequence)
     {
+        Debug.Log(sequence);
         int currentEventIndex = 0;
         while (currentEventIndex < sequence.events.Length)
         {
@@ -119,6 +123,7 @@ public class ScenarioManager : MonoBehaviour
                 {
                     dialoguePanel.gameObject.SetActive(true);
                     DialogueEvent currentDialogueEvent = (DialogueEvent)sequence.events[currentEventIndex];
+                    Debug.Log(currentDialogueEvent);
                     int dialogueIndex = 0;
                     float textSpeed = 0.01f;
                     while (dialogueIndex < currentDialogueEvent.contents.Length)
@@ -249,7 +254,11 @@ public class ScenarioManager : MonoBehaviour
 
                     break;
                 }
-                
+                case ScenarioEventTypes.FrameMove:
+                {
+                    //frameMove.DisplayFrame(currentScene.sceneName);
+                    break;
+                }
             }
             currentEventIndex++;
             yield return null;
@@ -265,7 +274,6 @@ public class ScenarioManager : MonoBehaviour
                 screenTransitionCurtain.TransitionAppear(); 
                 yield return new WaitForSeconds(screenTransitionCurtain.transitionTime); 
                 lightObject.gameObject.SetActive(false);
-                Debug.Log(lightObject.gameObject.activeInHierarchy);
                 SceneFinishedAction?.Invoke(sequence);
         }
     }
@@ -331,6 +339,10 @@ public class ScenarioManager : MonoBehaviour
         screenTransitionCurtain.TransitionDisappear();
         if (currentScene.setUpSequence != null)
         {
+            if (currentScene == testScene)
+            {
+                Time.timeScale = 1;
+            }
             CallSequence(currentScene.setUpSequence);
         }
         else

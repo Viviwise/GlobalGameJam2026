@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Scene1_Sequence1
   m_EditorClassIdentifier: Assembly-CSharp::SequenceForScene
   isSetUp: 0
-  sequenceName: "Seras-tu \xE0 ce point cr\xE9dule ?"
+  sequenceName: Pandore ne sait plus ou regarder
   giver: {fileID: 21300000, guid: 5a49bcd6466257c488edd31d468f4d1c, type: 3}
   events:
   - {fileID: 11400000, guid: 9fe7357319d62534b810e40ca982a3a0, type: 2}
@@ -23,9 +23,9 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 7444ae92fbcf9ca4d8bc40d67bb6d11e, type: 2}
   - {fileID: 11400000, guid: 0111103193fd6814d92b43ebc4ab71ff, type: 2}
   - {fileID: 11400000, guid: 8b1f415b2fc776244a18a399d1d1ddfc, type: 2}
-  - {fileID: 11400000, guid: 4e8f9024973cbf84e920b3ab53895333, type: 2}
+  - {fileID: 11400000, guid: 0a5666f24ce9e80469b65b7bfcbf9bff, type: 2}
   - {fileID: 11400000, guid: 97d202b81e22e6b4cb99e4b558ad743e, type: 2}
-  - {fileID: 11400000, guid: 385734f626e20414d956fe0ccd832361, type: 2}
+  - {fileID: 11400000, guid: b740d4d05b9074f449708707a5821644, type: 2}
   - {fileID: 11400000, guid: af8c5e8905ace6341a41b9d96c03cb1f, type: 2}
   - {fileID: 11400000, guid: bcb5f47de4315bf4280af7075ba3bea9, type: 2}
   - {fileID: 11400000, guid: 75f0016d40d696242a1c037caa69378f, type: 2}
@@ -37,4 +37,4 @@ MonoBehaviour:
   CatharsysReaction: {fileID: 21300000, guid: 713feac404aee3e46a07b8e176efee43, type: 3}
   catharsysReactionSound: 11
   wheelScore: 1
-  reactionText: "Quelques rat\xE9s, mais je reste patient"
+  reactionText: "J'ai vu quelques rat\xE9s, attention pour la suite..."

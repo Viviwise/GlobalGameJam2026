@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 96ac548253db39a4e91e48d053cdd06c, type: 3}
   m_Name: Johann_Pose_Drama
   m_EditorClassIdentifier: Assembly-CSharp::ChangePoseEvent
-  eventType: 0
+  eventType: 4
   id: 2
   newPose: {fileID: 21300000, guid: e16badc247053a743b3d35526e34b1d0, type: 3}
+  newPoseDead: {fileID: 0}

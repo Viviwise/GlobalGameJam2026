@@ -13,18 +13,18 @@ MonoBehaviour:
   m_Name: Scene1_Sequence4
   m_EditorClassIdentifier: Assembly-CSharp::SequenceForScene
   isSetUp: 0
-  sequenceName: "Lumi\xE8re sur Johann"
+  sequenceName: Eclairer Johann
   giver: {fileID: 21300000, guid: fb60d118ec765f649b3b34a4daf53477, type: 3}
   events:
   - {fileID: 11400000, guid: 153a84be8fe2104469f5bba3d9456f0e, type: 2}
   - {fileID: 11400000, guid: 02ab4d0a3d136bf41bb702ddf9548dcc, type: 2}
   - {fileID: 11400000, guid: 15789876ef1489641824a78995ddf253, type: 2}
-  - {fileID: 11400000, guid: ac74b382ba6762c4fb7a5291c6751273, type: 2}
+  - {fileID: 11400000, guid: 11cbc988ba7404c45bba70d1b028e4ec, type: 2}
   - {fileID: 11400000, guid: bcb5f47de4315bf4280af7075ba3bea9, type: 2}
   - {fileID: 11400000, guid: fd9dface8ee1808439c04338233ec8e3, type: 2}
   - {fileID: 11400000, guid: 31e8378df2dba6a488c792ab8705fb0a, type: 2}
   - {fileID: 11400000, guid: fd9dface8ee1808439c04338233ec8e3, type: 2}
-  - {fileID: 11400000, guid: 385734f626e20414d956fe0ccd832361, type: 2}
+  - {fileID: 11400000, guid: b740d4d05b9074f449708707a5821644, type: 2}
   - {fileID: 11400000, guid: d60e730b2632c234bb8a3b1870073108, type: 2}
   - {fileID: 11400000, guid: 02ab4d0a3d136bf41bb702ddf9548dcc, type: 2}
   - {fileID: 11400000, guid: 70888a4bd2f54d343a32996f52b851c9, type: 2}

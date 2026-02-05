@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 02ea93aca384ff847b1603e62d2389a4, type: 3}
+  m_Name: William_Dialogue_Scene2_1
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueEvent
+  eventType: 2
+  character: 1
+  sound: 26
+  contents:
+  - 'Pandore ? Tout va bien ? '
+  - "A la port\xE9e de ta voix, nous pourrions t\u2019entendre de l\u2019autre bout
+    du monde. "
+  - "Qu\u2019est-ce donc qui a pu te mettre dans un tel \xE9tat ?"

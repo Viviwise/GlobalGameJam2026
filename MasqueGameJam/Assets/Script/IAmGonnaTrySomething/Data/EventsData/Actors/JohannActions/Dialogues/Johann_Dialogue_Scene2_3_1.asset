@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 02ea93aca384ff847b1603e62d2389a4, type: 3}
+  m_Name: Johann_Dialogue_Scene2_3_1
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueEvent
+  eventType: 2
+  character: 2
+  sound: 20
+  contents:
+  - "Tu te crois pure, intacte, voire meilleure\u2026 Mais finalement\u2026"
+  - "Ne tentes-tu pas de m\u2019emp\xEAcher par peur d\u2019\xEAtre surpass\xE9 ?
+    Peur de retourner dans l\u2019ombre ?..."
+  - "Et bien, tremble ! Pour une fois, dans cette pi\xE8ce, j\u2019aurais le mot
+    de la fin, P\xE9n\xE9lope ! "
