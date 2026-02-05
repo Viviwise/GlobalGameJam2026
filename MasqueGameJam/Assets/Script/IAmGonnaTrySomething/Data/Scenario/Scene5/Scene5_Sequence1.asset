@@ -1,0 +1,46 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b0e845809c39396478739c1f9a52ab43, type: 3}
+  m_Name: Scene5_Sequence1
+  m_EditorClassIdentifier: Assembly-CSharp::SequenceForScene
+  isSetUp: 0
+  sequenceName: "Pandore se met en col\xE8re"
+  giver: {fileID: 21300000, guid: 5a49bcd6466257c488edd31d468f4d1c, type: 3}
+  events:
+  - {fileID: 11400000, guid: 201c213d77762034f8dd3df6e745289f, type: 2}
+  - {fileID: 11400000, guid: 195a2386bb9cf084582a36bc61d5c85b, type: 2}
+  - {fileID: 11400000, guid: 0111103193fd6814d92b43ebc4ab71ff, type: 2}
+  - {fileID: 11400000, guid: dbabe2aa34c65f24cb7d5f3ccc029885, type: 2}
+  - {fileID: 11400000, guid: bcb5f47de4315bf4280af7075ba3bea9, type: 2}
+  - {fileID: 11400000, guid: 0111103193fd6814d92b43ebc4ab71ff, type: 2}
+  - {fileID: 11400000, guid: 0584cb63a7251534183b3aa194ea955f, type: 2}
+  - {fileID: 11400000, guid: ffe75f15db6dce64db292f11871d34a9, type: 2}
+  - {fileID: 11400000, guid: ce722a94ff35e0544be07a30b9f92c9d, type: 2}
+  - {fileID: 11400000, guid: a4d53e34916cbeb409dca5579d779489, type: 2}
+  - {fileID: 11400000, guid: af02e6a447b41f348bd59946ba1df5ba, type: 2}
+  - {fileID: 11400000, guid: 26973e8bee2d5904ebc6ab5ffe2c4025, type: 2}
+  - {fileID: 11400000, guid: 9f42cb2809d2c7e44854bf6a69294fdf, type: 2}
+  - {fileID: 11400000, guid: fd6a5f8906450cf4ca1059a9cd427839, type: 2}
+  - {fileID: 11400000, guid: 5669665432e99e648889d5cf1d3fde68, type: 2}
+  - {fileID: 11400000, guid: be5e991000e50fb4fb9b1f9ae722ad29, type: 2}
+  - {fileID: 11400000, guid: 299f121c94d74eb4e8daebe1b00b4af6, type: 2}
+  - {fileID: 11400000, guid: fd6a5f8906450cf4ca1059a9cd427839, type: 2}
+  - {fileID: 11400000, guid: dc79b52bfe06aec4fad17fe840b61d3d, type: 2}
+  - {fileID: 11400000, guid: be5e991000e50fb4fb9b1f9ae722ad29, type: 2}
+  - {fileID: 11400000, guid: 77c361303ab39584d8985348fb9b2c30, type: 2}
+  - {fileID: 11400000, guid: 6294b81a17466db4e857c421ff5c4341, type: 2}
+  - {fileID: 11400000, guid: bcb5f47de4315bf4280af7075ba3bea9, type: 2}
+  nextScene: {fileID: 11400000, guid: 27bda2ee2c71fe247b827f6c0b3aacb1, type: 2}
+  CatharsysReaction: {fileID: 21300000, guid: cc3dfd10719fac74db170de5cd617874, type: 3}
+  catharsysReactionSound: 3
+  wheelScore: 2
+  reactionText: "Par tout les dieux, quelle com\xE9dienne d'exception !"

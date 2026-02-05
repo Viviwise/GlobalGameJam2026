@@ -1,0 +1,51 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b0e845809c39396478739c1f9a52ab43, type: 3}
+  m_Name: Scene3_Sequence1
+  m_EditorClassIdentifier: Assembly-CSharp::SequenceForScene
+  isSetUp: 0
+  sequenceName: "Le d\xE9cor ne tient pas en place"
+  giver: {fileID: 21300000, guid: 1869e0c38d3464644998fd470b5359d3, type: 3}
+  events:
+  - {fileID: 11400000, guid: fd6a5f8906450cf4ca1059a9cd427839, type: 2}
+  - {fileID: 11400000, guid: 1907e7a013303454aad6c3753db71eb8, type: 2}
+  - {fileID: 11400000, guid: be5e991000e50fb4fb9b1f9ae722ad29, type: 2}
+  - {fileID: 11400000, guid: 6c51e3da1c6eb81439a7d13165e9dbb9, type: 2}
+  - {fileID: 11400000, guid: 0fc908586e482cd40a256a97505ad250, type: 2}
+  - {fileID: 11400000, guid: a9db22982fabc0f48aeb210ec9750932, type: 2}
+  - {fileID: 11400000, guid: bd3416bf9d88a8f4b87467cea9ffa153, type: 2}
+  - {fileID: 11400000, guid: ea817d7b79495f14bb9746f7e9be03c3, type: 2}
+  - {fileID: 11400000, guid: fd6a5f8906450cf4ca1059a9cd427839, type: 2}
+  - {fileID: 11400000, guid: 8a6b411161108754094020d7c8fdb5bf, type: 2}
+  - {fileID: 11400000, guid: be5e991000e50fb4fb9b1f9ae722ad29, type: 2}
+  - {fileID: 11400000, guid: c11769618bb13214e82a9b3bb5902589, type: 2}
+  - {fileID: 11400000, guid: ce9bb592e08c41e40a4ea131f501ac39, type: 2}
+  - {fileID: 11400000, guid: 11cbc988ba7404c45bba70d1b028e4ec, type: 2}
+  - {fileID: 11400000, guid: e4f2731dbedc3f84ab74d987ffe94eb1, type: 2}
+  - {fileID: 11400000, guid: 8b9bf39b54e529c4b8fd0a5bc4412f12, type: 2}
+  - {fileID: 11400000, guid: f21d901fc74cec249a408881f2a33c44, type: 2}
+  - {fileID: 11400000, guid: b7ec766c29fd3e24881c217f1c4c0778, type: 2}
+  - {fileID: 11400000, guid: c11769618bb13214e82a9b3bb5902589, type: 2}
+  - {fileID: 11400000, guid: 5cd6d316995fd1e41b24262a3f37bc60, type: 2}
+  - {fileID: 11400000, guid: bd1d3197261b3ec43a7e40c5f1f438ce, type: 2}
+  - {fileID: 11400000, guid: 6cf5f7ae6d14bcf43bbce063bd670efe, type: 2}
+  - {fileID: 11400000, guid: 70888a4bd2f54d343a32996f52b851c9, type: 2}
+  - {fileID: 11400000, guid: 02ab4d0a3d136bf41bb702ddf9548dcc, type: 2}
+  - {fileID: 11400000, guid: d60e730b2632c234bb8a3b1870073108, type: 2}
+  - {fileID: 11400000, guid: 195a2386bb9cf084582a36bc61d5c85b, type: 2}
+  - {fileID: 11400000, guid: b740d4d05b9074f449708707a5821644, type: 2}
+  nextScene: {fileID: 11400000, guid: d97eadf760551cf4c8007f08426e6643, type: 2}
+  CatharsysReaction: {fileID: 21300000, guid: 023f312761a404d49b33a0a11996f25f, type: 3}
+  catharsysReactionSound: 11
+  wheelScore: 1
+  reactionText: "Voil\xE0 que m\xEAme les d\xE9cors veulent fuire cette pi\xE8ce
+    m\xE9diocre !"

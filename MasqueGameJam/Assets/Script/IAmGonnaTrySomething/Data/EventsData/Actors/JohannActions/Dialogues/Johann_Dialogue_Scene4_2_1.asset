@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 02ea93aca384ff847b1603e62d2389a4, type: 3}
+  m_Name: Johann_Dialogue_Scene4_2_1
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueEvent
+  eventType: 2
+  character: 2
+  sound: 20
+  contents:
+  - "J\u2019ai connu mieux. Le mot m\xE9diocre ne rend pas justice\u2026 "
+  - "A vrai dire, non, c\u2019est pire\u2026 Ce n\u2019\xE9tait pas mauvais, c\u2019\xE9tait
+    tr\xE8s mauvais.  "
+  - "Vu le niveau qu\u2019il proposait sur sc\xE8ne, "
+  - "il aurait mieux fait de ne jamais monter les marches d\u2019un th\xE9\xE2tre
+    de sa vie."

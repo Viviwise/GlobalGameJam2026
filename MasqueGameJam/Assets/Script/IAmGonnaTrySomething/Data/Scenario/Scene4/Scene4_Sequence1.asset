@@ -1,0 +1,42 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b0e845809c39396478739c1f9a52ab43, type: 3}
+  m_Name: Scene4_Sequence1
+  m_EditorClassIdentifier: Assembly-CSharp::SequenceForScene
+  isSetUp: 0
+  sequenceName: Johann se mure dans le silence
+  giver: {fileID: 21300000, guid: c6cff4ace24fa534ea4795d6f143f4bb, type: 3}
+  events:
+  - {fileID: 11400000, guid: 9fe7357319d62534b810e40ca982a3a0, type: 2}
+  - {fileID: 11400000, guid: 195a2386bb9cf084582a36bc61d5c85b, type: 2}
+  - {fileID: 11400000, guid: 9fe7357319d62534b810e40ca982a3a0, type: 2}
+  - {fileID: 11400000, guid: 9cc930dc6b0a45a40af259647d576053, type: 2}
+  - {fileID: 11400000, guid: 94288341585491f44a59b83741b11e72, type: 2}
+  - {fileID: 11400000, guid: dd4e0ad7086f3034999df2e31fd2dddd, type: 2}
+  - {fileID: 11400000, guid: 43fc7087bda8a2e45949d0b910d57ec9, type: 2}
+  - {fileID: 11400000, guid: cfd9c6f0b9b6993488995b9af10e44e4, type: 2}
+  - {fileID: 11400000, guid: 75f0016d40d696242a1c037caa69378f, type: 2}
+  - {fileID: 11400000, guid: 105f5664faafde542b704256c4833428, type: 2}
+  - {fileID: 11400000, guid: fd9dface8ee1808439c04338233ec8e3, type: 2}
+  - {fileID: 11400000, guid: 201c213d77762034f8dd3df6e745289f, type: 2}
+  - {fileID: 11400000, guid: 79fdce66ddd25f04596acf3b1c904b6f, type: 2}
+  - {fileID: 11400000, guid: 0a5666f24ce9e80469b65b7bfcbf9bff, type: 2}
+  - {fileID: 11400000, guid: dcfa92c49885c8d4994e6ca285387604, type: 2}
+  - {fileID: 11400000, guid: b740d4d05b9074f449708707a5821644, type: 2}
+  - {fileID: 11400000, guid: dd4e0ad7086f3034999df2e31fd2dddd, type: 2}
+  - {fileID: 11400000, guid: b54635dff72a41a4c8aec18d670c7da9, type: 2}
+  - {fileID: 11400000, guid: cfd9c6f0b9b6993488995b9af10e44e4, type: 2}
+  nextScene: {fileID: 11400000, guid: 82806772044c92344adb672afe8549c0, type: 2}
+  CatharsysReaction: {fileID: 21300000, guid: 94f3f469674ec91448f5eb784a79a80e, type: 3}
+  catharsysReactionSound: 12
+  wheelScore: 0
+  reactionText: "Comme c'\xE9tait pr\xE9visible..."

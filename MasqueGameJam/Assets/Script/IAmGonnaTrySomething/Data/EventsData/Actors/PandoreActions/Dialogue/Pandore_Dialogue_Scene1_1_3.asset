@@ -16,5 +16,5 @@ MonoBehaviour:
   character: 3
   sound: 24
   contents:
-  - "Toi qui ne penses qu\u2019\xE0 t\u2019\xE9lever, seras-tu aussi cr\xE9dule ?
-    Seras-tu aussi candide pour accepter la tentation du Malin ?"
+  - "Toi qui ne penses qu\u2019\xE0 t\u2019\xE9lever, seras-tu aussi cr\xE9dule ?"
+  - Seras-tu aussi candide pour accepter la tentation du Malin ?

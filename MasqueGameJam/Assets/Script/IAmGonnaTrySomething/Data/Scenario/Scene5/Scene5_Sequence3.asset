@@ -1,0 +1,44 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b0e845809c39396478739c1f9a52ab43, type: 3}
+  m_Name: Scene5_Sequence3
+  m_EditorClassIdentifier: Assembly-CSharp::SequenceForScene
+  isSetUp: 0
+  sequenceName: William tente de se rappeller de son texte
+  giver: {fileID: 21300000, guid: 41bc46e49e91be5429fc615c03cfb3ca, type: 3}
+  events:
+  - {fileID: 11400000, guid: 9fe7357319d62534b810e40ca982a3a0, type: 2}
+  - {fileID: 11400000, guid: 195a2386bb9cf084582a36bc61d5c85b, type: 2}
+  - {fileID: 11400000, guid: 9e921bd9dff4d314b99a9849e94e96d2, type: 2}
+  - {fileID: 11400000, guid: fd6a5f8906450cf4ca1059a9cd427839, type: 2}
+  - {fileID: 11400000, guid: fa6acfdd47b344f4b9b5aed4504bc627, type: 2}
+  - {fileID: 11400000, guid: be5e991000e50fb4fb9b1f9ae722ad29, type: 2}
+  - {fileID: 11400000, guid: dd4e0ad7086f3034999df2e31fd2dddd, type: 2}
+  - {fileID: 11400000, guid: 6a9afef6877a3e74685e702c5d0d39d1, type: 2}
+  - {fileID: 11400000, guid: cfd9c6f0b9b6993488995b9af10e44e4, type: 2}
+  - {fileID: 11400000, guid: fd6a5f8906450cf4ca1059a9cd427839, type: 2}
+  - {fileID: 11400000, guid: 94ac1b47e3c4cd9469d8ce69ef8a20b7, type: 2}
+  - {fileID: 11400000, guid: be5e991000e50fb4fb9b1f9ae722ad29, type: 2}
+  - {fileID: 11400000, guid: dd4e0ad7086f3034999df2e31fd2dddd, type: 2}
+  - {fileID: 11400000, guid: 27d5fb5c31f79bb4db811f5fe2eb354a, type: 2}
+  - {fileID: 11400000, guid: cfd9c6f0b9b6993488995b9af10e44e4, type: 2}
+  - {fileID: 11400000, guid: fd6a5f8906450cf4ca1059a9cd427839, type: 2}
+  - {fileID: 11400000, guid: 31914e6dc32da314b8c26761c17a0458, type: 2}
+  - {fileID: 11400000, guid: be5e991000e50fb4fb9b1f9ae722ad29, type: 2}
+  - {fileID: 11400000, guid: 08d38ae8c2e63f249a57372737cc5d97, type: 2}
+  - {fileID: 11400000, guid: f168925c7c7fba941b1bc7487974b1b1, type: 2}
+  - {fileID: 11400000, guid: cfd9c6f0b9b6993488995b9af10e44e4, type: 2}
+  nextScene: {fileID: 11400000, guid: 27bda2ee2c71fe247b827f6c0b3aacb1, type: 2}
+  CatharsysReaction: {fileID: 21300000, guid: 69578ee4b7dabfc4cacf004330d33570, type: 3}
+  catharsysReactionSound: 3
+  wheelScore: 2
+  reactionText: "J'aurais pari\xE9 que cet acteur avait du potentiel !"

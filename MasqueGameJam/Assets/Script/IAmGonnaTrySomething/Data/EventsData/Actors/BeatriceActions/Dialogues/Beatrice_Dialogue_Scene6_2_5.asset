@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 02ea93aca384ff847b1603e62d2389a4, type: 3}
+  m_Name: Beatrice_Dialogue_Scene6_2_5
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueEvent
+  eventType: 2
+  character: 0
+  sound: 17
+  contents:
+  - "Ce n\u2019est qu\u2019un jeu pour lui ! Et j\u2019ai\u2026 J\u2019ai\u2026 J\u2019ai
+    accept\xE9 de revivre cet enfer dans l\u2019espoir de pouvoir le changer !"
+  - "J\u2019ai accept\xE9 un pacte Pandore ! Encore ! Et encore ! Et encore !"

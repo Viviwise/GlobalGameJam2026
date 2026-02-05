@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Scene1_Sequence2
   m_EditorClassIdentifier: Assembly-CSharp::SequenceForScene
   isSetUp: 0
-  sequenceName: "Johann n'en fait qu'a sa t\xEAte ? "
+  sequenceName: "Johann n'en fait qu'a sa t\xEAte "
   giver: {fileID: 21300000, guid: 5a49bcd6466257c488edd31d468f4d1c, type: 3}
   events:
   - {fileID: 11400000, guid: 9fe7357319d62534b810e40ca982a3a0, type: 2}

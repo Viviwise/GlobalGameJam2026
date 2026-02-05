@@ -12,7 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ce8a13d67f00ae445a3344c78a203b32, type: 3}
   m_Name: SceneTest
   m_EditorClassIdentifier: Assembly-CSharp::SceneData
-  sceneName: 
-  sequences: []
-  actors: 
-  setUpSequence: {fileID: 0}
+  sceneName: "La sc\xE8ne de test"
+  sequences:
+  - {fileID: 11400000, guid: 6cc3820d3cf74fd4ab136ba3ff67ce5f, type: 2}
+  - {fileID: 11400000, guid: 7f52028ee4fc70448aee50cbd971b040, type: 2}
+  - {fileID: 11400000, guid: cfb587d76a8934a49a252510661e972b, type: 2}
+  actors: 00000000010000000200000003000000040000000500000009000000
+  setUpSequence: {fileID: 11400000, guid: 33e4a6b2e9ffd0343afa9b846049b31b, type: 2}

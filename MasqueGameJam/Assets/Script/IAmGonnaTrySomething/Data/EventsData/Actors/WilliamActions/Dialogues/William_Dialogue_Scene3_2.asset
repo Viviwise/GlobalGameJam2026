@@ -14,6 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::DialogueEvent
   eventType: 2
   character: 1
-  sound: 26
+  sound: 25
   contents:
   - "Oui, je vois\u2026 Je crois que je comprends\u2026"

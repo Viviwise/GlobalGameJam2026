@@ -12,7 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ce8a13d67f00ae445a3344c78a203b32, type: 3}
   m_Name: Scene3
   m_EditorClassIdentifier: Assembly-CSharp::SceneData
-  sceneName: 
-  sequences: []
-  actors: 
-  setUpSequence: {fileID: 0}
+  sceneName: "B\xE9atrice se confesse \xE0 William"
+  sequences:
+  - {fileID: 11400000, guid: c1e53cbb67e40684e8dac49573815da8, type: 2}
+  - {fileID: 11400000, guid: 5584edc0a979e0444924900920b05fc0, type: 2}
+  actors: 00000000010000000200000003000000050000000b0000000700000006000000
+  setUpSequence: {fileID: 11400000, guid: c05815cb4d73b664eb5024981eccdea4, type: 2}

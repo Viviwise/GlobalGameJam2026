@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: RopeOperator_Move_OutSceneTopLeft
   m_EditorClassIdentifier: Assembly-CSharp::MovementEvent
   eventType: 0
-  target: 6
+  target: 7
   speed: 5
   position: {x: -4.7, y: 6, z: 0}

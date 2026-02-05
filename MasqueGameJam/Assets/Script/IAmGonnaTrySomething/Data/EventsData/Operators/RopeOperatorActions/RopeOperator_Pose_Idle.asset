@@ -13,5 +13,6 @@ MonoBehaviour:
   m_Name: RopeOperator_Pose_Idle
   m_EditorClassIdentifier: Assembly-CSharp::ChangePoseEvent
   eventType: 4
-  id: 6
-  newPose: {fileID: 21300000, guid: fb60d118ec765f649b3b34a4daf53477, type: 3}
+  id: 7
+  newPose: {fileID: 21300000, guid: 33a80ecfc3373224ca6084652e60e7a3, type: 3}
+  newPoseDead: {fileID: 0}

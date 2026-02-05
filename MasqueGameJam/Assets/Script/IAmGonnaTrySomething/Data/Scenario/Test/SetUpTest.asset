@@ -12,10 +12,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b0e845809c39396478739c1f9a52ab43, type: 3}
   m_Name: SetUpTest
   m_EditorClassIdentifier: Assembly-CSharp::SequenceForScene
-  isSetUp: 0
+  isSetUp: 1
   sequenceName: 
   giver: {fileID: 0}
-  events: []
+  events:
+  - {fileID: 11400000, guid: 37e444dac5f986e4b8cbd94258135cbb, type: 2}
+  - {fileID: 11400000, guid: da5c430dd69c2c346b63f80b1efdd90b, type: 2}
+  - {fileID: 11400000, guid: a4dc7a8bdb5dd4a449ca0483a18a0baf, type: 2}
+  - {fileID: 11400000, guid: b18d0fcb361d70243a9c9ac8768ca16e, type: 2}
+  - {fileID: 11400000, guid: 63b0c241f56439a4fa7af21efb6d3c54, type: 2}
+  - {fileID: 11400000, guid: ce1a250244e3b2849abb994c78940de2, type: 2}
+  - {fileID: 11400000, guid: 189759f7eac531a4894f625881c434d9, type: 2}
   nextScene: {fileID: 0}
   CatharsysReaction: {fileID: 0}
   catharsysReactionSound: 0

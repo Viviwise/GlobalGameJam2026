@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 02ea93aca384ff847b1603e62d2389a4, type: 3}
+  m_Name: Mephisto_Dialogue_Scene4_1
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueEvent
+  eventType: 2
+  character: 4
+  sound: 22
+  contents:
+  - "Les jours passent, les pi\xE8ces d\xE9filent\u2026 Et l\u2019avare Johann conna\xEEt
+    une ascension fulgurante\u2026 "
+  - "Cependant ! L\xE0 o\xF9 les pi\xE8ces prennent vie, les com\xE9diens perdent
+    la leur\u2026 Une m\xE9taphore dites-vous ?"
+  - "Je suis persuad\xE9 que nombre d\u2019entre eux sont pr\xEAts \xE0 diff\xE9rer\u2026 "
+  - "Cela n\u2019en reste pas pour autant une fin des plus th\xE9\xE2trales ! Explosive
+    et color\xE9 !"

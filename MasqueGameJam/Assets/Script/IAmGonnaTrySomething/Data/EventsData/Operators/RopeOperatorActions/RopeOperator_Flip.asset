@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: RopeOperator_Flip
   m_EditorClassIdentifier: Assembly-CSharp::Script.IAmGonnaTrySomething.Data.EventsScripts.FlipPoseEvent
   eventType: 6
-  target: 6
+  target: 7

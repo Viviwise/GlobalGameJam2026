@@ -34,7 +34,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 385734f626e20414d956fe0ccd832361, type: 2}
   - {fileID: 11400000, guid: fd9dface8ee1808439c04338233ec8e3, type: 2}
   nextScene: {fileID: 11400000, guid: 66427bc802747ce49886f413376f2c1e, type: 2}
-  CatharsysReaction: {fileID: 21300000, guid: 713feac404aee3e46a07b8e176efee43, type: 3}
+  CatharsysReaction: {fileID: 21300000, guid: 023f312761a404d49b33a0a11996f25f, type: 3}
   catharsysReactionSound: 11
   wheelScore: 1
   reactionText: "J'ai vu quelques rat\xE9s, attention pour la suite..."

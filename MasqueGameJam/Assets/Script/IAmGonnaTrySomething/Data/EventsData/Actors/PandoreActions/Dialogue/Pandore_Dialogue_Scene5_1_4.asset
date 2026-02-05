@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 02ea93aca384ff847b1603e62d2389a4, type: 3}
+  m_Name: Pandore_Dialogue_Scene5_1_4
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueEvent
+  eventType: 2
+  character: 3
+  sound: 24
+  contents:
+  - "Me crois-tu aussi sotte ?  Me crois-tu aussi peu humain que je m\u2019abaisserai
+    \xE0 accepter ton offre ?"
+  - "Navr\xE9 de te d\xE9cevoir, mais je ne suis pas Johann. "
+  - "De toute mon existence, de tout mon \xEAtre, jamais je n\u2019ai \xE9prouv\xE9
+    ou ressenti tant de col\xE8re et de haine envers quelqu\u2019un."
