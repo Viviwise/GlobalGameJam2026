@@ -16,5 +16,6 @@ MonoBehaviour:
   character: 3
   sound: 24
   contents:
-  - "Je ne peux le promettre\u2026 Afin de prot\xE9ger le reste de nos camarades,
-    afin de vous prot\xE9ger, je consumerai ma vie s\u2019il le faut !"
+  - "Je ne peux le promettre\u2026 "
+  - "Afin de prot\xE9ger le reste de nos camarades, afin de vous prot\xE9ger, je
+    consumerai ma vie s\u2019il le faut !"

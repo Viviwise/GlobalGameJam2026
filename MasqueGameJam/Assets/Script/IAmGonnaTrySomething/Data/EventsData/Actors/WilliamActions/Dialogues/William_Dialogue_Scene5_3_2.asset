@@ -15,4 +15,6 @@ MonoBehaviour:
   eventType: 2
   character: 1
   sound: 26
-  contents: []
+  contents:
+  - "Encore ? Pourquoi devrais-je\u2026 \u2026"
+  - "Devrais-je\u2026 Euuuh\u2026 Non\u2026 Ce n\u2019est pas ce que je dois dire"

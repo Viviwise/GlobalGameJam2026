@@ -193,13 +193,17 @@ MonoBehaviour:
     - {fileID: 8300000, guid: f6ef7e9b342e79f43a06d7af86b8833f, type: 3}
   - name: BeatriceShortLine
     sounds:
-    - {fileID: 8300000, guid: b66481635d259034f99442953e6dfb7e, type: 3}
+    - {fileID: 8300000, guid: 5576b794c1ad1b745b5193d9ebe0d3bd, type: 3}
   - name: BeatriceNormalLine
     sounds:
-    - {fileID: 8300000, guid: b66481635d259034f99442953e6dfb7e, type: 3}
+    - {fileID: 8300000, guid: e09fec7deb5a8a8438048843337af58d, type: 3}
+    - {fileID: 8300000, guid: f8e1a84dd013e5542bf3e5710ac59f06, type: 3}
+    - {fileID: 8300000, guid: 37d84bedf76783d408d8391d621e49dc, type: 3}
+    - {fileID: 8300000, guid: 73b7b6dd782966b48905d1c838d43024, type: 3}
+    - {fileID: 8300000, guid: 4b7a2c47ac3021249bb0e4c8229658a7, type: 3}
   - name: BeatriceCryLine
     sounds:
-    - {fileID: 8300000, guid: b66481635d259034f99442953e6dfb7e, type: 3}
+    - {fileID: 8300000, guid: 1c8e8ae01eae846439913e955082adbc, type: 3}
   - name: JohannShortLine
     sounds:
     - {fileID: 8300000, guid: 5b6443a400248d14f8823f6392614bf9, type: 3}
@@ -207,6 +211,9 @@ MonoBehaviour:
     sounds:
     - {fileID: 8300000, guid: bfd8995f8695d2149820d8405c9f1db8, type: 3}
     - {fileID: 8300000, guid: aee16dc35c85deb479408fbedb602f5c, type: 3}
+    - {fileID: 8300000, guid: fa25e2f3ee7cf6143acc098f5856e8a7, type: 3}
+    - {fileID: 8300000, guid: 5769711a2b45ca44ab8cdd093847254b, type: 3}
+    - {fileID: 8300000, guid: df175b73d161e5342b33372f45894975, type: 3}
   - name: MephistoShortLine
     sounds:
     - {fileID: 8300000, guid: 9ca0e1588a986f84ba4f0bcf87d6c232, type: 3}
@@ -214,6 +221,9 @@ MonoBehaviour:
     sounds:
     - {fileID: 8300000, guid: 81ade9f2a8906344fa26fba92ed03036, type: 3}
     - {fileID: 8300000, guid: 27ee11ba739fdbe4496d9b8c502b1422, type: 3}
+    - {fileID: 8300000, guid: 945a4dda377552f4a840e303c11dcfa0, type: 3}
+    - {fileID: 8300000, guid: 3dfda30d7dadef748adae760babc87fc, type: 3}
+    - {fileID: 8300000, guid: 19a35f8293b01524d9a113d54d609c95, type: 3}
   - name: PandoreShortLine
     sounds:
     - {fileID: 8300000, guid: 17e9f574989006747b55a99ca4476140, type: 3}
@@ -221,6 +231,9 @@ MonoBehaviour:
     sounds:
     - {fileID: 8300000, guid: 4b954f4d148e88d4fadd141c5640aeb7, type: 3}
     - {fileID: 8300000, guid: 754c2bb577f54254ca25cd8fa7b0f3a5, type: 3}
+    - {fileID: 8300000, guid: d08fcf2080a2e9b43ade2be626447989, type: 3}
+    - {fileID: 8300000, guid: 040b251676c811f4c8d960b2865b6d2a, type: 3}
+    - {fileID: 8300000, guid: d3ff589b1d2393143adfbb6cf57d8b7d, type: 3}
   - name: WilliamShortLine
     sounds:
     - {fileID: 8300000, guid: e90ef6d3b43baaf49a503669bbcddc6a, type: 3}
@@ -228,6 +241,9 @@ MonoBehaviour:
     sounds:
     - {fileID: 8300000, guid: a0e5dec040cbfcf4b9e1bd9413c38eae, type: 3}
     - {fileID: 8300000, guid: 9ed302e32c90b8647a8756c129ec8d3c, type: 3}
+    - {fileID: 8300000, guid: a19849181b34c904ebb7d5ac8843ef39, type: 3}
+    - {fileID: 8300000, guid: 278622e5713240249b2c255e903119f0, type: 3}
+    - {fileID: 8300000, guid: 851d2c0d03e56ad4fbcd225b75c487f7, type: 3}
   - name: TensionMusic
     sounds:
     - {fileID: 8300000, guid: 6117883d98d90ac48a1597158051856f, type: 3}
@@ -240,3 +256,9 @@ MonoBehaviour:
   - name: GroundImpact
     sounds:
     - {fileID: 8300000, guid: b56c8f669abdf244e80ceefa50fb401f, type: 3}
+  - name: Orchestral
+    sounds:
+    - {fileID: 8300000, guid: 2c3d0263b40dbee4d82a224d0f86d0ff, type: 3}
+  - name: Dramatic
+    sounds:
+    - {fileID: 8300000, guid: 00878342e1de7b543a12fdf8c8c84809, type: 3}

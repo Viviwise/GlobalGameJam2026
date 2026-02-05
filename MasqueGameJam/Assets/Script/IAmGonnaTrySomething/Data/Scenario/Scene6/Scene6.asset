@@ -14,6 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::SceneData
   sceneName: "La confession de B\xE9atrice"
   sequences:
-  - {fileID: 0}
+  - {fileID: 11400000, guid: 9cc8eba4561ca5f4c8e53942bac5cd8a, type: 2}
+  - {fileID: 11400000, guid: 9b327021e9414e84b8ff07b1c34fd86d, type: 2}
   actors: 000000000100000002000000030000000400000008000000
   setUpSequence: {fileID: 11400000, guid: 16beba8ae6fc8c947b7e05e421309626, type: 2}

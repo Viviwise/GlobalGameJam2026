@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b0e845809c39396478739c1f9a52ab43, type: 3}
   m_Name: Scene6_SequenceSetUp
   m_EditorClassIdentifier: Assembly-CSharp::SequenceForScene
-  isSetUp: 0
+  isSetUp: 1
   sequenceName: 
   giver: {fileID: 0}
   events:
@@ -24,14 +24,16 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 201c213d77762034f8dd3df6e745289f, type: 2}
   - {fileID: 11400000, guid: 79fdce66ddd25f04596acf3b1c904b6f, type: 2}
   - {fileID: 11400000, guid: 201c213d77762034f8dd3df6e745289f, type: 2}
-  - {fileID: 11400000, guid: b36f3cb6baf8f9141ad18aeaac9942a1, type: 2}
+  - {fileID: 11400000, guid: 483860d6c01b42f47a2f6356a68e6201, type: 2}
   - {fileID: 11400000, guid: c98d3fa558a96c64f97ac469916580c5, type: 2}
   - {fileID: 11400000, guid: 201c213d77762034f8dd3df6e745289f, type: 2}
-  - {fileID: 11400000, guid: d7c34d79b4f1fda4f9d5651e818adce5, type: 2}
+  - {fileID: 11400000, guid: c9ce2aa7a2ac36e47a390382d493d8f6, type: 2}
+  - {fileID: 11400000, guid: 0111103193fd6814d92b43ebc4ab71ff, type: 2}
   - {fileID: 11400000, guid: 274ba86dd238ede44ba322670b0dfb87, type: 2}
   - {fileID: 11400000, guid: 6c51e3da1c6eb81439a7d13165e9dbb9, type: 2}
   - {fileID: 11400000, guid: 43deb6badf25a434c8102cd5584e2ad0, type: 2}
   - {fileID: 11400000, guid: 1d823b6bd25db0f49b56594870e00256, type: 2}
+  - {fileID: 11400000, guid: 0111103193fd6814d92b43ebc4ab71ff, type: 2}
   - {fileID: 11400000, guid: 0584cb63a7251534183b3aa194ea955f, type: 2}
   - {fileID: 11400000, guid: 947f02f0c617662428df2ac7ff37e874, type: 2}
   - {fileID: 11400000, guid: bcb5f47de4315bf4280af7075ba3bea9, type: 2}
