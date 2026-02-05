@@ -39,6 +39,7 @@ public class ScreenTransitionCurtain : MonoBehaviour
         }
     }
 
+
     void Start()
     {
         blackScreen = gameObject.GetComponent<Image>();
@@ -49,55 +50,59 @@ public class ScreenTransitionCurtain : MonoBehaviour
 
     }
 
-    public void TransitionAppear(SceneAsset sceneToLaunch=null)
+    public void TransitionAppear(string sceneName = null)
     {
-        StartCoroutine(Appear(sceneToLaunch));
+        StartCoroutine(Appear(sceneName));
     }
 
-    public void TransitionDisappear(SceneAsset sceneToLaunch = null)
+    public void TransitionDisappear(string sceneName = null)
     {
-        StartCoroutine(Disappear(sceneToLaunch));
+        StartCoroutine(Disappear(sceneName));
     }
 
-    IEnumerator Appear(SceneAsset sceneToLaunch=null)
+
+    IEnumerator Appear(string sceneName = null)
     {
         blackScreen.enabled = true;
         blackScreen.color = transparent;
-        float duration = transitionTime;
         float elapsedTime = 0f;
-        while (elapsedTime < duration)
+    
+        while (elapsedTime < transitionTime)
         {
-            float t = Mathf.Clamp01(elapsedTime / duration);
+            float t = Mathf.Clamp01(elapsedTime / transitionTime);
             blackScreen.color = Color.Lerp(transparent, black, t);
             elapsedTime += Time.deltaTime;
             yield return null;
         }
 
-        if (sceneToLaunch != null)
+        if (!string.IsNullOrEmpty(sceneName))
         {
-            SceneManager.LoadScene(sceneToLaunch.name);
+            SceneManager.LoadScene(sceneName);
         }
     }
-    IEnumerator Disappear(SceneAsset sceneToLaunch=null)
+
+    IEnumerator Disappear(string sceneName = null)
     {
         blackScreen.enabled = true;
         blackScreen.color = black;
-        float duration = transitionTime;
         float elapsedTime = 0f;
-        while (elapsedTime < duration)
+
+        while (elapsedTime < transitionTime)
         {
-            float t = Mathf.Clamp01(elapsedTime / duration);
+            float t = Mathf.Clamp01(elapsedTime / transitionTime);
             blackScreen.color = Color.Lerp(black, transparent, t);
             elapsedTime += Time.deltaTime;
             yield return null;
         }
+
         blackScreen.enabled = false;
 
-        if (sceneToLaunch != null)
+        if (!string.IsNullOrEmpty(sceneName))
         {
-            SceneManager.LoadScene(sceneToLaunch.name);
+            SceneManager.LoadScene(sceneName);
         }
     }
+
     
     IEnumerator TransitionScene(string nomScene)
     {

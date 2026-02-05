@@ -43,7 +43,7 @@ public class ScenarioManager : MonoBehaviour
 
     public void SetUpAll()
     {
-        Time.timeScale = 20f;
+       // Time.timeScale = 20f;
         objectsOffset = new Vector3(0, -1.5f, 0);
         lightObject.gameObject.SetActive(false);
         currentScene = firstScene;

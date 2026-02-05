@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8723532a97861f7409fc909507bdda27, type: 3}
   m_Name: MissSisypheSurprise
   m_EditorClassIdentifier: Assembly-CSharp::SisypheAnimEvent
-  eventType: 12
+  eventType: 13
   target: 5
   animatorStateName: MissSisypheSurprise
