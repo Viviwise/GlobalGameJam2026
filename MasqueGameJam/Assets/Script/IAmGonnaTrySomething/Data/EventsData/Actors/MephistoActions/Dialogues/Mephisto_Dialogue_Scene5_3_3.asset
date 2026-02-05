@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::DialogueEvent
   eventType: 2
   character: 4
-  sound: 21
+  sound: 22
   contents:
   - "Je le savais ! Les bonnes choses ont toute une fin, n\u2019est-ce pas William
     ? "

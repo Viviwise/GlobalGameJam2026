@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::DialogueEvent
   eventType: 2
   character: 4
-  sound: 21
+  sound: 22
   contents:
   - "Je dois admettre\u2026 C\u2019est plut\xF4t bien trouv\xE9\u2026 "
   - "Mais cela ne veut pas pour autant dire que l\u2019\xE9valuation changera ! Que

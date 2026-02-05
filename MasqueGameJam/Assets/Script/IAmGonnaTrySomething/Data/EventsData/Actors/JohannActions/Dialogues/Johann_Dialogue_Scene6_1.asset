@@ -10,12 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 02ea93aca384ff847b1603e62d2389a4, type: 3}
-  m_Name: Beatrice_Dialogue_Scene2_2_1
+  m_Name: Johann_Dialogue_Scene6_1
   m_EditorClassIdentifier: Assembly-CSharp::DialogueEvent
   eventType: 2
-  character: 0
-  sound: 17
+  character: 2
+  sound: 20
   contents:
-  - "Johann\u2026 Je pense que Pandore a raison\u2026 "
-  - "Ce n\u2019est pas une bonne id\xE9e\u2026 Tu ne sais pas ce que cela implique\u2026"
-  - " Les termes et les conditions qu\u2019il a pu imposer\u2026 J\u2019ai peur Johann\u2026"
+  - "La catharsis approche \xE0 grands pas ! Qu\u2019il me tarde de voir le r\xE9sultat
+    !"

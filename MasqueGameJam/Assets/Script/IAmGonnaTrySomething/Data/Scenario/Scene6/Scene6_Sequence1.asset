@@ -21,13 +21,24 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 6c51e3da1c6eb81439a7d13165e9dbb9, type: 2}
   - {fileID: 11400000, guid: 1fc2d7d269607684ab0e854c0d2307e1, type: 2}
   - {fileID: 11400000, guid: 1d823b6bd25db0f49b56594870e00256, type: 2}
+  - {fileID: 11400000, guid: 0584cb63a7251534183b3aa194ea955f, type: 2}
   - {fileID: 11400000, guid: 4ba9ea3932f077d47b204c03e3f8426b, type: 2}
+  - {fileID: 11400000, guid: bcb5f47de4315bf4280af7075ba3bea9, type: 2}
   - {fileID: 11400000, guid: a9db22982fabc0f48aeb210ec9750932, type: 2}
   - {fileID: 11400000, guid: 22092ba92b6db1d4bb4b32d963c03a07, type: 2}
+  - {fileID: 11400000, guid: 0584cb63a7251534183b3aa194ea955f, type: 2}
   - {fileID: 11400000, guid: aaa6d21b4e2620449a582a1620dd2923, type: 2}
+  - {fileID: 11400000, guid: bcb5f47de4315bf4280af7075ba3bea9, type: 2}
   - {fileID: 11400000, guid: 37cf734dc0adfed4ba4f46d488689bdf, type: 2}
+  - {fileID: 11400000, guid: 0584cb63a7251534183b3aa194ea955f, type: 2}
   - {fileID: 11400000, guid: 188045ba7ccd9544fbf249ca4ddad68a, type: 2}
+  - {fileID: 11400000, guid: bcb5f47de4315bf4280af7075ba3bea9, type: 2}
   - {fileID: 11400000, guid: bc74a9e58566ac34b9a1491bcbd87392, type: 2}
+  - {fileID: 11400000, guid: 1d823b6bd25db0f49b56594870e00256, type: 2}
+  - {fileID: 11400000, guid: 201c213d77762034f8dd3df6e745289f, type: 2}
+  - {fileID: 11400000, guid: 26c6ad2d800f94b4cba39b1b094fbd5c, type: 2}
+  - {fileID: 11400000, guid: 201c213d77762034f8dd3df6e745289f, type: 2}
+  - {fileID: 11400000, guid: d7c34d79b4f1fda4f9d5651e818adce5, type: 2}
   nextScene: {fileID: 0}
   CatharsysReaction: {fileID: 21300000, guid: 713feac404aee3e46a07b8e176efee43, type: 3}
   catharsysReactionSound: 12
