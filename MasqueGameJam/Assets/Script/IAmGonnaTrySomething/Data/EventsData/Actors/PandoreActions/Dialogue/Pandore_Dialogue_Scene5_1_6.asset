@@ -10,12 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 02ea93aca384ff847b1603e62d2389a4, type: 3}
-  m_Name: Mephisto_Dialogue_Scene2
+  m_Name: Pandore_Dialogue_Scene5_1_6
   m_EditorClassIdentifier: Assembly-CSharp::DialogueEvent
   eventType: 2
-  character: 4
-  sound: 21
+  character: 3
+  sound: 24
   contents:
-  - "Merveilleux ! Appr\xE9cie bien mon pr\xE9sent, Johann. "
-  - "Tu verras, il est mortel ! Je sais que les autres appr\xE9cieront \xE9galement
-    !"
+  - "Je ne peux le promettre\u2026 Afin de prot\xE9ger le reste de nos camarades,
+    afin de vous prot\xE9ger, je consumerai ma vie s\u2019il le faut !"

@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 02ea93aca384ff847b1603e62d2389a4, type: 3}
+  m_Name: Mephisto_Dialogue_Scene5_3_4
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueEvent
+  eventType: 2
+  character: 4
+  sound: 21
+  contents:
+  - "Je dois admettre\u2026 C\u2019est plut\xF4t bien trouv\xE9\u2026 "
+  - "Mais cela ne veut pas pour autant dire que l\u2019\xE9valuation changera ! Que
+    voulez-vous, je suis capricieux !"

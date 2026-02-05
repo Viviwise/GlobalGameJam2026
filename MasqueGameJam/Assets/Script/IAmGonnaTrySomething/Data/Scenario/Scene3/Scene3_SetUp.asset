@@ -12,21 +12,36 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b0e845809c39396478739c1f9a52ab43, type: 3}
   m_Name: Scene3_SetUp
   m_EditorClassIdentifier: Assembly-CSharp::SequenceForScene
-  isSetUp: 0
+  isSetUp: 1
   sequenceName: 
   giver: {fileID: 0}
   events:
+  - {fileID: 11400000, guid: e9f7ca7859d3bbe4b8b42149d07ac874, type: 2}
+  - {fileID: 11400000, guid: 0111103193fd6814d92b43ebc4ab71ff, type: 2}
   - {fileID: 11400000, guid: 43e5342f313bb7549bfa41ac445d9119, type: 2}
   - {fileID: 11400000, guid: 746bc8d56a16f8446852fb9e46d4b290, type: 2}
   - {fileID: 11400000, guid: 08dadeb584ea2e14a846941bcc4ef6f7, type: 2}
+  - {fileID: 11400000, guid: 9fe7357319d62534b810e40ca982a3a0, type: 2}
   - {fileID: 11400000, guid: 704e89f4c7078114386bc70d85add4ea, type: 2}
+  - {fileID: 11400000, guid: 153a84be8fe2104469f5bba3d9456f0e, type: 2}
+  - {fileID: 11400000, guid: 02ab4d0a3d136bf41bb702ddf9548dcc, type: 2}
+  - {fileID: 11400000, guid: a39833d1ee2cb0b4ebbc57a18102bc7f, type: 2}
   - {fileID: 11400000, guid: 0113539218b8af44296f350752f57258, type: 2}
+  - {fileID: 11400000, guid: 9fe7357319d62534b810e40ca982a3a0, type: 2}
   - {fileID: 11400000, guid: 986ae61dfc830af4ca97aa5707f9e5dc, type: 2}
-  - {fileID: 11400000, guid: 1d823b6bd25db0f49b56594870e00256, type: 2}
+  - {fileID: 11400000, guid: df129a5bdaa654f47b7d4b3a6c8dfe1e, type: 2}
+  - {fileID: 11400000, guid: eac5c71ec3002e54faa6ba4e393c538e, type: 2}
+  - {fileID: 11400000, guid: c11769618bb13214e82a9b3bb5902589, type: 2}
+  - {fileID: 11400000, guid: dce9be9c3606dbd499ef615ad908f05f, type: 2}
+  - {fileID: 11400000, guid: fd6a5f8906450cf4ca1059a9cd427839, type: 2}
   - {fileID: 11400000, guid: d9440ab5da7114a4ab8225e886aedfa1, type: 2}
+  - {fileID: 11400000, guid: be5e991000e50fb4fb9b1f9ae722ad29, type: 2}
+  - {fileID: 11400000, guid: 6c51e3da1c6eb81439a7d13165e9dbb9, type: 2}
   - {fileID: 11400000, guid: 8f63bc17196cde2489bbd61db818e412, type: 2}
+  - {fileID: 11400000, guid: 1d823b6bd25db0f49b56594870e00256, type: 2}
+  - {fileID: 11400000, guid: fd6a5f8906450cf4ca1059a9cd427839, type: 2}
   - {fileID: 11400000, guid: 2a4e374ce168ca144a1810dff254f503, type: 2}
-  - {fileID: 11400000, guid: f758d172d9eb999479e82a528f7ef6d1, type: 2}
+  - {fileID: 11400000, guid: be5e991000e50fb4fb9b1f9ae722ad29, type: 2}
   nextScene: {fileID: 0}
   CatharsysReaction: {fileID: 0}
   catharsysReactionSound: 0

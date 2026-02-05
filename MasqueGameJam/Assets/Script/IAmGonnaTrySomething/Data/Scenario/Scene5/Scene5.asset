@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ce8a13d67f00ae445a3344c78a203b32, type: 3}
+  m_Name: Scene5
+  m_EditorClassIdentifier: Assembly-CSharp::SceneData
+  sceneName: "Les acteurs font face \xE0 Mephisto"
+  sequences:
+  - {fileID: 11400000, guid: 2c72c9a8e3fc53f45b8308117719942f, type: 2}
+  - {fileID: 11400000, guid: 6018447c569c0e74abe03e80a0a3a992, type: 2}
+  - {fileID: 11400000, guid: 961db926f7794064cac7a90e25eac855, type: 2}
+  actors: 00000000010000000200000003000000040000000500000006000000
+  setUpSequence: {fileID: 11400000, guid: 14e61d4d4bfd77942867fcd7f3d945d1, type: 2}

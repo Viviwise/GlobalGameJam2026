@@ -41,6 +41,6 @@ public enum ObjectsID
     SoundOperator,
     BroomOperator,
     TowerObject,
-    ChandelierObject,
+    MoonObject,
     
 }

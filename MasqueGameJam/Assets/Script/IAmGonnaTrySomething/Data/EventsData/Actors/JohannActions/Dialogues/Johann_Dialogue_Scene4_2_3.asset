@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 02ea93aca384ff847b1603e62d2389a4, type: 3}
+  m_Name: Johann_Dialogue_Scene4_2_3
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueEvent
+  eventType: 2
+  character: 2
+  sound: 20
+  contents:
+  - "Me reprocherais-tu d\u2019\xEAtre critique ? Les minables n\u2019ont pas leur
+    place sur sc\xE8ne.   "
+  - "Le th\xE9\xE2tre n\u2019est pas qu\u2019un art, c\u2019est une vie ! "
+  - "C\u2019est ma vie ! Moi seul doit \xEAtre autoris\xE9 \xE0 briller ! Moi seul
+    doit \xEAtre acclam\xE9 !"
+  - "Je suis n\xE9 sur sc\xE8ne \u2026 Et je mourrais sur sc\xE8ne !"

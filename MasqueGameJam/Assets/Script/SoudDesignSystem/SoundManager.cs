@@ -31,6 +31,10 @@ public enum SoundType
     WilliamNormalLine,
     TensionMusic,
     Poof,
+    Rope,
+    GroundImpact,
+    Orchestral,
+    Dramatic,
 }
 [RequireComponent(typeof(AudioSource)), ExecuteInEditMode]
 public class SoundManager : MonoBehaviour

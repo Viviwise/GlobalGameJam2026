@@ -1,0 +1,45 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b0e845809c39396478739c1f9a52ab43, type: 3}
+  m_Name: Scene3_Sequence2
+  m_EditorClassIdentifier: Assembly-CSharp::SequenceForScene
+  isSetUp: 0
+  sequenceName: "B\xE9atrice s'effondre"
+  giver: {fileID: 21300000, guid: 9605282219897fd478be0c4a08808934, type: 3}
+  events:
+  - {fileID: 11400000, guid: 6c51e3da1c6eb81439a7d13165e9dbb9, type: 2}
+  - {fileID: 11400000, guid: 8c3036653ad4a3a478dbbf3287e8f6ac, type: 2}
+  - {fileID: 11400000, guid: 1d823b6bd25db0f49b56594870e00256, type: 2}
+  - {fileID: 11400000, guid: fd6a5f8906450cf4ca1059a9cd427839, type: 2}
+  - {fileID: 11400000, guid: c9803df0771091247b48e7ea2144eac4, type: 2}
+  - {fileID: 11400000, guid: be5e991000e50fb4fb9b1f9ae722ad29, type: 2}
+  - {fileID: 11400000, guid: 52489d05d1a60c84e9cf99c3a8d6ca4a, type: 2}
+  - {fileID: 11400000, guid: a9db22982fabc0f48aeb210ec9750932, type: 2}
+  - {fileID: 11400000, guid: d9d1e2b481c3bcd46a85457f2182e4a2, type: 2}
+  - {fileID: 11400000, guid: 84ff88d9cf3e6e84296dd95e892f9e47, type: 2}
+  - {fileID: 11400000, guid: fd6a5f8906450cf4ca1059a9cd427839, type: 2}
+  - {fileID: 11400000, guid: cb095374466d47e48a3dca3bd13f9b80, type: 2}
+  - {fileID: 11400000, guid: be5e991000e50fb4fb9b1f9ae722ad29, type: 2}
+  - {fileID: 11400000, guid: 773d202c269ba0540b6c1b4ed27a0f0f, type: 2}
+  - {fileID: 11400000, guid: c11769618bb13214e82a9b3bb5902589, type: 2}
+  - {fileID: 11400000, guid: 5cd6d316995fd1e41b24262a3f37bc60, type: 2}
+  - {fileID: 11400000, guid: bd1d3197261b3ec43a7e40c5f1f438ce, type: 2}
+  - {fileID: 11400000, guid: 6cf5f7ae6d14bcf43bbce063bd670efe, type: 2}
+  - {fileID: 11400000, guid: 70888a4bd2f54d343a32996f52b851c9, type: 2}
+  - {fileID: 11400000, guid: 02ab4d0a3d136bf41bb702ddf9548dcc, type: 2}
+  - {fileID: 11400000, guid: d60e730b2632c234bb8a3b1870073108, type: 2}
+  - {fileID: 11400000, guid: 195a2386bb9cf084582a36bc61d5c85b, type: 2}
+  nextScene: {fileID: 11400000, guid: d97eadf760551cf4c8007f08426e6643, type: 2}
+  CatharsysReaction: {fileID: 21300000, guid: 94f3f469674ec91448f5eb784a79a80e, type: 3}
+  catharsysReactionSound: 12
+  wheelScore: 0
+  reactionText: Allez, un peu d'action...

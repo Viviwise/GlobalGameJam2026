@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: RopeOperator_Teleport_OutSceneRight
   m_EditorClassIdentifier: Assembly-CSharp::TeleportationEvent
   eventType: 1
-  target: 6
+  target: 7
   position: {x: 6, y: 2, z: 0}

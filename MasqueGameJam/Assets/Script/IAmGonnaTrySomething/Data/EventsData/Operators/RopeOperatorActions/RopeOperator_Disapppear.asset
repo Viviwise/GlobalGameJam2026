@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 67785e9b28bb406e8f4eefc031b97f79, type: 3}
   m_Name: RopeOperator_Disapppear
   m_EditorClassIdentifier: Assembly-CSharp::Script.IAmGonnaTrySomething.Data.EventsScripts.DisappearEvent
-  eventType: 0
-  target: 6
+  eventType: 7
+  target: 7

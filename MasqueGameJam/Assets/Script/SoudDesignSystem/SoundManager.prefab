@@ -192,11 +192,14 @@ MonoBehaviour:
     sounds:
     - {fileID: 8300000, guid: f6ef7e9b342e79f43a06d7af86b8833f, type: 3}
   - name: BeatriceShortLine
-    sounds: []
+    sounds:
+    - {fileID: 8300000, guid: b66481635d259034f99442953e6dfb7e, type: 3}
   - name: BeatriceNormalLine
-    sounds: []
+    sounds:
+    - {fileID: 8300000, guid: b66481635d259034f99442953e6dfb7e, type: 3}
   - name: BeatriceCryLine
-    sounds: []
+    sounds:
+    - {fileID: 8300000, guid: b66481635d259034f99442953e6dfb7e, type: 3}
   - name: JohannShortLine
     sounds:
     - {fileID: 8300000, guid: 5b6443a400248d14f8823f6392614bf9, type: 3}
@@ -225,3 +228,15 @@ MonoBehaviour:
     sounds:
     - {fileID: 8300000, guid: a0e5dec040cbfcf4b9e1bd9413c38eae, type: 3}
     - {fileID: 8300000, guid: 9ed302e32c90b8647a8756c129ec8d3c, type: 3}
+  - name: TensionMusic
+    sounds:
+    - {fileID: 8300000, guid: 6117883d98d90ac48a1597158051856f, type: 3}
+  - name: Poof
+    sounds:
+    - {fileID: 8300000, guid: 31eaf8ebaad4fc040bc4d2fc47ce826b, type: 3}
+  - name: Rope
+    sounds:
+    - {fileID: 8300000, guid: be6026c745475b24da74cd5b61b1c613, type: 3}
+  - name: GroundImpact
+    sounds:
+    - {fileID: 8300000, guid: b56c8f669abdf244e80ceefa50fb401f, type: 3}

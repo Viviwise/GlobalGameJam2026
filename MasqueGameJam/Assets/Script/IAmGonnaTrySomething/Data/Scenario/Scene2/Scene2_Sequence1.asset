@@ -18,12 +18,22 @@ MonoBehaviour:
   events:
   - {fileID: 11400000, guid: 9fe7357319d62534b810e40ca982a3a0, type: 2}
   - {fileID: 11400000, guid: 9cc930dc6b0a45a40af259647d576053, type: 2}
+  - {fileID: 11400000, guid: fd6a5f8906450cf4ca1059a9cd427839, type: 2}
   - {fileID: 11400000, guid: 00bc4d3d20c531b4286e360f5f09dfb3, type: 2}
+  - {fileID: 11400000, guid: be5e991000e50fb4fb9b1f9ae722ad29, type: 2}
+  - {fileID: 11400000, guid: 75f0016d40d696242a1c037caa69378f, type: 2}
   - {fileID: 11400000, guid: c3c5f26442a1a8f498609ebe1909cbd6, type: 2}
+  - {fileID: 11400000, guid: fd9dface8ee1808439c04338233ec8e3, type: 2}
+  - {fileID: 11400000, guid: fd6a5f8906450cf4ca1059a9cd427839, type: 2}
   - {fileID: 11400000, guid: 6b8cfdb4becaca549a396763d6b41dfa, type: 2}
+  - {fileID: 11400000, guid: be5e991000e50fb4fb9b1f9ae722ad29, type: 2}
+  - {fileID: 11400000, guid: 75f0016d40d696242a1c037caa69378f, type: 2}
+  - {fileID: 11400000, guid: 11cbc988ba7404c45bba70d1b028e4ec, type: 2}
   - {fileID: 11400000, guid: ef0b0274c5b12f140a57cc42abf0dd85, type: 2}
-  nextScene: {fileID: 0}
-  CatharsysReaction: {fileID: 0}
-  catharsysReactionSound: 0
-  wheelScore: 0
-  reactionText: 
+  - {fileID: 11400000, guid: fd9dface8ee1808439c04338233ec8e3, type: 2}
+  - {fileID: 11400000, guid: b740d4d05b9074f449708707a5821644, type: 2}
+  nextScene: {fileID: 11400000, guid: ba3d8b5d05ebd2a44872b909d7ad6150, type: 2}
+  CatharsysReaction: {fileID: 21300000, guid: b5f936f196216ba4b81b8902be879d63, type: 3}
+  catharsysReactionSound: 11
+  wheelScore: 1
+  reactionText: "Allons bon, ce n'est pas si compliqu\xE9 d'apprendre un texte !"

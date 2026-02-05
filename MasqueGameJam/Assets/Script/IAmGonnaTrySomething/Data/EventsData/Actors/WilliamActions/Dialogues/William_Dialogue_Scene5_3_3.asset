@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 02ea93aca384ff847b1603e62d2389a4, type: 3}
+  m_Name: William_Dialogue_Scene5_3_3
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueEvent
+  eventType: 2
+  character: 1
+  sound: 26
+  contents:
+  - " \u2026 Toute chose \xE0 une fin\u2026 Un jour, ma carri\xE8re prendra fin\u2026
+    Je n\u2019aurais peut-\xEAtre pas autant marqu\xE9 la sc\xE8ne que je l\u2019aurais
+    esp\xE9r\xE9 mais je ne laisserai aucun regret."
+  - "En toute honn\xEAtet\xE9, je dirais que peu m\u2019importe l\u2019importance
+    que j\u2019ai pu avoir. Ce que j\u2019ai aim\xE9, c\u2019est me produire sur
+    sc\xE8ne, avec des personnes merveilleuses\u2026"
+  - "Alors, oui, cela prendra un jour fin\u2026 Mais les mauvaises choses ont \xE9galement
+    une fin\u2026"
+  - "Ce ne sera sans doute pas moi, mais j\u2019ai confiance, j\u2019ai foi."
+  - "Je sais que l\u2019un de mes cama-Non\u2026 L\u2019un de mes amis mettra un
+    terme \xE0 cette mascarade\u2026 "

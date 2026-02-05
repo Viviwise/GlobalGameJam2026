@@ -1,0 +1,35 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b0e845809c39396478739c1f9a52ab43, type: 3}
+  m_Name: Scene6_Sequence1
+  m_EditorClassIdentifier: Assembly-CSharp::SequenceForScene
+  isSetUp: 0
+  sequenceName: "B\xE9atrice n'ose pas parler"
+  giver: {fileID: 21300000, guid: 3cb1e791ad986104fb0acf666be2c6b1, type: 3}
+  events:
+  - {fileID: 11400000, guid: 9fe7357319d62534b810e40ca982a3a0, type: 2}
+  - {fileID: 11400000, guid: 9cc930dc6b0a45a40af259647d576053, type: 2}
+  - {fileID: 11400000, guid: 6c51e3da1c6eb81439a7d13165e9dbb9, type: 2}
+  - {fileID: 11400000, guid: 1fc2d7d269607684ab0e854c0d2307e1, type: 2}
+  - {fileID: 11400000, guid: 1d823b6bd25db0f49b56594870e00256, type: 2}
+  - {fileID: 11400000, guid: 4ba9ea3932f077d47b204c03e3f8426b, type: 2}
+  - {fileID: 11400000, guid: a9db22982fabc0f48aeb210ec9750932, type: 2}
+  - {fileID: 11400000, guid: 22092ba92b6db1d4bb4b32d963c03a07, type: 2}
+  - {fileID: 11400000, guid: aaa6d21b4e2620449a582a1620dd2923, type: 2}
+  - {fileID: 11400000, guid: 37cf734dc0adfed4ba4f46d488689bdf, type: 2}
+  - {fileID: 11400000, guid: 188045ba7ccd9544fbf249ca4ddad68a, type: 2}
+  - {fileID: 11400000, guid: bc74a9e58566ac34b9a1491bcbd87392, type: 2}
+  nextScene: {fileID: 0}
+  CatharsysReaction: {fileID: 21300000, guid: 713feac404aee3e46a07b8e176efee43, type: 3}
+  catharsysReactionSound: 12
+  wheelScore: 0
+  reactionText: "Dommage, elle avait piqu\xE9 ma curiosit\xE9..."

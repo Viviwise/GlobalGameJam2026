@@ -1,0 +1,72 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b0e845809c39396478739c1f9a52ab43, type: 3}
+  m_Name: Scene5_Sequence2
+  m_EditorClassIdentifier: Assembly-CSharp::SequenceForScene
+  isSetUp: 0
+  sequenceName: La dispute sous le feu des projecteurs
+  giver: {fileID: 21300000, guid: 3cb1e791ad986104fb0acf666be2c6b1, type: 3}
+  events:
+  - {fileID: 11400000, guid: 02ab4d0a3d136bf41bb702ddf9548dcc, type: 2}
+  - {fileID: 11400000, guid: 4248c33692581b940bf8848d9ccee49c, type: 2}
+  - {fileID: 11400000, guid: 6c51e3da1c6eb81439a7d13165e9dbb9, type: 2}
+  - {fileID: 11400000, guid: 2659540c52bc1394f9ff25d9cefb1cfb, type: 2}
+  - {fileID: 11400000, guid: 1d823b6bd25db0f49b56594870e00256, type: 2}
+  - {fileID: 11400000, guid: 02ab4d0a3d136bf41bb702ddf9548dcc, type: 2}
+  - {fileID: 11400000, guid: 171266889e9fcd34fa4650f5781001e3, type: 2}
+  - {fileID: 11400000, guid: 74aa6a73f77d23b45be62a1be24b3e59, type: 2}
+  - {fileID: 11400000, guid: 02ab4d0a3d136bf41bb702ddf9548dcc, type: 2}
+  - {fileID: 11400000, guid: c9e21dbcd98feb64595841c75c849269, type: 2}
+  - {fileID: 11400000, guid: dd4e0ad7086f3034999df2e31fd2dddd, type: 2}
+  - {fileID: 11400000, guid: 5d19ba0ec55c87440b31382fcfa0cefc, type: 2}
+  - {fileID: 11400000, guid: cfd9c6f0b9b6993488995b9af10e44e4, type: 2}
+  - {fileID: 11400000, guid: 02ab4d0a3d136bf41bb702ddf9548dcc, type: 2}
+  - {fileID: 11400000, guid: 4248c33692581b940bf8848d9ccee49c, type: 2}
+  - {fileID: 11400000, guid: a9db22982fabc0f48aeb210ec9750932, type: 2}
+  - {fileID: 11400000, guid: ee1679d26d2033240ad252bf291c8a3f, type: 2}
+  - {fileID: 11400000, guid: 02ab4d0a3d136bf41bb702ddf9548dcc, type: 2}
+  - {fileID: 11400000, guid: 171266889e9fcd34fa4650f5781001e3, type: 2}
+  - {fileID: 11400000, guid: 74aa6a73f77d23b45be62a1be24b3e59, type: 2}
+  - {fileID: 11400000, guid: 02ab4d0a3d136bf41bb702ddf9548dcc, type: 2}
+  - {fileID: 11400000, guid: c9e21dbcd98feb64595841c75c849269, type: 2}
+  - {fileID: 11400000, guid: a6a82be1187c26346bbfb26fcaa65174, type: 2}
+  - {fileID: 11400000, guid: 02ab4d0a3d136bf41bb702ddf9548dcc, type: 2}
+  - {fileID: 11400000, guid: e126aeec08bb2d3428a28b1351a6c43d, type: 2}
+  - {fileID: 11400000, guid: 74aa6a73f77d23b45be62a1be24b3e59, type: 2}
+  - {fileID: 11400000, guid: 02ab4d0a3d136bf41bb702ddf9548dcc, type: 2}
+  - {fileID: 11400000, guid: 171266889e9fcd34fa4650f5781001e3, type: 2}
+  - {fileID: 11400000, guid: afc78dd3aa7f0cd4b8fe83508211c39a, type: 2}
+  - {fileID: 11400000, guid: 02ab4d0a3d136bf41bb702ddf9548dcc, type: 2}
+  - {fileID: 11400000, guid: 4248c33692581b940bf8848d9ccee49c, type: 2}
+  - {fileID: 11400000, guid: f5522179debd10c449b675b59702a573, type: 2}
+  - {fileID: 11400000, guid: 02ab4d0a3d136bf41bb702ddf9548dcc, type: 2}
+  - {fileID: 11400000, guid: c9e21dbcd98feb64595841c75c849269, type: 2}
+  - {fileID: 11400000, guid: 74aa6a73f77d23b45be62a1be24b3e59, type: 2}
+  - {fileID: 11400000, guid: 02ab4d0a3d136bf41bb702ddf9548dcc, type: 2}
+  - {fileID: 11400000, guid: 02ab4d0a3d136bf41bb702ddf9548dcc, type: 2}
+  - {fileID: 11400000, guid: e126aeec08bb2d3428a28b1351a6c43d, type: 2}
+  - {fileID: 11400000, guid: 5b957a88b1846cb44ac794e84dc9d0a9, type: 2}
+  - {fileID: 11400000, guid: 02ab4d0a3d136bf41bb702ddf9548dcc, type: 2}
+  - {fileID: 11400000, guid: 171266889e9fcd34fa4650f5781001e3, type: 2}
+  - {fileID: 11400000, guid: 74aa6a73f77d23b45be62a1be24b3e59, type: 2}
+  - {fileID: 11400000, guid: 02ab4d0a3d136bf41bb702ddf9548dcc, type: 2}
+  - {fileID: 11400000, guid: c9e21dbcd98feb64595841c75c849269, type: 2}
+  - {fileID: 11400000, guid: d9a57c242f8ca364f86c1be371091e00, type: 2}
+  - {fileID: 11400000, guid: cfd9c6f0b9b6993488995b9af10e44e4, type: 2}
+  - {fileID: 11400000, guid: 0a5666f24ce9e80469b65b7bfcbf9bff, type: 2}
+  - {fileID: 11400000, guid: dc45fd092c3350f4aa63b98c320e4413, type: 2}
+  - {fileID: 11400000, guid: b740d4d05b9074f449708707a5821644, type: 2}
+  nextScene: {fileID: 11400000, guid: 27bda2ee2c71fe247b827f6c0b3aacb1, type: 2}
+  CatharsysReaction: {fileID: 21300000, guid: 023f312761a404d49b33a0a11996f25f, type: 3}
+  catharsysReactionSound: 11
+  wheelScore: 1
+  reactionText: "Qui donc \xE0 engag\xE9 ces empot\xE9s d'op\xE9rateurs ? "

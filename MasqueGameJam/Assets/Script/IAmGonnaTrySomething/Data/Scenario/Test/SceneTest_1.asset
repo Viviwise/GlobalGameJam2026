@@ -13,11 +13,13 @@ MonoBehaviour:
   m_Name: SceneTest_1
   m_EditorClassIdentifier: Assembly-CSharp::SequenceForScene
   isSetUp: 0
-  sequenceName: 
-  giver: {fileID: 0}
-  events: []
-  nextScene: {fileID: 0}
-  CatharsysReaction: {fileID: 0}
-  catharsysReactionSound: 0
-  wheelScore: 0
-  reactionText: 
+  sequenceName: Seq1
+  giver: {fileID: 21300000, guid: 3cb1e791ad986104fb0acf666be2c6b1, type: 3}
+  events:
+  - {fileID: 11400000, guid: 2f147d192760ab54caec274caed9bbbf, type: 2}
+  - {fileID: 11400000, guid: 189759f7eac531a4894f625881c434d9, type: 2}
+  nextScene: {fileID: 11400000, guid: 835082603781607469ac8b306e939935, type: 2}
+  CatharsysReaction: {fileID: 21300000, guid: cc3dfd10719fac74db170de5cd617874, type: 3}
+  catharsysReactionSound: 3
+  wheelScore: 2
+  reactionText: Golden choice

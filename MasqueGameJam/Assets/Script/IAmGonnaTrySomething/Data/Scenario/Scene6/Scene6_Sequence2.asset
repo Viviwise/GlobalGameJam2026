@@ -1,0 +1,39 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b0e845809c39396478739c1f9a52ab43, type: 3}
+  m_Name: Scene6_Sequence2
+  m_EditorClassIdentifier: Assembly-CSharp::SequenceForScene
+  isSetUp: 0
+  sequenceName: "B\xE9atrice r\xE9v\xE8le la v\xE9rit\xE9"
+  giver: {fileID: 21300000, guid: 9605282219897fd478be0c4a08808934, type: 3}
+  events:
+  - {fileID: 11400000, guid: b9f80b7ca459f4941af6db26c822b18d, type: 2}
+  - {fileID: 11400000, guid: 648ac263fdba71940af47baeb34798ab, type: 2}
+  - {fileID: 11400000, guid: 83956421f752f014fa51705cfa99febb, type: 2}
+  - {fileID: 11400000, guid: 7a7bc16d28b06dd4da3fb0522fb98db5, type: 2}
+  - {fileID: 11400000, guid: 0f7bdbe924af24a4a8d7f050477b8ba8, type: 2}
+  - {fileID: 11400000, guid: e4561ef01dbf0f640ab6384224574ae7, type: 2}
+  - {fileID: 11400000, guid: 916e23ec9ead52a45b8834f7b6a19b09, type: 2}
+  - {fileID: 11400000, guid: 2114558da66a6434b928d3b2cb8d23de, type: 2}
+  - {fileID: 11400000, guid: ea4a14afa212b5d4e8786a9056c2c31b, type: 2}
+  - {fileID: 11400000, guid: 988043e7961f61f4794aaa91cac27a75, type: 2}
+  - {fileID: 11400000, guid: a490ca2ec8e49cd488c51e67063346a7, type: 2}
+  - {fileID: 11400000, guid: b671ba5abb1be614080596cf4933cc1b, type: 2}
+  - {fileID: 11400000, guid: f5bc9e840261d8145a1d5e8e200aa040, type: 2}
+  - {fileID: 11400000, guid: 26c6ad2d800f94b4cba39b1b094fbd5c, type: 2}
+  - {fileID: 11400000, guid: 2ea7006b5222e9d4ab156cd90f84c1ef, type: 2}
+  nextScene: {fileID: 0}
+  CatharsysReaction: {fileID: 21300000, guid: cc3dfd10719fac74db170de5cd617874, type: 3}
+  catharsysReactionSound: 3
+  wheelScore: 2
+  reactionText: "Voil\xE0 qui est intriguant ! Elle aurait elle aussi fait un pacte
+    !"

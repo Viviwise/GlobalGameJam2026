@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 02ea93aca384ff847b1603e62d2389a4, type: 3}
+  m_Name: Mephisto_Dialogue_Scene4_1_2
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueEvent
+  eventType: 2
+  character: 4
+  sound: 22
+  contents:
+  - "Oooooooh ~ ? Peureux et l\xE2che ? "
+  - "Tu refuses d\u2019affronter la nouvelle r\xE9alit\xE9 que tu as cr\xE9\xE9 ?
+    Tu cherches \xE0 la fuir ?... "
+  - "Dommage\u2026 Toutes les dettes se payent Johann. Et la tienne vient juste de
+    commencer. "
+  - "Voyons si tu pourras continuer ce d\xE9ni lorsque tu conna\xEEtras le vrai prix
+    \xE0 payer\u2026 "
+  - Quel dramaturge je fais !

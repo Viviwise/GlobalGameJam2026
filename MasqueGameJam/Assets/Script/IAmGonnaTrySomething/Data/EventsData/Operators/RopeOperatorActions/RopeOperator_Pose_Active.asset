@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 96ac548253db39a4e91e48d053cdd06c, type: 3}
   m_Name: RopeOperator_Pose_Active
   m_EditorClassIdentifier: Assembly-CSharp::ChangePoseEvent
-  eventType: 0
-  id: 6
-  newPose: {fileID: 21300000, guid: dd5c697334ae8ae45995a09c4343c27b, type: 3}
+  eventType: 4
+  id: 7
+  newPose: {fileID: 21300000, guid: 1869e0c38d3464644998fd470b5359d3, type: 3}
+  newPoseDead: {fileID: 0}
