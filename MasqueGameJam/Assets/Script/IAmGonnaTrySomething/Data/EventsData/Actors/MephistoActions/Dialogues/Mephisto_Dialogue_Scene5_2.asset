@@ -19,5 +19,7 @@ MonoBehaviour:
   - "Diantre ? Moi ? Dois-je te rappeler que je n\u2019ai forc\xE9 en rien ."
   - "Johann \xE0 prendre mon petit cadeau. En v\xE9rit\xE9, ne devriez-vous pas me
     remercier ?"
-  - "Apr\xE8s tout, Johann brille de mille feux. Il gagne en prestige et par la m\xEAme
-    occasion, vous aussi"
+  - "Apr\xE8s tout, Johann brille de mille feux. "
+  - "Il gagne en prestige et par la m\xEAme occasion, vous aussi"
+  startSprite: {fileID: 0}
+  finishSprite: {fileID: 0}

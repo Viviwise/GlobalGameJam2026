@@ -16,5 +16,7 @@ MonoBehaviour:
   character: 4
   sound: 22
   contents:
-  - "Bien s\xFBr\u2026 Mais Johann\u2026 Penses-tu la m\xEAme chose\u2026 \xC0 propos
-    de tes amis ?"
+  - "Bien s\xFBr\u2026 Mais Johann\u2026 "
+  - "Penses-tu la m\xEAme chose\u2026 \xC0 propos de tes amis ?"
+  startSprite: {fileID: 0}
+  finishSprite: {fileID: 0}

@@ -18,5 +18,8 @@ MonoBehaviour:
   contents:
   - "Pauvre B\xE9atrice\u2026 Si id\xE9aliste\u2026 Si na\xEFve\u2026 Si hypocrite\u2026
     Si d\xE9testable\u2026 "
-  - "Aurais-tu oubli\xE9 B\xE9atrice ? Aurais-tu oubli\xE9 pourquoi ou plut\xF4t
-    gr\xE2ce \xE0 qui vous \xEAtes ici ?"
+  - "Aurais-tu oubli\xE9 B\xE9atrice ?"
+  - " Aurais-tu oubli\xE9 pourquoi ou plut\xF4t gr\xE2ce \xE0 qui vous \xEAtes ici
+    ?"
+  startSprite: {fileID: 0}
+  finishSprite: {fileID: 0}

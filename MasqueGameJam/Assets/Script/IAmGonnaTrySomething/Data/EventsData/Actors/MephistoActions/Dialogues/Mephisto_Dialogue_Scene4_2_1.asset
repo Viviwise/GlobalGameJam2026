@@ -17,4 +17,7 @@ MonoBehaviour:
   sound: 22
   contents:
   - "Merveilleux ! Hilarant ! Ce n\u2019est plus une trag\xE9die mais une pure com\xE9die
-    ! Tu es parf-"
+    !"
+  - ' Tu es parf-'
+  startSprite: {fileID: 0}
+  finishSprite: {fileID: 0}

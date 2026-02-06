@@ -17,3 +17,5 @@ MonoBehaviour:
   sound: 16
   contents:
   - "Ne peut-on pas tout arr\xEAter ?"
+  startSprite: {fileID: 21300000, guid: b45cec34d3e4d2d41a714171e5c6b9ef, type: 3}
+  finishSprite: {fileID: 21300000, guid: 3cb1e791ad986104fb0acf666be2c6b1, type: 3}

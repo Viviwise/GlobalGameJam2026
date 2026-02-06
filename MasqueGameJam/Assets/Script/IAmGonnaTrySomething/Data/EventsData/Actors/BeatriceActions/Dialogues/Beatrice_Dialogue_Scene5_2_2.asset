@@ -18,3 +18,5 @@ MonoBehaviour:
   contents:
   - "Je\u2026 Je\u2026 Je n\u2019ai rien fait ! Je\u2026 Je n\u2019ai\u2026 Rien
     fait\u2026 Ce n\u2019est pas moi\u2026"
+  startSprite: {fileID: 21300000, guid: b45cec34d3e4d2d41a714171e5c6b9ef, type: 3}
+  finishSprite: {fileID: 21300000, guid: 3cb1e791ad986104fb0acf666be2c6b1, type: 3}

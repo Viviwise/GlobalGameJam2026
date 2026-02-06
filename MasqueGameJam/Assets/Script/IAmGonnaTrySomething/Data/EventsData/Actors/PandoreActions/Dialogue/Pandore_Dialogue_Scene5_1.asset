@@ -16,5 +16,7 @@ MonoBehaviour:
   character: 3
   sound: 24
   contents:
-  - "\u2026 Es-tu venu pour fanfaronner, Diable ? Toi qui es la cause des maux qui
-    s\u2019abattent sur notre troupe ? "
+  - "\u2026 Es-tu venu pour fanfaronner, Diable ?  "
+  - "Toi qui es la cause des maux qui s\u2019abattent sur notre troupe ?"
+  startSprite: {fileID: 0}
+  finishSprite: {fileID: 0}

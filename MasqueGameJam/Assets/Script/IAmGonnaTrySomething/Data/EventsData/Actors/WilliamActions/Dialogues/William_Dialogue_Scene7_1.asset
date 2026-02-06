@@ -17,5 +17,8 @@ MonoBehaviour:
   sound: 26
   contents:
   - "Johann\u2026 Je ne te reconnais plus. "
-  - "Tu as toujours \xE9t\xE9 un homme d\u2019ambition, mais l\u2019\xE9tait-tu au
-    point de sacrifier tes amis ? Cesseras-tu cette folie ?"
+  - "Tu as toujours \xE9t\xE9 un homme d\u2019ambition, "
+  - "mais l\u2019\xE9tait-tu au point de sacrifier tes amis ? "
+  - Cesseras-tu cette folie ?
+  startSprite: {fileID: 0}
+  finishSprite: {fileID: 0}

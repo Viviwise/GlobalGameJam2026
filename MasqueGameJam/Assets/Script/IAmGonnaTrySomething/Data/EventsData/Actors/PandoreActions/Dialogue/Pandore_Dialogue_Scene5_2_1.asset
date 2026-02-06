@@ -18,5 +18,8 @@ MonoBehaviour:
   contents:
   - "Il suffit ! B\xE9atrice ne l\u2019\xE9coute pas. Il essaie de nous brouiller
     l\u2019esprit. . "
-  - "B\xE9atrice, \xE9coute-moi, regarde-moi. Si tu es ici, pr\xE9sente avec nous,
-    c\u2019est uniquement d\xFB \xE0 ton travail et \xE0 ton acharnement"
+  - "B\xE9atrice, \xE9coute-moi, regarde-moi."
+  - "Si tu es ici, pr\xE9sente avec nous, "
+  - "c\u2019est uniquement d\xFB \xE0 ton travail et \xE0 ton acharnement"
+  startSprite: {fileID: 0}
+  finishSprite: {fileID: 0}

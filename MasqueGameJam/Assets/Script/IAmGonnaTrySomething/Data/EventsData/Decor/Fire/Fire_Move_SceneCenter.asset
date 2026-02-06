@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: Fire_Move_SceneCenter
   m_EditorClassIdentifier: Assembly-CSharp::MovementEvent
   eventType: 0
-  target: 0
+  target: 10
   speed: 7
   position: {x: 0, y: 0, z: 0}

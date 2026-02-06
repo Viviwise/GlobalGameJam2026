@@ -17,5 +17,7 @@ MonoBehaviour:
   sound: 20
   contents:
   - "Pour l\u2019amour de Shakespeare, parle plus fort ! Que ta voix porte ! "
-  - "Pas \xE9tonnant que tu es refoul\xE9 au fin fond du d\xE9cor B\xE9r\xE9nice
+  - "Pas \xE9tonnant que tu sois refoul\xE9 au fin fond du d\xE9cor B\xE9r\xE9nice
     !"
+  startSprite: {fileID: 0}
+  finishSprite: {fileID: 0}

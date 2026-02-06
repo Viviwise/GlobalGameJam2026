@@ -20,5 +20,7 @@ MonoBehaviour:
   - "Je l\u2019envie r\xE9ellement\u2026 Johann, je veux dire\u2026 D\u2019une certaine
     mani\xE8re\u2026"
   - " Il est dur et parfois cruel\u2026 "
-  - "Pourtant lorsqu\u2019il perd sa place dans la lumi\xE8re, il tente de la reprendre\u2026
-    Je n\u2019ai pas cette force."
+  - "Pourtant lorsqu\u2019il perd sa place dans la lumi\xE8re, il tente de la reprendre\u2026 "
+  - "Je n\u2019ai pas cette force."
+  startSprite: {fileID: 0}
+  finishSprite: {fileID: 0}

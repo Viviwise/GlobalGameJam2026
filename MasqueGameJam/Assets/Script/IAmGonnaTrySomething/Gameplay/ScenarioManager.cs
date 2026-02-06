@@ -8,6 +8,7 @@ using UnityEngine.Events;
 using UnityEngine.Rendering.Universal;
 using UnityEngine.SceneManagement;
 using UnityEngine.Serialization;
+using UnityEngine.UI;
 using Random = System.Random;
 
 [DefaultExecutionOrder(1)]
@@ -29,8 +30,9 @@ public class ScenarioManager : MonoBehaviour
     
     [SerializeField] private OpenCurtain openCurtain;
     [SerializeField] private FrameMove frameMove;
+    [SerializeField] private Button skipBut;
     public event Action OnGoodEndReached;
-
+    private bool skip;
 
 
     public event Action<SequenceForScene> SceneFinishedAction;
@@ -63,7 +65,12 @@ public class ScenarioManager : MonoBehaviour
         }
 
     }
-    
+
+    public void SkipDialogue()
+    {
+        skip = true;
+        skipBut.interactable = false;
+    }
 
     public void DisplayChoices()
     {
@@ -135,9 +142,17 @@ public class ScenarioManager : MonoBehaviour
                     }
                     while (dialogueIndex < currentDialogueEvent.contents.Length)
                     {
+                        skip = false;
+                        skipBut.interactable = true;
                         SoundManager.PlaySound(currentDialogueEvent.sound,0.6f);
                         dialoguePanel.SetUp(currentDialogueEvent.contents[dialogueIndex], FindTarget(currentDialogueEvent.character).GetComponent<DramaObject>().actorName, textSpeed);
-                        yield return new WaitForSeconds((currentDialogueEvent.contents[dialogueIndex].Length*textSpeed)+4);
+                        yield return new WaitForSeconds((currentDialogueEvent.contents[dialogueIndex].Length*textSpeed));
+                        float elapsed = 0f;
+                        while (skip == false && elapsed <= 4)
+                        {
+                            elapsed += Time.deltaTime;
+                            yield return null;
+                        }
                         dialogueIndex++;
                     }
                     if (currentDialogueEvent.finishSprite != null)

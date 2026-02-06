@@ -17,9 +17,12 @@ MonoBehaviour:
   sound: 20
   contents:
   - "Excuses\u2026 Toujours des excuses\u2026 Entour\xE9 de m\xE9diocres\u2026"
-  - "Tu me parles de talents comme s\u2019il s\u2019agissait d\u2019une pluie ne
-    tombant que sur quelques \xE9lus\u2026"
-  - "Par pur hasard\u2026 Par caprice du ciel\u2026 Il n\u2019en est rien ! J\u2019ai
-    pli\xE9 mon corps, cass\xE9 ma voix ! "
+  - 'Tu me parles de talent, '
+  - "comme s\u2019il s\u2019agissait d\u2019une pluie ne tombant que sur quelques
+    \xE9lus\u2026"
+  - "Par pur hasard\u2026 Par caprice du ciel\u2026 "
+  - "Il n\u2019en est rien ! J\u2019ai pli\xE9 mon corps, cass\xE9 ma voix ! "
   - "Ce n\u2019est pas une gr\xE2ce mais une dette que l\u2019on se refuse \xE0 me
     payer !"
+  startSprite: {fileID: 0}
+  finishSprite: {fileID: 0}

@@ -19,6 +19,8 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 6e2f3040d0320ea4db998453531ea829, type: 2}
   - {fileID: 11400000, guid: 7bbe9c1ec5743bb4c8e3e9c25f47ef95, type: 2}
   - {fileID: 11400000, guid: 5736f2bb85201234dba7a7cdee056f71, type: 2}
+  - {fileID: 11400000, guid: 9fe7357319d62534b810e40ca982a3a0, type: 2}
+  - {fileID: 11400000, guid: 9cc930dc6b0a45a40af259647d576053, type: 2}
   nextScene: {fileID: 0}
   CatharsysReaction: {fileID: 0}
   catharsysReactionSound: 0

@@ -19,5 +19,8 @@ MonoBehaviour:
   - "\u2026 Il est certain que ce genre de mentalit\xE9 est \xE0 admirer\u2026  "
   - "Jusqu\u2019\xE0 un certain seuil\u2026 B\xE9atrice\u2026 \xC9coute mon conseil
     et reste toi-m\xEAme. "
-  - "A trop en vouloir comme Johann, tu finiras consum\xE9 par les flammes de l\u2019ambition. "
+  - A trop en vouloir comme Johann,
+  - "tu finiras consum\xE9 par les flammes de l\u2019ambition. "
   - "Ce dont tu as besoin, c\u2019est de te rendre compte de tes forces."
+  startSprite: {fileID: 0}
+  finishSprite: {fileID: 0}

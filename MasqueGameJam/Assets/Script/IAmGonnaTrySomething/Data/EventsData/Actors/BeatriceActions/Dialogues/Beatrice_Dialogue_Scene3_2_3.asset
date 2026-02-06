@@ -20,5 +20,7 @@ MonoBehaviour:
     que nul ne regarde. "
   - "Je ne suis qu\u2019une pr\xE9sence oubli\xE9e d\xE8s que les lumi\xE8res s\u2019\xE9teignent. "
   - "Ce qui me d\xE9truit, ce n\u2019est pas d\u2019\xEAtre dans l\u2019ombre. Non\u2026 "
-  - "Ce qui me ronge, c\u2019est de savoir que je pourrais dispara\xEEtre\u2026 Sans
-    n\u2019avoir rien pu faire. "
+  - "Ce qui me ronge, c\u2019est de savoir que je pourrais dispara\xEEtre\u2026 . "
+  - "Sans n\u2019avoir rien pu faire"
+  startSprite: {fileID: 0}
+  finishSprite: {fileID: 0}

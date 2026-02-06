@@ -16,6 +16,9 @@ MonoBehaviour:
   character: 0
   sound: 17
   contents:
-  - "Ce n\u2019est qu\u2019un jeu pour lui ! Et j\u2019ai\u2026 J\u2019ai\u2026 J\u2019ai
-    accept\xE9 de revivre cet enfer dans l\u2019espoir de pouvoir le changer !"
+  - "Ce n\u2019est qu\u2019un jeu pour lui ! Et j\u2019ai\u2026 J\u2019ai\u2026 "
+  - "J\u2019ai accept\xE9 de revivre cet enfer dans l\u2019espoir de pouvoir le changer
+    !"
   - "J\u2019ai accept\xE9 un pacte Pandore ! Encore ! Et encore ! Et encore !"
+  startSprite: {fileID: 0}
+  finishSprite: {fileID: 0}
