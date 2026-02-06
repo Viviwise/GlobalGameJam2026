@@ -137,7 +137,7 @@ public class ScenarioManager : MonoBehaviour
                     {
                         SoundManager.PlaySound(currentDialogueEvent.sound,0.6f);
                         dialoguePanel.SetUp(currentDialogueEvent.contents[dialogueIndex], FindTarget(currentDialogueEvent.character).GetComponent<DramaObject>().actorName, textSpeed);
-                        yield return new WaitForSeconds((currentDialogueEvent.contents[dialogueIndex].Length*textSpeed)+5);
+                        yield return new WaitForSeconds((currentDialogueEvent.contents[dialogueIndex].Length*textSpeed)+4);
                         dialogueIndex++;
                     }
                     if (currentDialogueEvent.finishSprite != null)
