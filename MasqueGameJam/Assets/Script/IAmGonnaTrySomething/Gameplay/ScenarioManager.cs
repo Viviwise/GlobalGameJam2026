@@ -29,6 +29,8 @@ public class ScenarioManager : MonoBehaviour
     
     [SerializeField] private OpenCurtain openCurtain;
     [SerializeField] private FrameMove frameMove;
+    public event Action OnGoodEndReached;
+
 
 
     public event Action<SequenceForScene> SceneFinishedAction;
@@ -262,14 +264,10 @@ public class ScenarioManager : MonoBehaviour
                 }
                 case ScenarioEventTypes.ChargeGoodEndScene:
                 {
-                    //yield return StartCoroutine(screenTransitionCurtain.FermetureRideauxCoroutine());
-                    //yield return StartCoroutine(screenTransitionCurtain.TransitionAppearCoroutine());
-                    SceneManager.LoadScene("GoodEnd");
+                    OnGoodEndReached?.Invoke();
                     break;
                 }
-
-
-
+                
             }
             currentEventIndex++;
             yield return null;
