@@ -16,7 +16,9 @@ MonoBehaviour:
   character: 3
   sound: 24
   contents:
-  - "J\u2019ai du mal \xE0 comprendre ce que tu veux dire, B\xE9atrice\u2026 Tu me
-    donnes l\u2019impression de t\u2019exprimer de mani\xE8re cryptique\u2026"
-  - "Tu as l\u2019air de savoir quelque chose\u2026 Sur toute cette mascarade\u2026
-    Quelque chose dont nous ignorons tout\u2026 "
+  - "J\u2019ai du mal \xE0 comprendre ce que tu veux dire, B\xE9atrice\u2026 "
+  - "Tu me donnes l\u2019impression de t\u2019exprimer de mani\xE8re cryptique\u2026"
+  - "Tu as l\u2019air de savoir quelque chose\u2026"
+  - " Sur toute cette mascarade\u2026 Quelque chose dont nous ignorons tout\u2026 "
+  startSprite: {fileID: 0}
+  finishSprite: {fileID: 0}

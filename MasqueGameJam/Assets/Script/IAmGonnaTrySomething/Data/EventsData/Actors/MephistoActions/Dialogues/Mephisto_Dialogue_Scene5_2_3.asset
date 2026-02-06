@@ -16,6 +16,8 @@ MonoBehaviour:
   character: 4
   sound: 22
   contents:
-  - "Hilarant ! Les pauvres\u2026 Il semblerait qu\u2019elle ne se rende pas compte
-    de leurs propres conditions\u2026 "
+  - "Hilarant ! Les pauvres\u2026 "
+  - "Il semblerait qu\u2019elle ne se rende pas compte de leurs propres conditions\u2026 "
   - "J\u2019en aurais presque de la peine\u2026 Presque !"
+  startSprite: {fileID: 0}
+  finishSprite: {fileID: 0}

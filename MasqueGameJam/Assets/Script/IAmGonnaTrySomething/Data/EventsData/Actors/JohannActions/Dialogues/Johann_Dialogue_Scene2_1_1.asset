@@ -18,5 +18,7 @@ MonoBehaviour:
   contents:
   - "Aurais-tu, une fois de plus, perdu ta langue Moli\xE8re ? "
   - 'Quelle farce ! '
-  - "Apr\xE8s tant d\u2019ann\xE9es de pratique et exp\xE9rience, toujours incapable
-    de placer une r\xE9plique correctement\u2026"
+  - "Apr\xE8s tant d\u2019ann\xE9es de pratique et exp\xE9rience,"
+  - " toujours incapable de placer une r\xE9plique correctement\u2026"
+  startSprite: {fileID: 0}
+  finishSprite: {fileID: 0}

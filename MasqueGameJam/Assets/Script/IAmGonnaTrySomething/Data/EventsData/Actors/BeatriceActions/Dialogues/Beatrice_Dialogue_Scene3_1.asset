@@ -16,7 +16,9 @@ MonoBehaviour:
   character: 0
   sound: 17
   contents:
-  - "\u2026 Et bien\u2026 Pour tout te dire, je me sens perdue William\u2026 Je ne
-    sais que faire, je ne sais o\xF9 aller\u2026 "
+  - "\u2026 Et bien\u2026 Pour tout te dire, je me sens perdue William\u2026"
+  - " Je ne sais que faire, je ne sais o\xF9 aller\u2026 "
   - "L\xE0 o\xF9 d\u2019autres ont leurs places bien d\xE9finies, quelle est la mienne
     ?"
+  startSprite: {fileID: 0}
+  finishSprite: {fileID: 0}

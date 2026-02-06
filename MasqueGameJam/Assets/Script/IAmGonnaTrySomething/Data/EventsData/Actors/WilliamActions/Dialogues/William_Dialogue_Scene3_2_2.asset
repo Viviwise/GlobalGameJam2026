@@ -16,9 +16,11 @@ MonoBehaviour:
   character: 1
   sound: 25
   contents:
-  - "\u2026 Je n\u2019en ai pas la moindre id\xE9e. N\xE9anmoins, il y a une chose
-    dont je suis s\xFBr : "
-  - "dans cette grande pi\xE8ce qu\u2019est la vie, nous avons tous un r\xF4le. Grand,
-    petit\u2026 Peu importe. "
+  - "\u2026 Je n\u2019en ai pas la moindre id\xE9e.  "
+  - "N\xE9anmoins, il y a une chose dont je suis s\xFBr :"
+  - "dans cette grande pi\xE8ce qu\u2019est la vie, nous avons tous un r\xF4le. "
+  - "Grand, petit\u2026 Peu importe. "
   - "Et je suis persuad\xE9 qu\u2019au moment voulu, tu l\u2019incarneras \xE0 la
     perfection."
+  startSprite: {fileID: 0}
+  finishSprite: {fileID: 0}

@@ -18,5 +18,7 @@ MonoBehaviour:
   contents:
   - "Aaaah\u2026 Le silence ! Il dit parfois plus qu\u2019un long discours ! "
   - Serait-ce une pointe de regret ?
-  - "Ou peut-\xEAtre un coeur si noir qu\u2019il serait incapable de sentir autre
-    chose que la mont\xE9e de sa-"
+  - "Ou peut-\xEAtre un coeur si noir, "
+  - "qu\u2019il serait incapable de sentir autre chose que la mont\xE9e de sa-"
+  startSprite: {fileID: 0}
+  finishSprite: {fileID: 0}

@@ -16,6 +16,8 @@ MonoBehaviour:
   character: 4
   sound: 22
   contents:
-  - "Bien entendu que tu n\u2019as rien fait. Sinon\u2026 Pourquoi serais-tu toujours
-    bloqu\xE9 sur l\u2019avanc\xE9e de ton r\xF4le ? "
+  - "Bien entendu que tu n\u2019as rien fait. Sinon\u2026 "
+  - "Pourquoi serais-tu toujours bloqu\xE9 sur l\u2019avanc\xE9e de ton r\xF4le ? "
   - "A devoir le r\xE9p\xE9ter sans cesse ? Cela en est navrant B\xE9atrice\u2026 "
+  startSprite: {fileID: 0}
+  finishSprite: {fileID: 0}

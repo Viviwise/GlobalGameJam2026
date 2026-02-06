@@ -16,5 +16,5 @@ MonoBehaviour:
   sequences:
   - {fileID: 11400000, guid: 52a89090fd42f8247ba66daba5cebc55, type: 2}
   - {fileID: 11400000, guid: b085074ceacd24344b99fd391d5a8182, type: 2}
-  actors: 00000000020000000300000008000000
+  actors: 000000000200000003000000010000000400000008000000
   setUpSequence: {fileID: 11400000, guid: 6ac696550f8e0cc43b2d7966ecdebe19, type: 2}

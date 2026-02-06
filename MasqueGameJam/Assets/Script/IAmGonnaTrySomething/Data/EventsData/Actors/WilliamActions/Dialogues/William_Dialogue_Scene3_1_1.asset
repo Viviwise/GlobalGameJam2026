@@ -18,7 +18,9 @@ MonoBehaviour:
   contents:
   - "C\u2019est au sujet de la jeune Pandore, n\u2019est-ce pas ?"
   - "Il faut dire que je ne l\u2019ai jamais vu aussi \xE9nerv\xE9\u2026 "
-  - "Pas m\xEAme lorsque tu te r\xE9fugiais derri\xE8re les d\xE9cors lors de ton
-    tour de parole sur sc\xE8ne\u2026  "
+  - "Pas m\xEAme lorsque tu te r\xE9fugiais derri\xE8re les d\xE9cors, "
+  - "lors de ton tour de parole sur sc\xE8ne\u2026  "
   - "Mais cela t\u2019a-t-il tant choqu\xE9 ? Plus que morose, tu parais mal \xE0
     l\u2019aise\u2026"
+  startSprite: {fileID: 0}
+  finishSprite: {fileID: 0}

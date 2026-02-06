@@ -16,5 +16,7 @@ MonoBehaviour:
   character: 5
   sound: 14
   contents:
-  - "Haha...Et cela fait un malheureux de plus qui \xE0 cru qu'il pouvait triompher
-    du diable"
+  - Haha...
+  - "Encore un malheureux de plus qui \xE0 cru qu'il pouvait triompher du diable"
+  startSprite: {fileID: 0}
+  finishSprite: {fileID: 0}

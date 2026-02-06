@@ -16,10 +16,13 @@ MonoBehaviour:
   character: 4
   sound: 22
   contents:
-  - "Les jours passent, les pi\xE8ces d\xE9filent\u2026 Et l\u2019avare Johann conna\xEEt
-    une ascension fulgurante\u2026 "
+  - "Les jours passent, les pi\xE8ces d\xE9filent\u2026 "
+  - "Et l\u2019avare Johann conna\xEEt une ascension fulgurante\u2026 "
   - "Cependant ! L\xE0 o\xF9 les pi\xE8ces prennent vie, les com\xE9diens perdent
-    la leur\u2026 Une m\xE9taphore dites-vous ?"
+    la leur\u2026 "
+  - "Une m\xE9taphore dites-vous ?"
   - "Je suis persuad\xE9 que nombre d\u2019entre eux sont pr\xEAts \xE0 diff\xE9rer\u2026 "
   - "Cela n\u2019en reste pas pour autant une fin des plus th\xE9\xE2trales ! Explosive
-    et color\xE9 !"
+    et color\xE9e !"
+  startSprite: {fileID: 0}
+  finishSprite: {fileID: 0}

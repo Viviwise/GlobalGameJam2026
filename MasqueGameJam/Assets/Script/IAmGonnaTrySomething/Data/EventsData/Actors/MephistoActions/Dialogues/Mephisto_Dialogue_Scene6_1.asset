@@ -17,5 +17,5 @@ MonoBehaviour:
   sound: 22
   contents:
   - "Enfin ! Nous entrons dans le dernier acte ! L\u2019\xE9tau se resserre ! "
-  - "La catharsis approche \xE0 grands pas ! Qu\u2019il me tarde de voir le r\xE9sultat
-    !"
+  startSprite: {fileID: 0}
+  finishSprite: {fileID: 0}

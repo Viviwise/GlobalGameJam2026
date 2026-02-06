@@ -16,5 +16,7 @@ MonoBehaviour:
   character: 3
   sound: 24
   contents:
-  - "Cela ne peut-il pas attendre ? Je veux m\u2019empresser de mettre un terme \xE0
-    toute cette histoire\u2026"
+  - 'Cela ne peut-il pas attendre ? '
+  - "Je veux m\u2019empresser de mettre un terme \xE0 toute cette histoire\u2026"
+  startSprite: {fileID: 0}
+  finishSprite: {fileID: 0}

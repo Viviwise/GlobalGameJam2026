@@ -17,5 +17,7 @@ MonoBehaviour:
   sound: 26
   contents:
   - "Que t\u2019arrive-t-il B\xE9atrice ?"
-  - " Ce qui s\u2019est pass\xE9 t\u2019a-t-il \xE0 ce point secou\xE9e ? Tu parais
-    bien plus morose que d\u2019habitude."
+  - "Ce qui s\u2019est pass\xE9 t\u2019a-t-il \xE0 ce point secou\xE9e ?"
+  - "Tu parais bien plus morose que d\u2019habitude."
+  startSprite: {fileID: 0}
+  finishSprite: {fileID: 0}
