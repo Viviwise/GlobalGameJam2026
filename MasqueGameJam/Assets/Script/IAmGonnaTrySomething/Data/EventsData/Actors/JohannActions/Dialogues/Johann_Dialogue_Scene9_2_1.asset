@@ -18,7 +18,9 @@ MonoBehaviour:
   contents:
   - "Il n\u2019en est pas question ! Je refuse cette fin ! Je la renie !"
   - Que faut-il pour que tu cesses ? Tu veux des excuses ?
-  - "Tr\xE8s bien, tu as gagn\xE9. Je suis profond\xE9ment d\xE9sol\xE9, j\u2019aurais
-    d\xFB t\u2019\xE9couter Pandore\u2026 Voil\xE0, satisfaite ?! "
+  - "Tr\xE8s bien, tu as gagn\xE9.  "
+  - "Je suis profond\xE9ment d\xE9sol\xE9, j\u2019aurais d\xFB t\u2019\xE9couter
+    Pandore\u2026 "
+  - "Voil\xE0, satisfaite ?!"
   startSprite: {fileID: 21300000, guid: 28ac9fae1b0d8114684dc7ceda8963f0, type: 3}
   finishSprite: {fileID: 21300000, guid: c6cff4ace24fa534ea4795d6f143f4bb, type: 3}

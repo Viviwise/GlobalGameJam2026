@@ -16,16 +16,17 @@ MonoBehaviour:
   character: 3
   sound: 24
   contents:
-  - "Tu as l\u2019air bien surpris M\xE9phisto\u2026 Croyais-tu que tout allait rester
-    dans l\u2019ombre ind\xE9finiment ?"
+  - "Tu as l\u2019air bien surpris M\xE9phisto\u2026 "
+  - "Croyais-tu que tout allait rester dans l\u2019ombre ind\xE9finiment ?"
   - "\u2026 Moi, qui suis l\u2019objet de deux pactes\u2026"
   - "L\u2019un que l\u2019on veut surpasser\u2026 Et un autre que l\u2019on veut
     prot\xE9ger\u2026"
   - "Et de ce que j\u2019ai compris, ce fut toujours de ta main que je p\xE9ris\u2026
     Alors je me demande\u2026"
-  - "Si ma mort n\u2019a rien \xE0 voir avec la tienne\u2026 Et que je d\xE9cide
-    de t\u2019immoler avec moi, avec ton pr\xE9cieux th\xE9\xE2tre\u2026"
-  - "Comment cela se terminerait ? \u2026Ta petite trag\xE9die va se terminer, M\xE9phisto\u2026 "
+  - "Si ma mort n\u2019a rien \xE0 voir avec la tienne\u2026"
+  - "Et que je d\xE9cide de t\u2019immoler avec moi, avec ton pr\xE9cieux th\xE9\xE2tre"
+  - "Comment cela se terminerait ? \u2026"
+  - "Ta petite trag\xE9die va se terminer, M\xE9phisto\u2026 "
   - "Puisque tout a une fin\u2026 Qu\u2019elle soit bonne ou mauvaise\u2026"
   startSprite: {fileID: 21300000, guid: 7d5a26b60ba9f444b8d5d69e7265b475, type: 3}
   finishSprite: {fileID: 21300000, guid: 5a49bcd6466257c488edd31d468f4d1c, type: 3}

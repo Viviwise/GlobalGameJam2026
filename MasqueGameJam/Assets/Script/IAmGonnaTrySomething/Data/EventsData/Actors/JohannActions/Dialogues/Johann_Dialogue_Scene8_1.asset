@@ -18,7 +18,8 @@ MonoBehaviour:
   contents:
   - "Hmf\u2026 Toujours \xE0 exag\xE9rer les faits ! "
   - "Elle doit surement \xEAtre en train de dig\xE9rer le fait qu\u2019elle n\u2019est
-    plus sous la lumi\xE8re et les acclamations du public\u2026"
+    plus sous la lumi\xE8re,"
+  - "et sous les acclamations du public\u2026"
   - "Rien de plus\u2026"
   startSprite: {fileID: 21300000, guid: 28ac9fae1b0d8114684dc7ceda8963f0, type: 3}
   finishSprite: {fileID: 21300000, guid: c6cff4ace24fa534ea4795d6f143f4bb, type: 3}

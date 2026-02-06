@@ -17,7 +17,7 @@ MonoBehaviour:
   sound: 25
   contents:
   - "N\u2019essaie pas de changer le sujet\u2026 Euh... "
-  - "Ici, nous parlons de toi, de tes torts et de tes fautes. J\u2019ai les miennes
-    mais pour ton bien, je dois les outre passer."
+  - Ici, nous parlons de toi, de tes torts et de tes fautes.
+  - "J\u2019ai les miennes mais pour ton bien, je dois les outre passer."
   startSprite: {fileID: 21300000, guid: 41bc46e49e91be5429fc615c03cfb3ca, type: 3}
   finishSprite: {fileID: 21300000, guid: 887b7270f5a58b24a91d2d388d574695, type: 3}

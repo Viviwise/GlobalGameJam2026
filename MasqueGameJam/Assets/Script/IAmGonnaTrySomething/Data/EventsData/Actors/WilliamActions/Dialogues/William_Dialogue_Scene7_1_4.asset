@@ -17,8 +17,8 @@ MonoBehaviour:
   sound: 26
   contents:
   - "Et il semblerait que maintenant, ce soit toi qui oublies ton texte\u2026 "
-  - "Tu as d\xE9j\xE0 fait suffisamment de mal. Nos d\xE9funts camarades ne reviendront
-    pas. "
+  - "Tu as d\xE9j\xE0 fait suffisamment de mal. "
+  - "Nos d\xE9funts camarades ne reviendront pas. "
   - "Mais\u2026 pense encore \xE0 ceux qui reste\u2026"
   - "Arr\xEAte tout cela avant que Pandore n\u2019en vienne \xE0 des mesures drastiques."
   startSprite: {fileID: 21300000, guid: 41bc46e49e91be5429fc615c03cfb3ca, type: 3}

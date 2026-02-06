@@ -19,8 +19,8 @@ MonoBehaviour:
   - "M\xEAme dans les flammes tu trouves le moyen de m'interrompre ! "
   - Je disais...
   - "Et je m\u2019excuse \xE9galement\u2026 Il est vrai\u2026"
-  - "Une partie de moi, une partie plus sombre ne voulait pas que tu me surpasses\u2026
-    J\u2019avais peur\u2026 "
+  - "Une partie de moi, ne voulait pas que tu me surpasses\u2026 "
+  - "J\u2019avais peur\u2026 "
   - "Mais plus que de perdre ma place\u2026 Je vous aime tous\u2026"
   - "Et je ne veux pas vous perdre\u2026 Alors autant que ce soit moi qui perde\u2026 "
   startSprite: {fileID: 21300000, guid: 7d5a26b60ba9f444b8d5d69e7265b475, type: 3}

@@ -16,20 +16,21 @@ MonoBehaviour:
   character: 3
   sound: 23
   contents:
-  - "Ne t\u2019avances pas plus, Johann. Je te connais, par orgueil, tu serais capable
-    de me rejoindre dans ces flammes\u2026"
-  - "Pour une fois, ne te contente pas de m\u2019entendre mais de m\u2019\xE9couter\u2026
-    C\u2019est amusant\u2026 Toi qui paniques pour ma vie\u2026"
-  - "Alors que je me sens\u2026 Apais\xE9e\u2026 Apais\xE9e parce que ce que je fais
-    \xE0 un sens."
-  - "Je ne pars pas parce que je n\u2019en peux plus. Je pars pour vous lib\xE9rer,
-    parce que je n\u2019ai plus besoin de rester\u2026"
+  - "Ne t\u2019avances pas plus, Johann.\u2026"
+  - Je te connais, par orgueil, tu serais capable de me rejoindre dans ces flammes
+  - "Pour une fois, ne te contente pas de m\u2019entendre mais de m\u2019\xE9couter\u2026 "
+  - "C\u2019est amusant\u2026 Toi qui paniques pour ma vie\u2026"
+  - "Alors que je me sens\u2026 Apais\xE9e\u2026 "
+  - "Apais\xE9e parce que ce que je fais \xE0 un sens."
+  - "Je ne pars pas parce que je n\u2019en peux plus. "
+  - "Je pars pour vous lib\xE9rer, parce que je n\u2019ai plus besoin de rester\u2026"
   - "Tu me demandes si je suis satisfaite\u2026 Je n\u2019ai jamais demand\xE9 \xE0
     gagner\u2026"
   - "J\u2019ai toujours appr\xE9ci\xE9 vivre mon r\xF4le\u2026"
-  - "Avec toi\u2026 Avec les autres\u2026 Mais comme chaque cycle, il faut que le
-    soleil se couche pour laisser sa place \xE0 la brillance de la lune\u2026"
+  - "Avec toi\u2026 Avec les autres\u2026 "
   - "Adieu, Johann\u2026 William\u2026 B\xE9atrice\u2026 On se reverra de l\u2019autre
     c\xF4t\xE9 du d\xE9cor\u2026"
+  - "Mais comme chaque cycle, il faut que le soleil se couche pour laisser sa place
+    \xE0 la brillance de la lune\u2026"
   startSprite: {fileID: 21300000, guid: 7d5a26b60ba9f444b8d5d69e7265b475, type: 3}
   finishSprite: {fileID: 21300000, guid: d144be7e488ecd144a4d35db9baa3a89, type: 3}

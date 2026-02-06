@@ -14,13 +14,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::SequenceForScene
   isSetUp: 0
   sequenceName: "B\xE9atrice brille enfin"
-  giver: {fileID: 21300000, guid: 4da0d3f17e54e8c4cbd67f92286b5168, type: 3}
+  giver: {fileID: 21300000, guid: b45cec34d3e4d2d41a714171e5c6b9ef, type: 3}
   events:
   - {fileID: 11400000, guid: fff666fddce2f784fa365db47b8ffafa, type: 2}
   - {fileID: 11400000, guid: fc7e84a7cf022b54fa416cf84bfa5225, type: 2}
   - {fileID: 11400000, guid: 24e299362a1786d46960027178aee2b1, type: 2}
   - {fileID: 11400000, guid: 710c4b693ee074f4eba4a2d261674e0e, type: 2}
   - {fileID: 11400000, guid: 90c1b97a17e3a9d42adc871fd3e566aa, type: 2}
+  - {fileID: 11400000, guid: 754a96fdfc3f4c24b9c3489e8f0fbf86, type: 2}
   nextScene: {fileID: 0}
   CatharsysReaction: {fileID: 21300000, guid: 69578ee4b7dabfc4cacf004330d33570, type: 3}
   catharsysReactionSound: 3

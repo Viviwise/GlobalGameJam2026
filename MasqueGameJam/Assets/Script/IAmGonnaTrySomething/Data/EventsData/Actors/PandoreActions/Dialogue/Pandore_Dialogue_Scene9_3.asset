@@ -16,8 +16,8 @@ MonoBehaviour:
   character: 3
   sound: 23
   contents:
-  - "\u2026 Je sais\u2026 B\xE9atrice\u2026 Tu es rest\xE9e trop longtemps dans l\u2019ombre
-    de Johann\u2026"
+  - "\u2026 Je sais\u2026 B\xE9atrice\u2026 "
+  - "Tu es rest\xE9e trop longtemps dans l\u2019ombre de Johann\u2026"
   - "Et beaucoup trop dans la mienne\u2026 Pour cette derni\xE8re repr\xE9sentation\u2026"
   - "Brille de mille feux avant que je ne devienne cendres avec le th\xE9\xE2tre\u2026"
   startSprite: {fileID: 21300000, guid: 7d5a26b60ba9f444b8d5d69e7265b475, type: 3}
