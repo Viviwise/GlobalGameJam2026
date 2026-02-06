@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::SequenceForScene
   isSetUp: 0
   sequenceName: William fait appel aux souvenirs
-  giver: {fileID: 0}
+  giver: {fileID: 21300000, guid: 887b7270f5a58b24a91d2d388d574695, type: 3}
   events:
   - {fileID: 11400000, guid: 013506da90967d14b9a4cb797e1200f6, type: 2}
   - {fileID: 11400000, guid: fd946ad8b1f768645900ca2f5f796beb, type: 2}

@@ -15,3 +15,4 @@ MonoBehaviour:
   eventType: 4
   id: 2
   newPose: {fileID: 21300000, guid: 28ac9fae1b0d8114684dc7ceda8963f0, type: 3}
+  newPoseDead: {fileID: 21300000, guid: 236788a65a212d9429f7732a38b60559, type: 3}

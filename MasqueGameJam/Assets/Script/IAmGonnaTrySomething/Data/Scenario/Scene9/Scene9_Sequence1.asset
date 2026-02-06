@@ -15,7 +15,12 @@ MonoBehaviour:
   isSetUp: 0
   sequenceName: 
   giver: {fileID: 0}
-  events: []
+  events:
+  - {fileID: 11400000, guid: fff666fddce2f784fa365db47b8ffafa, type: 2}
+  - {fileID: 11400000, guid: fc7e84a7cf022b54fa416cf84bfa5225, type: 2}
+  - {fileID: 11400000, guid: 24e299362a1786d46960027178aee2b1, type: 2}
+  - {fileID: 11400000, guid: 710c4b693ee074f4eba4a2d261674e0e, type: 2}
+  - {fileID: 11400000, guid: 90c1b97a17e3a9d42adc871fd3e566aa, type: 2}
   nextScene: {fileID: 0}
   CatharsysReaction: {fileID: 0}
   catharsysReactionSound: 0
